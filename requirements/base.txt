@@ -19,4 +19,4 @@ six==1.15.0
 Unidecode==1.1.1
 urllib3==1.25.9
 
-django-nopassword==4.0.0
+django-nopassword==5.0.0
