@@ -5,13 +5,10 @@ This README would normally document whatever steps are necessary to get your app
 ### What is this repository for? ###
 Selfpower Website for Selfpower NGO at https://selfpower.ro
 
-[![CircleCI](https://circleci.com/gh/ionescu77/selfpower.ro.svg?style=svg&circle-token=50b5608afe104f05dc5c194f3c388469c00ace7c)](https://circleci.com/gh/ionescu77/selfpower.ro)
-[![codecov](https://codecov.io/gh/ionescu77/selfpower.ro/branch/develop/graph/badge.svg?token=vT8RIBSlb7)](https://codecov.io/gh/ionescu77/selfpower.ro)
-[![Python 3.6.7](https://img.shields.io/badge/python-3.6.7-blue.svg)](https://www.python.org/downloads/release/python-367/)
-[![Django 2.0](https://img.shields.io/badge/django-2.0-blue.svg)](https://docs.djangoproject.com/en/2.1/releases/2.0/)
-
-* Django 2.2.10
-* Python 3.6.7
+[![CircleCI](https://circleci.com/gh/selfpower-ngo/selfpower.ro.svg?style=svg)](https://circleci.com/gh/selfpower-ngo/selfpower.ro)
+[![codecov](https://codecov.io/gh/selfpower-ngo/selfpower.ro/branch/develop/graph/badge.svg?token=vT8RIBSlb7)](https://codecov.io/gh/selfpower-ngo/selfpower.ro)
+[![Python 3.7.7](https://img.shields.io/badge/python-3.6.7-blue.svg)](https://www.python.org/downloads/release/python-367/)
+[![Django 2.2.13](https://img.shields.io/badge/django-2.0-blue.svg)](https://docs.djangoproject.com/en/2.1/releases/2.0/)
 
 * [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
