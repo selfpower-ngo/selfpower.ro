@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block metatags %}
+    <meta name="description" content="Partenerii asociatiei Selfpower">
+    <meta name="keywords" content="Selfpower, asociatie, colaboratori, parteneri, membrii">
+    <meta property="og:title" content="Partenerii nostri" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.selfpower.ro/parteneri" />
+    <meta property="og:description" content="Despre partenerii asociatiei Selfpower" />
+    <meta property="og:image" content="https://www.selfpower.ro/static/img/ParkGreenxs.jpg" />
+    <meta property="og:image:secure_url" content="https://www.selfpower.ro/static/img/ParkGreenxs.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="717" />
+    <meta property="og:image:height" content="403" />
+{% endblock metatags %}
+{% block title %} Despre Noi - Selfpower Consiliere, Educatie si Dezvoltare Personala{% endblock title %}
+
+{% load static %}
+
+{% block body %} <body id="home"> {% endblock body %}
+
+{% block content %}
+
+<div class="container">
+
+  <div class="row">
+        <div class="box">
+
+
+
+            <div class="col-sm-2 col-sm-offset-3 text-center">
+                <a class="intro-text text-center" href="https://avproiect.com/">AVPro<span style="color: orange">i</span>ect.com
+                  
+                </a> 
+                <hr>
+            </div>
+
+
+            <div class="col-sm-2 col-sm-offset-3">
+                    <img class="img-responsive" src="{% static "img/ltn2.jpg" %}" alt="LTN">
+            </div>
+  
+        </div>
+
+
+  </div>
+</div>
+</body>
+
+{% endblock content %}

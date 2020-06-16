@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block title %} Selfpower - Login{% endblock title %}
+
+{% block body %} <body id="profile"> {% endblock body %}
+
+{% block content %}
+
+<div class="container">
+      <div class="login-form">
+         <div class="main-div">
+            <div class="panel">
+             <h2>Panou de logare</h2>
+            </div><!-- ./panel -->
+            {% if user.is_authenticated %}
+                <p>Bună {{user.username}}! Ești deja logat! </p>
+                <a href="{% url 'logout'%}"><button type="submit" class="btn btn-primary">Deloghează-mă</button></a>
+                {% elif not user.is_authenticated%}
+                <p>Loghează-te pentru a putea continua! </p>
+
+                <form id="myForm" method='POST'> {% csrf_token %}
+                  {% if form.errors %}
+                    <div class="alert alert-danger" role="alert"><center><strong>Numele tău de utilizator si parola nu se potrivesc. Te rog încearcă din nou.</strong></center><small></small>
+                    </div>
+                  {% endif %}
+
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="title" placeholder="username" name="username">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" id="title" placeholder="password" name="password">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Login</button>
+
+                  <div class="ikBreak-sp"></div>
+                  <a href="{% url 'signup' %}">Nou venit?</a>
+                  <br>
+                  <a href="{% url 'password_reset_form' %}"> Uitat parola? </a>
+                  </form>
+
+                  <div class="ikBreak-sp"></div>
+                  <div class="ikBreak-sp"></div>
+                <hr>
+                  <a href="{% url 'login' %}" class="btn btn-info" style="">Logare rapidă prin email?</a>
+                <hr>
+            {% endif %}
+          </div><!-- ./main-div -->
+        </div><!-- ./login-form -->
+      </div><!-- ./container -->
+
+{% endblock content %}

@@ -1,0 +1,148 @@
+{% extends 'base.html' %}
+ 
+{% block metatags %}
+    <meta name="description" content="Date de Contact - Selfpower comunitatea de consiliere si dezvoltare personala.">
+    <meta name="keywords" content="Selfpower, Blog, Articole, Studii, Consiliere, Educatie, Dezvoltare, Personala">
+    <meta property="og:title" content="Contact - Selfpower Consiliere, Educatie si Dezvoltare Personala" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://selfpower.ro/contact" />
+    <meta property="og:description" content="Date de Contact - Selfpower comunitatea de consiliere si dezvoltare personala." />
+    <meta property="og:image" content="https://selfpower.ro/static/img/ParkGreenxs.jpg" />
+    <meta property="og:image:secure_url" content="https://selfpower.ro/static/img/ParkGreenxs.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="717" />
+    <meta property="og:image:height" content="403" />
+{% endblock metatags %}
+{% block title %} Date de contact - Selfpower Consiliere, Educatie si Dezvoltare Personala{% endblock title %}
+
+{% block body %} <body id="contact"> {% endblock body %}
+
+{% block content %}
+
+    <div class="container">
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <hr>
+                    <h2 class="intro-text text-center">Formular de
+                        <strong>Contact</strong>
+                    </h2>
+
+                    <h4> {{ confirmation }} </h4> <!-- triggers w3c warning in case of no confirmation (empty heading)  -->
+                    <hr>
+                      <br>
+            
+                    
+                      <br>
+            
+                    
+
+                    <form action='../contact/' method="POST">{% csrf_token %}
+                        <div class="row">
+
+
+                            <div class="form-group col-lg-4 {% if form.errors.name %} alert alert-danger {% endif %}" >
+                                {% if form.errors.name %}
+                                <label>  {{form.errors.name}} </label> <br>
+                                {% endif %}
+                                <label style="color: black;"> Nume</label>
+                                <input type="text" class="form-control" name="name" 
+                                    value="{{name}}"
+                                >
+                            </div>
+
+
+                            <div class="form-group col-lg-4 {% if form.errors.email %} alert alert-danger {% endif %}">
+                                {% if form.errors.email %}
+                                <label>  {{form.errors.email}} </label> <br>
+                                {% endif %}
+                                <label style="color: black;"> Adresă de Email</label>
+                                <input type="email" class="form-control" name="email" value="{{email}}">
+                            </div>
+
+
+
+                            <div class="form-group col-lg-4 {% if form.errors.telefon %} alert alert-danger {% endif %}">
+                                {% if form.errors.telefon %}
+                                <label>  {{form.errors.telefon}} </label> <br>
+                                {% endif %}
+                                <label style="color: black;"> Număr de Telefon</label>
+                                <input type="tel" class="form-control" name="telefon" value="{{telefon}}">
+                            </div>
+
+
+                            <div class="clearfix"></div>
+
+                            <div class="form-group col-lg-12 {% if form.errors.message %} alert alert-danger {% endif %}">
+                                {% if form.errors.message %}
+                                <label>  {{form.errors.message}} </label> <br>
+                                {% endif %}
+                                <label style="color: black;"> Mesaj</label>
+                                <textarea class="form-control" rows="6" name="message">{{message}}</textarea>
+                            </div>
+
+                        
+
+                        
+                        
+                            <div class="col-lg-5 {% if form.non_field_errors %}alert alert-danger {% endif %}">
+
+                                    {% if form.non_field_errors %}
+                                         <label>  {{form.non_field_errors}} </label> 
+                                    {% endif %} 
+
+                                    <div class="g-recaptcha" data-sitekey="{{recaptchaKey}}">
+                                             <!--  Recaptcha. stays at the end of the form -->
+                                    </div>
+
+                            </div> <!-- end of column-->
+
+
+                        </div> <!-- end of row -->
+
+                        <br>
+
+                        <div class="row">
+                            <div class="col-lg-3">
+                                    <input type="hidden" name="save" value="contact">
+                                    <button type="submit" class="btn btn-default form-control">Trimite</button>
+                            </div>
+                        </div>
+
+                    </form>
+
+                  
+
+
+                </div>  <!-- col -->
+            </div>  <!-- box -->
+        </div> <!-- row -->
+    </div> <!-- container -->
+
+
+
+
+<!--Start of Tawk.to Script-->
+<script>
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5b94f137f31d0f771d8493ec/1cserg2se';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+<!-- recaptcha script -->
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<!--  End ofrecaptcha script -->
+
+
+
+    <!-- /.container -->
+
+{% endblock content %}

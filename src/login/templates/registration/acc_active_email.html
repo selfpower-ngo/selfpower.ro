@@ -1,0 +1,5 @@
+{% autoescape off %}
+Buna {{ user.username }},
+Te rog apasa pe link pentru confirmarea inregistrarii,
+http://{{ domain }}{% url 'activate' uidb64=uid token=token %}
+{% endautoescape %}

@@ -1,0 +1,191 @@
+{% extends 'base.html' %}
+
+{% block metatags %}
+    <meta name="description" content="Despre Noi si Despre Selfpower comunitatea de consiliere si dezvoltare personala. Psiholog Consilier Profesor">
+    <meta name="keywords" content="Selfpower, Despre, Noi, Colaboratori, Parteneri">
+    <meta property="og:title" content="Despre - Selfpower Consiliere, Educatie si Dezvoltare Personala" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.selfpower.ro/about" />
+    <meta property="og:description" content="Despre Noi si Despre Selfpower, comunitatea de consiliere si dezvoltare personala. Psiholog Consilier Profesor" />
+    <meta property="og:image" content="https://www.selfpower.ro/static/img/ParkGreenxs.jpg" />
+    <meta property="og:image:secure_url" content="https://www.selfpower.ro/static/img/ParkGreenxs.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="717" />
+    <meta property="og:image:height" content="403" />
+{% endblock metatags %}
+{% block title %} Despre Noi - Selfpower Consiliere, Educatie si Dezvoltare Personala{% endblock title %}
+
+{% load static %}
+
+{% block body %} <body id="home"> {% endblock body %}
+
+{% block content %}
+
+    <div class="container">
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                <img src="{% static "img/banner.png" %}" alt="Blog Image" class="img-responsive center-block">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <hr>
+                    <h2 class="intro-text text-center"><strong>Despre</strong>
+                        Selfpower
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-lg-6 col-lg-offset-3 text-center">
+                    <p class="frontpage">
+                      &nbsp; &nbsp; Asociația Selfpower oferă servicii de psihoterapie, educație și management al stilului de viață.
+                      Scopul nostru principal este creșterea nivelului de confort psihic, emoțional și social al celor interesați.
+                    </p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <hr>
+                    <h2 class="intro-text text-center"><strong>Parteneri</strong>
+                        Selfpower
+                    </h2>
+                    <hr>
+                </div>
+
+              <div class="row">
+                  <div class="col-xs-4">
+                      <a href="https://www.goethe.de/ins/ro/de/index.html" class="thumbnail">
+                          <img src="{% static 'img/Goethe.png' %}" alt="Goethe_institut" style="max-height:225px">
+                      </a>
+                  </div>
+                  <div class="col-xs-4">
+                      <a href="https://www.goethe.de/prj/cma/en/index.html" class="thumbnail">
+                          <img src="{% static 'img/CMA_en.jpg' %}" alt="CMA_en" style="max-height:225px">
+                      </a>
+                  </div>
+                  <div class="col-xs-4">
+                      <a href="https://www.liceulnational.ro/" class="thumbnail">
+                          <img src="{% static 'img/ltn2.jpg' %}" alt="LTN2" style="max-height:225px">
+                      </a>
+                  </div>
+              </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-6 col-lg-offset-3 text-center">
+                    <hr>
+                    <p class="frontpage">"M-am str&#259;duit ne&#238;ncetat s&#259; nu ridiculizez, s&#259; nu depl&#226;ng <br>&#351;i nici s&#259; dispre&#355;uiesc ac&#355;iunile umane, ci s&#259; le în&#355;eleg."<br>Spinoza</p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+
+
+
+<script>
+function formInteracted(cond)
+{
+   // if(cond)
+   // {
+   //     t = document.getElementsByClassName("id1")[0]
+   //     t.style.color = 'red'
+   //     widget = document.getElementsByClassName("g-recaptcha")[0]
+   //     widget.style.visibility='visible'
+   // }
+   // else
+   // {
+   //     t = document.getElementsByClassName("id1")[0]
+   //     t.style.color = 'black'
+   //     widget = document.getElementsByClassName("g-recaptcha")[0]
+   //     widget.style.visibility='hidden'
+   // }
+
+   var item = document.getElementsByClassName("g-recaptcha")[0]
+
+   if(cond)
+   {
+
+        item.classList.add('is-visibleAK');
+
+        setTimeout(function ()
+        {
+          item.classList.add('is-openAK');
+        }, 20);
+   }
+   else
+   {}
+}
+</script>
+
+
+    <div class="row" onmouseover="formInteracted(true)">
+        <div class="box" >
+            <div class="row">
+            <form id="inregistrare" class="form-inline text-center" method="post">
+              {% csrf_token %}
+                <div class="form-group">
+                  <label for="id_adresa_email">Newsletter:</label>
+
+                  <input type="email" class="form-control" name="adresa_email" id="id_adresa_email" placeholder="nume@nume.com">
+
+                  </div>
+                <button type="submit" class="btn btn-default">Înscriere</button>
+
+                <br>
+                <br>
+
+
+                <input type="checkbox" name="checkbox_agreement" id="checkbox_agreement"> {{ config.aproveNewsletterMessage }} <br>
+
+
+                <div class="clearfix"></div>
+
+            </form>
+
+
+
+            </div>
+            {% for message in messages %}
+              <div class="row">
+                  <!-- <div class="col-lg-7 col-lg-offset-4">-->
+                    <br>
+                    {% if 'success' in message.tags %}
+                    <div class="alert alert-success col-lg-4 col-lg-offset-4" role="alert"><center><strong>{{ message }}</strong></center></div>
+                    {% endif %}
+                    {% if 'error' in message.tags %}
+                    <div class="alert alert-danger col-lg-4 col-lg-offset-4" role="alert"><!-- <center>{{message}}<strong>{{ form.errors }}</strong></center><small>{{ form.non_field_errors.message | striptags }}</small> -->{{message}}
+
+                        {% if form.non_field_errors %}
+                             <label>  {{form.non_field_errors}} </label>
+                        {% endif %}
+                        <br>
+                        {% if form.errors.adresa_email %}
+                            <label>  {{form.errors.adresa_email}} (adresa de email)</label> <br>
+                        {% endif %}
+                    </div>
+                    {% endif %}
+
+                  </div>
+              <!-- </div> -->
+            {% endfor %}
+          </div>
+        </div>
+    </div>
+    <!-- /.container -->
+
+
+
+
+{% endblock content %}

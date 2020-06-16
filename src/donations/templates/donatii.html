@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+
+{% block metatags %}
+    <meta name="description" content="Selfpower - sustine asociatia printr-o donatie unica sau recurenta">
+    <meta name="keywords" content="Donatie, sustine, paypal, card, Selfpower, caritate, doneaza">
+    <meta property="og:title" content="Doneaza pentru o cauza caritabila" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.selfpower.ro/donatii" />
+    <meta property="og:description" content="Selfpower - sustine asociatia printr-o donatie unica sau recurenta" />
+    <meta property="og:image" content="https://www.selfpower.ro/static/img/ParkGreenxs.jpg" />
+    <meta property="og:image:secure_url" content="https://www.selfpower.ro/static/img/ParkGreenxs.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="717" />
+    <meta property="og:image:height" content="403" />
+
+
+
+    
+
+{% endblock metatags %}
+{% block title %} Despre Noi - Selfpower Consiliere, Educatie si Dezvoltare Personala{% endblock title %}
+
+{% load static %}
+
+{% block body %} <body id="sustine"> {% endblock body %}
+
+{% block content %} 
+  
+<div class="container">
+
+    <div class="row">
+        <div class="box text-center">
+          <div class="col-md-3 col-md-offset-4">
+            <img src="{% static "images/donations.png" %}" alt="Blog Image" class="img-responsive center-block" style="width: 90%;">
+          </div>
+
+          <div class="clearfix"></div>
+          <br>
+          <br>
+          <br>
+          <div class="col-md-7 col-md-offset-2 divLine"></div> <!-- a custom line -->
+          <br>
+          <div class="clearfilx"></div>
+
+          <div class="col-md-5 col-md-offset-2">
+             <p> Alătură-te nouă în scopul susținerii acestor obiective si fii un partener al asociației Selfpower! Îți mulțumim pentru interes!
+             </p>
+          </div>
+
+          <div class="col-md-2">   
+             <img src="{% static "images/fist.png" %}" alt="Blog Image" class="img-responsive center-block" style="width: 90%;">
+          </div>
+
+
+          <div class="clearfix"></div>
+          <br>
+          <br>
+          <br>
+          <div class="col-md-7 col-md-offset-2 divLine"></div> <!-- a custom line -->
+          <br>
+          <div class="clearfilx"></div>
+          <div class="col-md-5 col-md-offset-2">
+             <p> Fondurile strânse vor fi folosite in cadrul proiectelor pe care le susținem. Urmarește progresul proiectelor în desfășurare sau vino și tu cu idei noi.
+             </p>
+          </div>
+          <div class="col-md-2">   
+             <img src="{% static "images/todolist.png" %}" alt="Blog Image" class="img-responsive center-block" style="width: 90%;">
+          </div>
+
+
+
+          <div class="clearfix"></div>
+          <br>
+          <br>
+          <br>
+          
+          <div class="col-md-7 col-md-offset-2 divLine"></div> <!-- a custom line -->
+
+          <br>
+
+          <div class="clearfilx"></div>
+
+          <div class="col-md-5 col-md-offset-2">
+             <p> Poți face o plată individuală sau regulată. Transfer wire, Paypel sau folosind cardul de debit/credit sunt modalitățile prin care poți transfera fonduri către asociația Selfpower.
+             </p>
+          </div>
+
+          <div class="col-md-2">   
+              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="6JMRBGWEWL35N">
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+              </form>
+          </div>
+
+          <br>
+          <br>
+          <div class="ikBreak"></div>
+
+
+          <div class="clearfilx"></div>
+          
+
+
+          <div class="col-md-6 col-md-offset-3">
+              <a class="donateButton" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6JMRBGWEWL35N" id="parentCell">Donează</a>
+          </div>
+         
+
+
+        </div>
+    </div>         
+</div>
+    <!-- /.container -->
+
+{% endblock content %}

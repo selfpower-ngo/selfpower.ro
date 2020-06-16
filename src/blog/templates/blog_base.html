@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block metatags %}
+    <meta name="description" content="{% block metadesc %}Selfpower.ro - Blog, Articole, Studii{% endblock metadesc %}">
+    <meta name="keywords" content="Selfpower, Blog, Articole, Studii, Consiliere, Educatie, Dezvoltare, Personala">
+    <meta property="og:title" content="{% block metatitle %}Selfpower.ro Blog{% endblock metatitle %}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.selfpower.ro/blog/{% block og_url %}{% endblock og_url %}" />
+    <meta property="og:description" content="Selfpower.ro - Blog, Articole, Studii" />
+    <meta property="og:image" content="https://www.selfpower.ro/static/img/banner.png" />
+    <meta property="og:image:secure_url" content="https://www.selfpower.ro/static/img/banner.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="Blog Selfpower Banner Image" />
+    <meta property="og:image:width" content="1000" />
+    <meta property="og:image:height" content="532" />
+    <meta property="fb:app_id" content="2521504124841472" />
+{% endblock metatags %}
+
+
+
+
+{% block title %} Selfpower - Blog, Articole, Studii {% endblock title %}
+
+{% block body %} <body id="blog"> {% endblock body %}
+
+{% block content %}
+
+    <div class="container">
+
+        <div class="box">
+
+                {% block blog_entries %} {% endblock %}
+
+        </div><!-- /.box -->
+
+    </div>
+    <!-- /.container -->
+
+{% endblock content %}

@@ -1,0 +1,391 @@
+body {
+    background-color: #fe832a;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+      line-height: 1.0;
+}
+
+div.blogpost p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+blockquote {
+  font-size: 14.5px;
+  border-left: 5px solid #E22D2D;
+}
+
+h2 a {
+  color: #333;
+}
+
+.brand-before,
+.brand-name {
+    font-family: "Slabo 27px","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.transparent {
+    background-color: transparent !important;
+}
+
+p.quote {
+    background-color: rgba(0,0,0,0.5) !important;
+    color: #fff;
+}
+
+.box {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+  color: #000;
+  background-color: #fff;
+}}
+
+
+footer ul.quicklinks {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    text-transform: none;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 40px;
+    padding-top: 25px
+}
+
+footer p {
+  padding: 25px 0;
+}
+
+.list-inline {
+    padding-top: 50px;
+}
+
+ul.social-buttons {
+    margin-bottom: 0;
+}
+
+ul.social-buttons li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 40px;
+    outline: 0;
+    color: #fff;
+    background-color: #222;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+    background-color: #777;
+}
+
+.carousel-caption {
+  right: 12%;
+  left: 12%;
+  padding-bottom: 2px;
+  background: rgba(0,0,0,0.5);
+
+}
+
+.carousel-text{
+  color: #FFF;
+}
+.carousel-inner { background:none !important; }
+.carousel-control { background: none !important; filter: none !important; progid:none !important; }
+
+.carousel-control span.icon-prev, span.icon-next {
+    color: #fe832a;
+}
+
+#profileImage
+{
+
+}
+
+
+.main-div {
+  background: #ffffff none repeat scroll 0 0;
+  border-radius: 3px;
+  margin: 10px auto 30px;
+  padding: 50px 70px 70px 71px;
+}
+
+.main2-div {
+  background: #ffffff none repeat scroll 0 0;
+  border-radius: 3px;
+  margin: 10px auto 30px;
+  max-width: 70%;
+  min-width: 200;
+  padding: 50px 70px 70px 71px;
+}
+
+
+@media screen
+and (min-width: 320px)
+and (max-width: 480px) {
+    body {
+        background-color: #fe832a;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    }
+    .brand {
+        font-family: "Slabo 13px","Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+    .banner {
+        font-size: 1.1em;
+    }
+
+    .main-div {
+      max-width: 85%;
+      padding: 20px 10px 20px 10px;
+    }
+
+    .main2-div {
+      max-width: 85%;
+      padding: 15px 15px 20px 15px;
+    }
+
+    #profileImage
+    {
+      max-width: 20%;
+      padding: 10px;
+    }
+
+}
+
+
+@media screen
+and (min-width: 480px)
+and (max-width: 768px) {
+    body {
+        background-color: #fe832a;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    }
+    .brand {
+        font-family: "Slabo 13px","Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+    .banner {
+        font-size: 1.1em;
+    }
+
+    .main-div {
+      max-width: 65%;
+    }
+
+    .main2-div {
+      max-width: 65%;
+    }
+
+    #profileImage
+    {
+      max-width: 20%;
+      padding: 10px;
+    }
+
+}
+
+
+@media screen
+and (min-width: 768px)
+and (max-width: 1024px) {
+    body {
+        background-color: #fe832a;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    }
+    .brand {
+        font-family: "Slabo 13px","Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+
+    .main-div {
+      max-width: 60%;
+    }
+
+    .main2-div {
+      max-width: 60%;
+    }
+
+    #profileImage
+    {
+      max-width: 100%;
+      padding: 10px;
+    }
+
+}
+
+@media screen
+and (min-width: 768px)
+and (max-width: 1024px) {
+    body {
+        background-color: #fe832a;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    }
+    .brand {
+        font-family: "Slabo 27px","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 4em;
+    }
+
+    .main-div {
+      max-width: 55%;
+    }
+
+    .main2-div {
+      max-width: 55%;
+    }
+
+
+    .nav>li>a {
+    padding-left: 10px;
+    padding-right:10px
+        }
+
+}
+
+
+@media screen
+and (min-width: 1024px) {
+    body {
+        background-color: #fe832a;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    }
+    .brand {
+        font-family: "Slabo 27px","Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+
+        .main-div {
+      max-width: 40%;
+    }
+
+     .main2-div {
+      max-width: 40%;
+    }
+
+
+}
+
+@media screen
+and (min-width: 1624px) {
+    body {
+        background-color: #fe832a;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    }
+    .brand {
+        font-family: "Slabo 27px","Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+
+    .main-div {
+      max-width: 38%;
+    }
+
+    .main2-div {
+      max-width: 38%;
+    }
+
+}
+
+
+.divLine /* dev: alex. Info:  create a custom line; */
+{
+    height: 1px;
+    border: 1px solid black;
+    color: black;
+
+    -webkit-filter: invert(100%);
+    filter: invert(80%);
+}
+
+.ikBreak /* dev: alex. Info: create a blank space between interface objects; */
+{
+    width: 100%;
+    height: 180px;
+}
+
+.ikBreak-sp /* dev: alex. Info: create a blank space between interface objects; */
+{
+    width: 100%;
+    height: 27px;
+}
+
+.donateButton   /* dev: alex. A donate button that can redirect to a payment gate. */
+{
+    background-color: #0096FF;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 80px;
+}
+
+
+#gradient1 /*dev: alex. a gradient; */
+   {
+     height: 72px;
+     background: #990000;
+    /* For browsers that do not support gradients */
+     background: linear-gradient(to bottom, #6E6E6E, #323232);
+    /* Standard syntax (must be last) */
+   }
+
+
+
+
+ .animationOneContainer {
+  display: none;
+  opacity: 0;
+/*  width: 200px;
+  height: 200px;*/
+  margin-top: 50px;
+  /*background-color: gold;*/
+  transition: all .3s linear;
+}
+
+.is-visibleAK {
+  display: block;
+  height: 50px;
+}
+
+.is-openAK {
+  margin-top: 30px;
+  opacity: 1;
+  height: 100px;
+}

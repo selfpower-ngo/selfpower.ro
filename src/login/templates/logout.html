@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block body %} <body id="profile"> {% endblock body %}
+
+{% block content %}
+<div class="container">
+	 <div class="row">
+        <div class="box">
+		  <p>Ai fost delogat!</p>
+		  <a href="{% url 'panou_logare'%}">Click aici pentru a te loga din nou!</a>
+		</div>
+	</div>
+</div>
+{% endblock %}

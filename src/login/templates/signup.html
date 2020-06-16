@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+ 
+{% load static %}
+
+{% block metatags %}
+    <meta name="description" content="Inregistrare ca utilizator - platforma Selfpower">
+    <meta name="keywords" content="Selfpower, autentificare, inregistrare, login, cont, user, utilizator, profil">
+    <meta property="og:title" content="Inregistrare - Signup" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://selfpower.ro/signup" />
+    <meta property="og:description" content="Inregistrare ca utilizator pe platforma Selfpower" />
+    <meta property="og:image" content="https://selfpower.ro/static/img/ParkGreenxs.jpg" />
+    <meta property="og:image:secure_url" content="https://selfpower.ro/static/img/ParkGreenxs.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="717" />
+    <meta property="og:image:height" content="403" />
+{% endblock metatags %}
+
+{% block title %} Inregistrare - Alatura-te comunitatii noastre {% endblock title %}
+
+{% block body %} <body id="profile"> {% endblock body %}
+
+{% block content %}
+
+<div class="container">
+   <div class="signup-form">
+		<div class="main2-div">
+
+			  <h2>Sign up</h2>
+
+		  <!-- 	{% if form.errors %}
+            <p>Your username and password didn't match. Please try again.</p>
+	            <font size="3" color="red">{{ form.errors }}</font>
+	            
+      		{% endif %} -->
+
+			  <form method="post" id="Login"> {% csrf_token %}
+			  		
+			  	<div class="form-group {% if form.errors.username %} alert alert-danger {% endif %}">
+			  			{% if form.errors.username %}
+                        <label>  {{form.errors.username}} </label> <br>
+                        {% endif %}
+		              <input type="text" class="form-control" id="username" placeholder="username" name="username" value="{{username}}">
+	            </div>
+
+
+	            <div class="form-group {% if form.errors.first_name %} alert alert-danger {% endif %}">
+	            		{% if form.errors.first_name %}
+                        <label>  {{form.errors.first_name}} </label> <br>
+                        {% endif %}
+		              <input type="text" class="form-control" id="first_name" placeholder="Numele mic" name="first_name" value="{{first_name}}">
+	            </div>
+
+
+	            <div class="form-group {% if form.errors.last_name %} alert alert-danger {% endif %}">
+	            		{% if form.errors.last_name %}
+                        <label>  {{form.errors.last_name}} </label> <br>
+                        {% endif %}
+		              <input type="text" class="form-control" id="last_name" placeholder="Numele de familie" name="last_name" value="{{last_name}}">
+	            </div>
+
+
+	            <div class="form-group {% if form.errors.email %} alert alert-danger {% endif %}">
+	            		{% if form.errors.email %}
+                        <label>  {{form.errors.email}} </label> <br>
+                        {% endif %}
+		              <input type="email" class="form-control" id="email" placeholder="email" name="email" value="{{email}}">
+	            </div>
+
+
+	            <div class="form-group {% if form.errors.password1 %} alert alert-danger {% endif %}">
+	            		{% if form.errors.password1 %}
+                        <label>  {{form.errors.password1}} </label> <br>
+                        {% endif %}
+		              <input type="password" class="form-control" id="password1" placeholder="parolă" name="password1">
+	            </div>
+
+	            <div class="form-group {% if form.errors.password2 %} alert alert-danger {% endif %}">
+	            		{% if form.errors.password2 %}
+                        <label>  {{form.errors.password2}} </label> <br>
+                        {% endif %}
+		              <input type="password" class="form-control" id="password2" placeholder="Confirmă parola" name="password2">
+	            </div>
+
+	            <div class="">
+                    {% if form.non_field_errors %} <div class="alert alert-danger"> {% endif %}
+
+                    {% if form.non_field_errors %}
+                         <label>  {{form.non_field_errors}} </label> 
+                    {% endif %} 
+
+                    <div class="g-recaptcha" data-sitekey="{{recaptchaKey}}">
+                             <!--  Recaptcha. stays at the end of the form -->
+                    </div>
+
+                     {% if form.non_field_errors %} </div> {% endif %}
+                </div> <!-- end of col-lg-8 -->
+
+               
+
+	    			<button type="submit" class="btn btn-primary">Sign up</button>
+
+
+			  </form>
+
+	  	</div>
+  	</div>
+</div>
+
+
+<!-- recaptcha script -->
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<!--  End ofrecaptcha script -->
+
+{% endblock %}

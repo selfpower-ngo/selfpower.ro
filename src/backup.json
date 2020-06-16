@@ -1,0 +1,705 @@
+[
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$36000$zDAMqfi48aoy$gjhmGHuDP04Bd3a9sz9c9fquYkNVGDpg8UrdWwYbpoA=",
+    "last_login": "2019-01-22T08:59:01.736Z",
+    "is_superuser": true,
+    "username": "razvansky",
+    "first_name": "",
+    "last_name": "",
+    "email": "ionescu77@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2015-03-06T21:39:09.240Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$12000$6aBfVK3RrwPo$dZkj/eJMpQKkdkbtynfOdEjBmX1nd0nil7ZLupqk6cg=",
+    "last_login": "2017-03-12T09:25:27.259Z",
+    "is_superuser": false,
+    "username": "cristina.ginghina",
+    "first_name": "Cristina",
+    "last_name": "Ginghina",
+    "email": "cristina.elena.ginghina@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2015-03-07T16:47:45Z",
+    "groups": [],
+    "user_permissions": [
+      [
+        "add_entry",
+        "blog",
+        "entry"
+      ],
+      [
+        "change_entry",
+        "blog",
+        "entry"
+      ],
+      [
+        "delete_entry",
+        "blog",
+        "entry"
+      ],
+      [
+        "add_tag",
+        "blog",
+        "tag"
+      ],
+      [
+        "change_tag",
+        "blog",
+        "tag"
+      ],
+      [
+        "delete_tag",
+        "blog",
+        "tag"
+      ]
+    ]
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 8,
+  "fields": {
+    "password": "pbkdf2_sha256$36000$3T5zEkL5fYTK$Bx6PTWJ0FhK/j8ine/N2kw/SD27B3tZ/T+0RagbrZ9E=",
+    "last_login": "2019-02-18T06:50:16.130Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2019-01-12T08:35:33.772Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 13,
+  "fields": {
+    "password": "pbkdf2_sha256$36000$UjupAqjkUfNW$yuxaqAFNzblk15cYatMDDihr0kh5b/sBaTDudfoTtGs=",
+    "last_login": "2019-02-17T15:38:37.577Z",
+    "is_superuser": false,
+    "username": "alex",
+    "first_name": "alex",
+    "last_name": "manolescu",
+    "email": "alex.inntekt@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-02-17T15:37:53.540Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "18beetb3e7t3vhodlvkjk1ifs3vnhzjv",
+  "fields": {
+    "session_data": "MDZiMjg4NmFkYjIxZThiMGQ3NTAzYmE3NWVjNjU1ZTEzNDdmOWRjZTp7Il9hdXRoX3VzZXJfaGFzaCI6ImQ3OWMwYjk2MjVhZDBhM2ZjMmJiNWIyZGI5ZGY3NGU4N2E0YTYzMjAiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiI2In0=",
+    "expire_date": "2018-12-13T11:51:47.162Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "30qgtlpbtc8zy7a0udcqy40fgqr4e739",
+  "fields": {
+    "session_data": "M2U4M2U4ZTBkMmFkNzcwYThhOGM4MmZmOTA5NjQ3MDE5YTNjZDNlNTp7Il9hdXRoX3VzZXJfaGFzaCI6IjljMTZhZDYzMmEyMDRlYWY5Njg1ZTFlYTU2OWE5YWJmYjI4MGEzZDYiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiI4In0=",
+    "expire_date": "2019-02-13T13:49:11.778Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "354ozgarp0mulgc606rwwhgss3eiavq0",
+  "fields": {
+    "session_data": "ZDFkNTMxY2MyOTI2Y2QzMDgzMDRhOTZkNzM3NTRkZjE2YTVmNzc1Mjp7Il9hdXRoX3VzZXJfaGFzaCI6IjNiZDcyYWVlNTZiY2RhNzhjYjhmOTYzOWM0NmUzOWUxODIyYjc0ZmYiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjJ9",
+    "expire_date": "2017-03-26T09:25:27.260Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "4378ietkcr1dzgdxcr4ppse3q60yci4m",
+  "fields": {
+    "session_data": "Y2YzMTdjODU0OWMxNmJmYmYzN2Y5NTliZTRjNzZjZTI0Y2RjNzA4OTp7Il9hdXRoX3VzZXJfaGFzaCI6IjY0YjJlNjMzZGE2YWEyZDVkZWQxNDYxOTQwNTMwNWMxN2ZiMjU0ZTMiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=",
+    "expire_date": "2018-12-13T11:13:10.308Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "80zzow153v4o71u1xge22ip6r4pm4cx7",
+  "fields": {
+    "session_data": "MmI2YzgxZDVhMzk5YjVhZjg1MDlhYTc2ZmI2MGU4NTBmNjM4MjYxMjp7fQ==",
+    "expire_date": "2015-07-26T23:01:04.820Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "847wlqfvxxn39fgl2twgf2g8x3h4ue2s",
+  "fields": {
+    "session_data": "ZDFkNTMxY2MyOTI2Y2QzMDgzMDRhOTZkNzM3NTRkZjE2YTVmNzc1Mjp7Il9hdXRoX3VzZXJfaGFzaCI6IjNiZDcyYWVlNTZiY2RhNzhjYjhmOTYzOWM0NmUzOWUxODIyYjc0ZmYiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjJ9",
+    "expire_date": "2015-07-24T11:42:05.859Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "abbqzk2q71tllb4yb17dm1uxei5wsx9s",
+  "fields": {
+    "session_data": "NDY1YTA2YWZhZDcyODRkMzRmM2E1MDQwOGZlZTUwZDU5NzAwZjA5OTp7Il9hdXRoX3VzZXJfaGFzaCI6IjI4NWYyYzIwOThmN2JjZjIxYTYwZGYzZmM3NDQ2ODIwYTcyYzQ0NjUiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjF9",
+    "expire_date": "2015-04-15T12:23:48.333Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "bbjv4arro0bq6px4ukcy53g8ffer91ls",
+  "fields": {
+    "session_data": "MGNmMDkwMjM4NWYxY2I1ZTk0ZmJkNzIyOWVmMThjNGY0M2ZhYjQ5NDp7Il9hdXRoX3VzZXJfaGFzaCI6IjI5MjI4ZjY2NjVmZTlmZTYzYThiZGE0MTE3YjM3YmY1Y2JjZWNhNjkiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJub3Bhc3N3b3JkLmJhY2tlbmRzLmVtYWlsLkVtYWlsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxMyJ9",
+    "expire_date": "2019-03-03T15:38:37.579Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "h66kglf0bnw7zz6qydvqjcnld9o88wi6",
+  "fields": {
+    "session_data": "ZDFkNTMxY2MyOTI2Y2QzMDgzMDRhOTZkNzM3NTRkZjE2YTVmNzc1Mjp7Il9hdXRoX3VzZXJfaGFzaCI6IjNiZDcyYWVlNTZiY2RhNzhjYjhmOTYzOWM0NmUzOWUxODIyYjc0ZmYiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjJ9",
+    "expire_date": "2015-07-23T15:40:58.637Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "m8lv2smpqflew589l6ispjh93ef5a682",
+  "fields": {
+    "session_data": "Y2YzMTdjODU0OWMxNmJmYmYzN2Y5NTliZTRjNzZjZTI0Y2RjNzA4OTp7Il9hdXRoX3VzZXJfaGFzaCI6IjY0YjJlNjMzZGE2YWEyZDVkZWQxNDYxOTQwNTMwNWMxN2ZiMjU0ZTMiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=",
+    "expire_date": "2018-12-13T10:13:35.365Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "maq9pkymkrswf7mqt4h6wlrcrkb63m1v",
+  "fields": {
+    "session_data": "ZDFkNTMxY2MyOTI2Y2QzMDgzMDRhOTZkNzM3NTRkZjE2YTVmNzc1Mjp7Il9hdXRoX3VzZXJfaGFzaCI6IjNiZDcyYWVlNTZiY2RhNzhjYjhmOTYzOWM0NmUzOWUxODIyYjc0ZmYiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjJ9",
+    "expire_date": "2017-03-12T08:51:54.170Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "nojkgfp2fntft7gfakyd1ju8sd69z830",
+  "fields": {
+    "session_data": "MmI2YzgxZDVhMzk5YjVhZjg1MDlhYTc2ZmI2MGU4NTBmNjM4MjYxMjp7fQ==",
+    "expire_date": "2015-03-23T00:47:47.633Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "qn05xgdwp52ct7zrvkofnlli8amzqf4i",
+  "fields": {
+    "session_data": "MDZiMjg4NmFkYjIxZThiMGQ3NTAzYmE3NWVjNjU1ZTEzNDdmOWRjZTp7Il9hdXRoX3VzZXJfaGFzaCI6ImQ3OWMwYjk2MjVhZDBhM2ZjMmJiNWIyZGI5ZGY3NGU4N2E0YTYzMjAiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiI2In0=",
+    "expire_date": "2018-12-13T11:36:36.655Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "qr9xhz18vxhw08aof290rqzbz6tqu7y0",
+  "fields": {
+    "session_data": "ZDFkNTMxY2MyOTI2Y2QzMDgzMDRhOTZkNzM3NTRkZjE2YTVmNzc1Mjp7Il9hdXRoX3VzZXJfaGFzaCI6IjNiZDcyYWVlNTZiY2RhNzhjYjhmOTYzOWM0NmUzOWUxODIyYjc0ZmYiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjJ9",
+    "expire_date": "2016-03-12T08:34:54.838Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "qxuvcavsnnive0orfumgs5kq6kiursak",
+  "fields": {
+    "session_data": "M2U4M2U4ZTBkMmFkNzcwYThhOGM4MmZmOTA5NjQ3MDE5YTNjZDNlNTp7Il9hdXRoX3VzZXJfaGFzaCI6IjljMTZhZDYzMmEyMDRlYWY5Njg1ZTFlYTU2OWE5YWJmYjI4MGEzZDYiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiI4In0=",
+    "expire_date": "2019-03-04T06:50:16.133Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "v5ssh7to3sxcpwqhd07rv5vwiez4ge3b",
+  "fields": {
+    "session_data": "MmI2YzgxZDVhMzk5YjVhZjg1MDlhYTc2ZmI2MGU4NTBmNjM4MjYxMjp7fQ==",
+    "expire_date": "2015-08-25T13:57:31.565Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "vtg0rh4rnsrf44ytxhcivvfyzqmpz41g",
+  "fields": {
+    "session_data": "M2U4M2U4ZTBkMmFkNzcwYThhOGM4MmZmOTA5NjQ3MDE5YTNjZDNlNTp7Il9hdXRoX3VzZXJfaGFzaCI6IjljMTZhZDYzMmEyMDRlYWY5Njg1ZTFlYTU2OWE5YWJmYjI4MGEzZDYiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiI4In0=",
+    "expire_date": "2019-03-03T15:37:11.182Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "xgepq2zelv5uu60z7dg36smnh86jvn2j",
+  "fields": {
+    "session_data": "NDY1YTA2YWZhZDcyODRkMzRmM2E1MDQwOGZlZTUwZDU5NzAwZjA5OTp7Il9hdXRoX3VzZXJfaGFzaCI6IjI4NWYyYzIwOThmN2JjZjIxYTYwZGYzZmM3NDQ2ODIwYTcyYzQ0NjUiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjF9",
+    "expire_date": "2015-03-23T10:38:25.391Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "y7lzftyqf9yt3uzc7opunhjkd6sti4ys",
+  "fields": {
+    "session_data": "ZDFkNTMxY2MyOTI2Y2QzMDgzMDRhOTZkNzM3NTRkZjE2YTVmNzc1Mjp7Il9hdXRoX3VzZXJfaGFzaCI6IjNiZDcyYWVlNTZiY2RhNzhjYjhmOTYzOWM0NmUzOWUxODIyYjc0ZmYiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjJ9",
+    "expire_date": "2016-05-16T11:02:10.150Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "yjf8czo3g57mabin5466xpeb1zpsqodc",
+  "fields": {
+    "session_data": "MmI2YzgxZDVhMzk5YjVhZjg1MDlhYTc2ZmI2MGU4NTBmNjM4MjYxMjp7fQ==",
+    "expire_date": "2015-04-15T13:27:47.533Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ypbhu82n2727ohcia3ce1ltlp9f8a81q",
+  "fields": {
+    "session_data": "MmI2YzgxZDVhMzk5YjVhZjg1MDlhYTc2ZmI2MGU4NTBmNjM4MjYxMjp7fQ==",
+    "expire_date": "2015-03-20T21:39:36.900Z"
+  }
+},
+{
+  "model": "blog.tag",
+  "pk": 1,
+  "fields": {
+    "slug": "stres"
+  }
+},
+{
+  "model": "blog.tag",
+  "pk": 2,
+  "fields": {
+    "slug": "meditatie"
+  }
+},
+{
+  "model": "blog.tag",
+  "pk": 3,
+  "fields": {
+    "slug": "sanatate"
+  }
+},
+{
+  "model": "blog.tag",
+  "pk": 4,
+  "fields": {
+    "slug": "contemplatie"
+  }
+},
+{
+  "model": "blog.tag",
+  "pk": 5,
+  "fields": {
+    "slug": "constientizare"
+  }
+},
+{
+  "model": "blog.tag",
+  "pk": 6,
+  "fields": {
+    "slug": "educatie"
+  }
+},
+{
+  "model": "blog.tag",
+  "pk": 7,
+  "fields": {
+    "slug": "psihoterapie"
+  }
+},
+{
+  "model": "blog.tag",
+  "pk": 8,
+  "fields": {
+    "slug": "revelatie"
+  }
+},
+{
+  "model": "blog.entry",
+  "pk": 1,
+  "fields": {
+    "title": "Despre Stres",
+    "subtitle": "Stresul nu este ceea ce \u021bi se \u00eent\u00e2mpl\u0103, ci modul \u00een care percepi evenimentele \u0219i \u00eent\u00e2mpl\u0103rile din via\u021ba ta",
+    "body": "Stresul este un **concept** care de obicei este v\u0103zut ca o problema. Tr\u0103im \u00een aceea\u0219i lume. Evenimente nefericite exist\u0103 \u00een via\u021ba fiec\u0103ruia dintre noi. Bolile, moartea, problemele financiare fac parte din natura umana. Dar nu to\u021bi oamenii reac\u021bioneaz\u0103 \u00een acela\u0219i fel la aceste evenimente. De fapt, modul \u00een care percepem aceste evenimente define\u0219te ceea ce este stresant. Percep\u021bia se refer\u0103 la modul \u00een care vedem oamenii, evenimentele \u0219i lucrurile din jurul nostru.  \r\n\r\nC\u00e2nd ne examin\u0103m propria percep\u021bie trebuie s\u0103 \u00eenfrunt\u0103m concepte \u0219i idei noi care \u00een acel moment duc la confuzie, iar acest fapt define\u0219te niveul de stres. \u00centreb\u0103rile nu \u00eent\u00e2rzie s\u0103 apar\u0103:\r\n> \u201cCum ar trebui s\u0103 rezolv situa\u021bii care par s\u0103 fie nedrepte?\u201d\r\n \r\n> \u201cCe ar trebui s\u0103 fac atunci c\u00e2nd sunt speriat?\u201d \r\n\r\n> \u201cDac\u0103 via\u021ba nu este a\u0219a cum mi-am planificat-o, ce ar trebui s\u0103 fac?\u201d   \r\n\r\n\r\nStresul este o situatie care ne define\u0219te via\u021ba, este prezent oric\u00e2nd \u0219i oriunde, ne poate face via\u021ba fie excitant\u0103, interesant\u0103, fie depresiv\u0103. Modul \u00een care o persoana \u00een\u021belege stresul reprezint\u0103 un punct de vedere propriu, singular. Stresul \u0219i r\u0103spunsul la stres nu sunt neap\u0103rat evenimente negative. Ele ne ajut\u0103 s\u0103 r\u0103spundem schimbarilor pe care le int\u00e2mpin\u0103m \u0219i de multe ori fac viata s\u0103 merite tr\u0103it\u0103.\r\n\r\n> C\u00e2t de des pe parcursul vie\u021bii noastre, percep\u021bia cu privire la \"cum ar trebui s\u0103 fiu\u201d sau cum ne-ar pl\u0103cea s\u0103 fim trata\u021bi creeaza stres pentru noi? \r\n\r\nDar ce sunt stresorii?  Ei bine, tot ceea ce cauzeaz\u0103 stres - o persoana, o idee, un obiect, o rela\u021bie poate fi numita stresor. Stresorii pot s\u0103 apar\u0103 singuri sau \u00een grup, o data pe zi sau de mai multe ori pe zi. F\u0103r\u0103 \u00eendoiala, am fi foarte surprin\u0219i s\u0103 observ\u0103m c\u00e2t timp \u0219i energie investim \u00een a face fa\u021b\u0103 stresorilor de zi cu zi, \u00eenfrunt\u00e2ndu-i sau evit\u00e2ndu-i.\r\nTo\u021bi \u00eencerc\u0103m s\u0103 evit\u0103m situa\u021biile \u0219i oamenii negativi din via\u021ba noastr\u0103 \u0219i s\u0103 ne focusam doar asupra oamenilor \u0219i situa\u021biilor pozitive din viata noastr\u0103. \u00cen acela\u0219i timp observ\u0103m c\u0103 via\u021ba nu este doar \u201dlapte \u0219i miere\u201d. Observ\u0103m c\u0103 stresorii negativi sunt deseori mai prezen\u021bi dec\u00e2t aspectele pozitive \u00een via\u021ba noastr\u0103.\r\n\r\nUn **management de succes al stresului** \u00eencepe cu managementul stresorilor\r\n \u00een via\u021ba noastr\u0103. Nu este posibil \u0219i nici indicat s\u0103 elimin\u0103m to\u021bi stresorii din via\u021ba noastr\u0103. \u00cen pofida faptului c\u0103 majoritatea dintre noi consider\u0103m c\u0103 stresorii sunt doar negativi, exist\u0103 \u0219i stresori pozitivi care fac lumea un loc mai confortabil pentru a ne putea tr\u0103i vie\u021bile. \r\n\r\nCa o concluzie, stresul nu este ceea ce \u021bi se \u00eent\u00e2mpl\u0103, stresul este ceea ce g\u00e2nde\u0219ti \u0219i sim\u021bi vis-a-vis de ceea ce \u021bi se intampl\u0103. De aici deducem faptul c\u0103 stresul din via\u021ba noastr\u0103 poate fi controlat. **Cum?**\r\n\r\n> - Schimb\u0103 modul de g\u00e2ndire cu privirea la realitatea \u00eenconjur\u0103toare, urm\u0103re\u0219te-\u021bi paternurile!\r\n> - Observ\u0103 \u0219i schimb\u0103 modul de reac\u021bie la ceea ce \u021bi se intampl\u0103!\r\n> - Po\u021bi observa \u0219i te po\u021bi ocupa de propriile temeri, \u00eengrijor\u0103ri, g\u00e2nduri anxioase!\r\n> - Po\u021bi evita anumite situa\u021bii care i\u021bi creeaza stres, mai ales dac\u0103 nu te sim\u021bi preg\u0103tit pentru a le infrunta!\r\n> - Alege s\u0103 faci lucruri care i\u021bi creeaza o stare de pace, lini\u0219te, mul\u021bumire!\r\n\r\nTu e\u0219ti cel care decide, \u0219i nu uita: \"Roma nu a fost construit\u0103 \u00eentr-o singur\u0103 zi!\"\r\n",
+    "slug": "despre-stres",
+    "publish": true,
+    "author": [
+      "cristina.ginghina"
+    ],
+    "created": "2015-03-09T00:43:34.939Z",
+    "modified": "2015-03-30T19:34:47.484Z",
+    "image": "",
+    "tags": [
+      1
+    ]
+  }
+},
+{
+  "model": "blog.entry",
+  "pk": 2,
+  "fields": {
+    "title": "Stresul emigrantilor romani din Germania",
+    "subtitle": "Am ales sa fac aceasta cercetare din dorinta de a oferi un sprijin emigrantilor romani din Germania, si ca urmare a propriei experiente de emigrant in Germania.",
+    "body": "Inainte de a avea eu insumi aceasta experienta, consideram ca nu este atat de dificil sa ma adaptez intr-o noua tara, dar nu am luat in calcul toti factorii care ar putea sa perturbe procesul de adaptare la o noua cultura si consecintele care pot aparea in urma unui pas atat de important.\r\n> Traim intr-o perioada in care granitele nu mai exista atunci cand vorbim despre locuri de munca si studiu. Observam ca din ce in ce mai multi oameni hotarasc sa lucreze sau sa studieze la universitati peste hotare ca urmare a efectului de globalizare.\r\n\r\nDin aceste motive, consider ca trebuie sa tinem pasul cu schimbarile, si sa oferim mai multa atentie fenomenului de migratie.\r\nVedem ca la tot pasul se vorbeste despre stres si despre implicatiile acestuia in viata de zi cu zi a fiecaruia dintre noi. Conceptul de stres este discutat pe larg in domeniul sanatatii, dar este des intalnit si in alte domenii cum ar fi: domeniul economic, domeniul politic, domeniul social si domeniul educational. Stresul apare atunci cand exista o discrepanta intre cerintele exterioare (cerintele mediului) si resursele interioare ale unei persoane.\r\nStresul poate avea multe forme, insa ce ne intereseaza pe noi este stresul de aculturatie care apare ca urmare a procesului de aculturatie prin care trece fiecare persoana care migreaza intr-o tara straina.\r\nDar ce este aculturatia? Ei bine, este un proces in care membrii unui grup cultural adopta credintele si comportamentele altui grup cultural. Totul bine pana aici, dar ce facem in cazul in care membrii care fac parte din grupurile mai sus amintite nu reusesc, nu vor, sau vor doar partial sa-si insuseasca aceste credinte si comportamente ale celulilalt grup cultural? In acest moment poate aparea stresul de aculturatie. Acesta isi are radacinile in valorile si practicile culturale incompatibile, dificultatile de limba si discriminare. \r\nIn urma studiilor, s-a ajuns la concluzia ca stresul de aculturatie duce la stari emotionale negative cum ar fi depresia si anxietatea. Emigrantii traiesc cu sentimentul separarii de familie, de prieteni si de intreaga lor cultura, iar de cele mai multe ori resursele lor de face fata sunt limitate.\r\nEmigran\u021bii rom\u00e2ni au mari a\u0219tept\u0103ri cu privire la cum va fi viata lor odata cu decizia de a pleca peste hotare. C\u00e2nd trebuie s\u0103 fac\u0103 fa\u021b\u0103 numeroaselor provoc\u0103ri \u0219i obstacole dupa emigrare, iar a\u0219tept\u0103rile nu sunt pe deplin satisf\u0103cute, ace\u0219tia experimenteaz\u0103 \u0219ocul cultural, sentimente de depresie, furie, resentimente \u0219i dezam\u0103gire.\r\nAceste sentimente si emo\u021bii negative care apar ca urmare a procesului de migra\u021bie nu pot fi evitate, ins\u0103 se pot g\u0103si strategii de a face fa\u021b\u0103 cu bine \u0219i de a facilita integrarea \u00een societatea gazd\u0103.\r\nScopul acestui studiu este de a identifica problemele reale cu care se confrunt\u0103 emigran\u021bii rom\u00e2ni din Germania \u0219i identificarea unor strategii de a face mai u\u0219oar\u0103 aceste trecere de la o cultura la alta. \r\nInformare \u0219i sus\u021binere sunt cuvintele cheie care, puse \u00een practic\u0103, pot fi de un real ajutor in acest proces. \r\n",
+    "slug": "stresul-emigrantilor-romani-din-germania",
+    "publish": true,
+    "author": [
+      "cristina.ginghina"
+    ],
+    "created": "2015-04-01T13:19:28Z",
+    "modified": "2015-04-01T13:20:41.021Z",
+    "image": "",
+    "tags": [
+      1
+    ]
+  }
+},
+{
+  "model": "blog.entry",
+  "pk": 3,
+  "fields": {
+    "title": "Medita\u021bia",
+    "subtitle": "Medita\u021bia - O tehnic\u0103 de relaxare",
+    "body": "Efectele medita\u0163iei \u00een s\u0103n\u0103tate se bazeaz\u0103 pe unitatea minte-corp. Practicarea medita\u0163iei este acceptat\u0103 \u00een general ca un tratament corp-minte pentru probleme ce \u0163in de s\u0103n\u0103tate \u015fi starea general\u0103 de bine.\r\n\r\nExist\u0103 multe tipuri de medita\u0163ie care au rolul de a induce o stare de relaxare. O parte dintre acestea se folosesc ca \u201einstrumente\u201d \u00een managementul stresului, \u015fi aici amintim:\r\n\r\n- Medita\u0163ia concentrat\u0103\r\n- Medita\u0163ia interioar\u0103\r\n- Practica mindfulness\r\n- Medita\u0163ia strategic\u0103\r\n\r\nElementul comun \u00een toate formele de medita\u0163ie sunt stimulii sau lucrurile asupra c\u0103rora practican\u0163ii \u00ee\u015fi focuseaz\u0103 aten\u0163ia. Stilmulul reprezint\u0103 ceva asupra c\u0103ruia se insist\u0103, \u015fi \u00een func\u0163ie de acest aspect putem categorisi formele de medita\u0163ie dupa cum urmeaz\u0103:\r\n\r\n- _**Repeti\u0163ia mental\u0103**_ \u2013 aceast\u0103 form\u0103 de medita\u0163ie const\u0103 \u00een persisten\u0163a asupra unui eveniment mental. Un exemplu clasic ar fi _\u201emantra\u201d_, in care un cuv\u00e2nt sau o fraz\u0103 sunt repetate de foarte multe ori. Formatul mantrei poate fi o list\u0103 de cuvinte din Sanskrit\u0103, poate cuprinde cuvinte ca iubire, pace; poate avea versuri formate din _\u201eOm mani padme hum\u201d_, care provin din budismul tibetan. \u00cen medita\u0163ia Sikh (India) este repetat timp de 10-20 de minute pe zi, cuv\u00e2ntul _Vahiguru_ care semnific\u0103 _\u201elumin\u0103 minunat\u0103\u201d_.\r\n- **_Repeti\u0163ia fizic\u0103_** - const\u0103 \u00een focusarea aten\u0163iei asupra unui act fizic. Un stil vechi yoghin (hindu) al medita\u0163iei repetate se concentreaz\u0103 asupra repeti\u0163iilor fizice \u015fi  respira\u0163iei. Sunt multe abord\u0103ri \u00een yoga, iar una dintre ele, Hatha Yoga, folose\u015fte diferite forme de control ale respira\u0163iei \u015fi numararea respira\u0163iilor (pranayama). Hata Yoga se focuseaz\u0103 pe educa\u0163ia fizic\u0103 \u015fi pe practica posturilor numite asanas. Musulmanii sufi\u015fti sunt cunoscu\u0163i pentru  practicarea  unui dans continuu, circular sau \u00eenvolburat.\r\n- **Contemplarea problemei**_ \u2013 aici obiectul focalizat const\u0103 \u00een \u00eencercarea de a rezolva o problem\u0103 ce con\u0163ine componente paradoxale. Exemplul clasic aici este Zenul koan.\r\n- _**Concentrarea vizual\u0103**_ \u2013 aici obiectul spre care ne indreptam toata aten\u0163ia \u015fi inten\u0163ia este reprezentat de o imagine \u2013 o fotografie, flac\u0103ra unei lum\u00e2n\u0103ri, o frunz\u0103, o scen\u0103 relaxant\u0103, etc. \u00cen culturile estice este folosit\u0103 pentru concentrare vizual\u0103 Mandala. Aceasta este un design geometric ce dispune de un p\u0103trat \u00eentr-un cerc, care reprezint\u0103 uninunea dintre umanitate \u015fi univers.\r\n\r\nStudiile au demonstrat c\u0103 practicarea medita\u0163iei ajut\u0103 la:\r\n\r\n- reducerea semnificativ\u0103 a anxiet\u0103\u0163ii percepute \u00een condi\u0163iile \u00een care  este practicat\u0103 de minimum trei ori pe s\u0103pt\u0103m\u00e2n\u0103 timp de 20 de minute pe o perioad\u0103 de cel pu\u0163in patru s\u0103pt\u0103m\u00e2ni;\r\n- reducerea excita\u0163iei autonome; \r\n- \u00eembun\u0103t\u0103\u0163e\u015fte concentrarea aten\u0163iei;\r\n- reduce rectivitatea la stres cu un r\u0103spuns rapid la impactul stresorului;\r\n- aduce practicantul  \u00eentr-o stare de rat\u0103 metabolic\u0103 anormal de sc\u0103zut\u0103 (hypometabolic state), asupra c\u0103reia acesta de\u0163ine controlul;\r\n- \u00eencetine\u015fte ritmul cardiac \u00een timpul practicii;\r\n- scade tensiunea arterial\u0103 \u015fi hipertensiunea;\r\n- o rezisten\u0163\u0103 mai bun\u0103 a pielii;\r\n- \u00eembun\u0103t\u0103\u0163e\u015fte abilit\u0103\u0163ile perceptuale;\r\n- ajut\u0103 la \u00eembun\u0103t\u0103\u0163irea memoriei \u015fi a inteligen\u0163ei;\r\n- joac\u0103 un rol important \u00een creativitate \u015fi auto-actualizare.\r\n\r\nBeneficiile medita\u021biei de orice fel \u0219i nu numai, reprezint\u0103 o oaz\u0103 de lini\u0219te pentru fiecare dintre noi intr-o lume care se afla intr-o continua mi\u0219care \u0219i evolu\u021bie. Organismul nostru se adapteaz\u0103 \u00een propriul sau ritm la cerin\u021bele din mediul exterior, iar pentru a gasi un echilibru \u00eentre aceste dou\u0103 variabile este important s\u0103 identific\u0103m metoda de relaxare potrivit\u0103 personalita\u021bii noastre. \r\n\r\n\u00cen concluzie, nu uita\u021bi:\r\n**_\u201dO c\u0103l\u0103torie de 2000 de kilometri \u00eencepe \u00eentotdeauna cu primul pas!\u201d_**",
+    "slug": "meditatie",
+    "publish": true,
+    "author": [
+      "cristina.ginghina"
+    ],
+    "created": "2015-07-09T15:54:08Z",
+    "modified": "2015-07-09T16:37:11.423Z",
+    "image": "",
+    "tags": [
+      1,
+      2,
+      3,
+      4
+    ]
+  }
+},
+{
+  "model": "blog.entry",
+  "pk": 4,
+  "fields": {
+    "title": "Ajut\u0103-\u021bi copilul s\u0103 se dezvolte personal!",
+    "subtitle": "Ghid de dezvoltare personal\u0103 pentru copii",
+    "body": "Dezvoltarea personal\u0103 a devenit un subiect foarte arz\u0103tor \u00een ultima perioad\u0103, constituindu-se astfel o industrie de miliarde de dolari, iar participan\u021bii la astfel de cursuri sau consumatorii de c\u0103rti de dezvoltare personal\u0103 aud destul de des urm\u0103toarea fraz\u0103: \u201dAcestea sunt deprinderi pe care nu le-ai dob\u00e2ndit \u00een \u0219coal\u0103.\u201d\r\n\r\n\u00cen mare parte este adev\u0103rat. S\u0103 \u00eenv\u0103\u021b\u0103m copiii s\u0103 g\u00e2ndeasc\u0103 pozitiv \u0219i s\u0103 ob\u021bin\u0103 satisfac\u021bie \u00een via\u021b\u0103 nu se potrive\u0219te cu ceea ce \u00eent\u00e2lnim \u00een programa de limba \u0219i literatura rom\u00e2n\u0103, matematic\u0103, istorie, geografie sau \u0219tiin\u021be.\r\n\r\nVestea bun\u0103 este c\u0103, \u00een pofida acestui fapt, p\u0103rin\u021bii \u00ee\u0219i pot ajuta copiii s\u0103 dob\u00e2ndeasc\u0103 aceste cuno\u0219tin\u021be acas\u0103, iar aici nu vorbim despre teme \u00een plus.\r\n\r\nAvem mai jos un mic ghid prin care putem oferi copiilor no\u0219tri instrumentele \u0219i strategiile necesare pentru dezvoltarea unei min\u021bi s\u0103n\u0103toase \u0219i pentru a-i ajuta de a ob\u021bine mai multe informa\u021bii at\u00e2t la \u0219coal\u0103 c\u00e2t \u0219i \u00een afara ei:\r\n\r\n**Vizualizeaz\u0103**\r\n\r\nVizualizarea este o tehnic\u0103 foarte eficient\u0103 folosit\u0103 de sportivii profesioni\u0219ti \u0219i de oamenii de succes \u00een general. Imagin\u00e2ndun-ne ceea ce dorim s\u0103 ob\u021binem, \u00eenainte de a trece la ac\u021biune, ne preg\u0103te\u0219te pentru materializarea scopului, datorit\u0103 creierului nostru care nu poate face diferen\u021ba \u00eentre imagina\u021bie \u0219i realitate. Deoarece copiii no\u0219tri au o imagina\u021bie foarte bogat\u0103, se afl\u0103 la v\u00e2rsta potrivit\u0103 pentru a folosi aceast\u0103 tehnic\u0103.\r\n\r\nCopilul tau poate vizualiza rezultate bune la o lucrare/proiect/tez\u0103/examen, ori s\u0103-\u0219i imagineze diverse modalit\u0103\u021bi prin care s\u0103-\u0219i aminteasc\u0103 r\u0103spunsurile corecte (ex: analogii, scheme \u0219i diagrame structurate - metoda ciorchinelui este una dintre ele, metoda cubului, etc).\r\n\r\nCoach-ul Terri Levine propune c\u00e2teva strategii care ar putea fi de folos \u00een acest proces:\r\n\r\n- Spune-i copilului t\u0103u o poveste scurt\u0103, apoi \u00eentreab\u0103-l cum o viziualizeaz\u0103. Cum arat\u0103 personajele din poveste sau scenele din povestire?\r\n- Descrie un loc de vacan\u021b\u0103 inventat sau un animal \u0219i \u00eentreab\u0103 copilul cum le vizualizeaz\u0103;\r\n- Alege un cuv\u00e2nt nou \u0219i \u00eencurajeaz\u0103-\u021bi copilul s\u0103-\u0219i imagineze ceva ce l-ar putea ajuta s\u0103 re\u021bin\u0103 acel cuv\u00e2nt;\r\n\r\n**Verbalizeaz\u0103**\r\n\r\nAfirma\u021biile pozitive pe care ni le spunem pot avea rezultate excelente asupra noastr\u0103. Adul\u021bii, de obicei, se lovesc destul de des de faptul c\u0103 nu cred cu adev\u0103rat \u00een cuvintele pe care le exprim\u0103, \u00eens\u0103 copiii nu \u0219i-au stabilit at\u00e2t de multe credin\u021be limitative, iar creierul lor este mult mai receptiv la idei noi. Afirma\u021biile de acest tip joac\u0103 un rol foarte important \u00een \u00eencurajarea copiilor de fi cei mai buni. P\u00e2rin\u021bii \u00ee\u0219i pot ajuta copiii prin discu\u021bii \u0219i prin exemple prin care \u00eei \u00eencuraj\u0103m s\u0103 foloseasc\u0103 conversa\u021bia cu ei \u00een\u0219i\u0219i c\u00e2nd este nevoie. Rezultatele vor duce la con\u0219tientizare de sine, fericire, copil adaptat, at\u00e2t la \u0219coal\u0103 c\u00e2t \u0219i acas\u0103.\r\n\r\n**Simte**\r\n\r\nAt\u00e2t verbalizarea, c\u00e2t \u0219i vizualizarea func\u021bioneaz\u0103 foarte bine c\u00e2nd sunt conectate la emo\u021biile noastre. Levine spune c\u0103 dac\u0103 un copil, atunci cand cite\u0219te, simte imaginile \u0219i cuvintele \u00eentalnite \u00een carte poate duce la o \u00een\u021belegere bun\u0103 a textului citit.  Aceast\u0103 strategie \u00eei ajut\u0103 pe copii s\u0103 stabileasc\u0103 o conexiune cu materialul citit.\r\n\r\n**Gust\u0103**\r\n\r\nPentru a dezvolta o minte excelent\u0103 \u0219i s\u0103n\u0103toas\u0103 nu este nevoie doar de lumea interioar\u0103 \u0219i de activarea min\u021bii subcon\u0219tiente. Lumea exterioar\u0103 din jurul nostru este la fel de important\u0103. \r\nTherese Pasqualoni, educator \u0219i doctor \u00een \u0219tiin\u021be ale educa\u021biei, spune c\u0103 alegerile s\u0103n\u0103toase sunt digerate mult mai u\u0219or, iar o alimenta\u021bie s\u0103n\u0103toas\u0103 afecteaz\u0103 chimia din creier \u00eentr-un mod pozitiv prin imbun\u0103t\u0103\u021birea abilit\u0103\u021bilor de \u00eenv\u0103\u021bare \u0219i capacitatea de memorare. La polul opus se afl\u0103 alimenta\u021bia nes\u0103n\u0103toas\u0103, care afecteaz\u0103 chimia din creier \u00eentr-un mod negativ, prin \u00eengreunarea func\u021bion\u0103rii min\u021bii \u0219i obstruc\u021bionarea oportunit\u0103\u021bilor de \u00eenv\u0103\u021bare. Ea sugereaz\u0103 petrecerea unei ore active pe s\u0103pt\u0103m\u00e2n\u0103 cu familia, \u0219i luarea mesei impreun\u0103 cel pu\u021bin de dou\u0103 ori pe zi. \u00cen acela\u0219i timp se pot ini\u021bia diverse jocuri de cuvinte, prin care s\u0103-i prezin\u021bi copilului t\u0103u o nou\u0103 defini\u021bie, sau identificarea de sinonime \u0219i antonime \u00eenso\u021bite de exemple. Copiii \u00ee\u0219i amintesc mult mai u\u0219or conversa\u021biile pe care le au \u00een cadrul familiei, precum \u0219i timpul petrecut cu aceasta, spun cercet\u0103torii.\r\n\r\nOricare dintre strategiile de mai sus vei alege pentru s\u0103n\u0103tatea fizic\u0103, emo\u021bional\u0103 \u0219i mental\u0103, asigur\u0103-te ca \u00eei oferi copilului t\u0103u instrumentele necesare pentru tot restul vie\u021bii.\r\n",
+    "slug": "ajut-i-copilul-s-se-dezvolte-personal",
+    "publish": true,
+    "author": [
+      "cristina.ginghina"
+    ],
+    "created": "2015-07-10T11:52:10Z",
+    "modified": "2015-07-10T11:59:23.560Z",
+    "image": "",
+    "tags": [
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "blog.entry",
+  "pk": 5,
+  "fields": {
+    "title": "12 lucruri pe care oamenii care merg la \u0219edin\u021be de \u00a0psihoterapie ar dori s\u0103 le \u0219ti\u021bi",
+    "subtitle": "De citit \u0219i de re\u021binut",
+    "body": "C\u00e2nd oamenii discut\u0103 despre psihoterapie, apar o serie de nel\u0103muriri \u00een mintea lor cum ar fi: \u201dEste bine s\u0103 merg la psihoterapie?\u201d, \u201dCe p\u0103rere are despre mine psihoterapeutul?\u201d, \u201d Ce vor crede ceilal\u021bi despre mine?\u201d, \u201dInforma\u021biile pe care i le ofer sunt confiden\u021biale?\u201d, etc. Din p\u0103cate, din cauza acestor temeri, oamenii renun\u021b\u0103 la a merge la psihoterapie, chiar \u0219i atunci c\u00e2nd situa\u021bia \u00een sine o cere.\r\nDac\u0103 ace\u0219tia ar fi mult mai informa\u021bi cu privire la ce implic\u0103 psihoterapia, aceste preconcep\u021bii nu ar mai avea nicio relevan\u021b\u0103.\r\n\r\nIat\u0103 c\u00e2teva lucruri pe care oamenii care merg la psihoterapie ar dori s\u0103 le transmit\u0103 celor care au o reticen\u021b\u0103 \u00een aceast\u0103 privin\u021b\u0103:\r\n\r\n**1. Nu d\u0103m dovad\u0103 de slabiciune!**\r\n\r\nDac\u0103 mergi la sal\u0103, asta denot\u0103 c\u0103 nu e\u0219ti s\u0103n\u0103tos din punct de vedere fizic? De fapt este exact opusul! Psihoterapia este exact ca mersul la sal\u0103 pentru starea ta de bine, at\u00e2t mental\u0103, c\u00e2t \u0219i spiritual\u0103. Fiecare \u0219edin\u021b\u0103 te ajut\u0103 s\u0103 cre\u0219ti, s\u0103 te dezvol\u021bi personal \u0219i s\u0103 faci fa\u021b\u0103 cu succes provoc\u0103rilor vie\u021bii.\r\nAdev\u0103rata sl\u0103biciune o vedem la cei care evit\u0103 problemele de zi cu zi \u0219i se ascund de ei \u00een\u0219i\u0219i, \u00een loc s\u0103 le \u00eenfrunte.\r\n\r\n**2. Nu suntem nebuni!**\r\n\r\nStigma social\u0103 atribuit\u0103 oric\u0103rei forme de psihoterapie este aceea c\u0103 trateaz\u0103 nebunia. Ei bine, nu este cazul! Foarte mul\u021bi oameni perfect s\u0103n\u0103to\u0219i merg la terapie pentru a ob\u021bine c\u00e2teva perspective despre via\u021ba lor, mai ales atunci c\u00e2nd trec prin anumite evenimente de via\u021b\u0103.\r\nChiar \u0219i psihoterapeu\u021bii merg la terapie! Iar acest lucru se \u00eent\u00e2mpl\u0103 nu din cauza faptului c\u0103 nu se pot ajuta singuri, ci pentru a se sf\u0103tui cu al\u021bi profesioni\u0219ti din domeniu, care \u00eel pot ajuta s\u0103 vad\u0103 problema obiectiv \u0219i din alte perspective.\r\n\r\n**3. Nu lu\u0103m medica\u021bie!**\r\n\r\nCei care doresc s\u0103 merag\u0103 la terapie nu trebuie s\u0103 caute o rezolvare rapid\u0103. O rezolvare rapid\u0103, cum ar fi uzul de alcool sau de droguri, sunt de fapt motivul pentru care oamenii \u00eencep \u0219edin\u021bele de psihoterapie. \r\nDrogurile \u0219i alcoolul au rolul de a masca problemele mari pe care le-am ignorat \u0219i evitat \u00een via\u021ba de zi cu zi, iar atunci c\u00e2nd efectul acestora dispare, problema reapare. Atunci c\u00e2nd te confrun\u021bi cu evenimentele de zi cu zi f\u0103r\u0103 a folosi aceste \u201d\u00eenlocuitoare\u201d, devii mult mai puternic cu fiecare zi. Secretul este s\u0103 ai r\u0103bdare.\r\n\r\n**4. Nu ne pierdem timpul!**\r\n\r\nNu exist\u0103 un motiv plauzibil s\u0103 crezi c\u0103 dac\u0103 petreci o or\u0103 pe s\u0103pt\u0103m\u00e2n\u0103 s\u0103-\u021bi analizezi sentimentele, emo\u021biile \u0219i reac\u021biile reprezint\u0103 o pierdere de timp.\r\nNu doar timpul petrecut \u00een \u0219edin\u021ba de psihoterapie conteaz\u0103, ci \u0219i cel petrecut \u00een afara cabinetului, unde via\u021ba noastr\u0103 poate deveni mai echilibrat\u0103 datorit\u0103 acestor \u0219edin\u021be. Aici o s\u0103 fac o compara\u021bie din nou cu mersul la sal\u0103, unde odat\u0103 cu acest program \u00ee\u021bi organizezi \u0219i un mod de via\u021b\u0103 mai s\u0103n\u0103tos, \u021bin\u00e2nd cont de alimenta\u021bie de exemplu. \r\n\r\n**5. Nu ne pierdem banii!**\r\n\r\nDa, terapia poate fi scump\u0103, dar starea ta de bine are un pre\u021b? Dac\u0103 r\u0103spunsul t\u0103u este da, atunci \u00een mod ironic e\u0219ti candidatul ideal pentru urmarea unor \u0219edin\u021be de terapie!\r\nDup\u0103 cum am men\u021bionat mai sus, \u0219edin\u021bele de terapie pot fi scumpe, \u00eens\u0103 dac\u0103 folosim lec\u021biile \u00eenv\u0103\u021bate corect, \u0219i le aplic\u0103m \u00een via\u021ba de zi cu zi, suma de bani investit\u0103 se compenseaz\u0103.\r\n\r\n**6. Nu suntem singuri!**\r\n\r\nMul\u021bi oameni consider\u0103 c\u0103 indivizii care merg la terapie o fac pentru c\u0103 nu au prieteni sau familie cu care s\u0103 discute. Este o idee gre\u0219it\u0103! De cele mai multe ori, prietenii sau familia sunt subiectivi cu noi datorit\u0103 implic\u0103rii emo\u021bionale. Un psihoterapeut este un profesionist obiectiv care nu te judec\u0103, \u0219i nu-\u021bi va oferi acele r\u0103spunsuri pe care vrei s\u0103 le auzi doar s\u0103 nu-\u021bi creeze un disconfort pe moment.\r\n\r\n**7. Nu vorbim despre tine!**\r\n\r\nNu mergem la psihoterapeut pentru a b\u00e2rfi sau pentru a vorbi despre prietenii no\u0219tri! De obicei este tocmai invers. Tot ceea ce se discut\u0103 \u00een cadrul unei sesiuni de terapie este semnificativ \u0219i productiv.\r\nEste posibil s\u0103 vorbim despre tine, \u00eens\u0103 orice am spune negativ se va \u00eentoarce asupra nostr\u0103, deoarece terapistul ne va \u00eentreba: \u201dDe ce sim\u021bi asta fa\u021b\u0103 de x?\u201d Deci totul se rezum\u0103 la noi \u00een cadrul unei \u0219edin\u021be de terapie.\r\n\r\n**8. Nu avem nicio problem\u0103 \u00een a cere ajutor!**\r\n\r\nMajoritatea oamenilor a\u0219teapt\u0103 p\u00e2n\u0103 ajung \u00een punctul critic, c\u00e2nd nu mai \u00eentrev\u0103d nicio solu\u021bie, \u0219i atunci merg la psihoterapie. Nu trebuie s\u0103 fie astfel! O psihoterapie \u00eenceput\u0103 la momentul potrivit ne va ajuta s\u0103 evolu\u0103m frumos, s\u0103 ne dezvolt\u0103m personal \u0219i s\u0103 ob\u021binem perspective noi asupra vie\u021bii.\r\nConcluzia ar fi c\u0103 este bine s\u0103 ceri ajutorul, \u0219i este \u0219i mai bine s\u0103 \u00eel ceri unui profesionist!\r\n\r\n**9. Nu ne afl\u0103m neap\u0103rat \u00eentr-un moment dificil!**\r\n\r\nMul\u021bi oameni a\u0219teapt\u0103 ca situa\u021bia \u00een care sunt s\u0103 se complice foarte mult, iar atunci c\u00e2nd nu mai \u00eentrev\u0103d nicio solu\u021bie apeleaz\u0103 la un psihoterapeut. Al\u021bii sunt mai proactivi \u0219i se folosesc de terapie pentru a evita situa\u021biile dificile dec\u00e2t s\u0103 le rezolve. Al\u021bii doresc s\u0103 aib\u0103 o sus\u021binere \u00een procesul lor de schimbare, atunci c\u00e2nd renun\u021b\u0103 la anumite obiceiuri, sau pur \u0219i simplu atunci c\u00e2nd totul merge bine \u0219i individul dore\u0219te s\u0103 se men\u021bin\u0103 pe acee\u0219i direc\u021bie.\r\nOricare ar fi motivul pentru care opt\u0103m pentru psihoterapie, aceasta este o modalitate sigur\u0103 de a ie\u0219i din starea de team\u0103 \u0219i confuzie \u00een care ne afl\u0103m sau s\u0103 ne men\u021binem echilibrul dob\u00e2ndit \u00een via\u021b\u0103!\r\n\r\n**10. Psihoterapeutul nu este d\u0103daca noastr\u0103!**\r\n\r\nEste un vechi proverb care sun\u0103 cam a\u0219a: \u201dNu-l po\u021bi \u00eenv\u0103\u021ba nimic pe om. Po\u021bi doar s\u0103-l la\u0219i s\u0103 descopere.\u201d Cu siguran\u021b\u0103 psihoterapeutul nostru nu ne va spune ce s\u0103 facem, deoarece \u00ee\u0219i va pierde timpul f\u0103r\u0103 folos. Cee ce poate face este s\u0103 ne ghideze \u00een procesul nostru de dezvoltare \u0219i cunoa\u0219tere de sine, folosindu-se de observa\u021biile \u0219i opiniile profesionale.\r\n\r\n**11. Nu-\u021bi putem recomanda un psihoterapeut!**\r\n\r\nPsihoterapia pur \u0219i simplu nu este pentru toat\u0103 lumea. A\u0219a cum am mai men\u021bionat, nu este o vindecare magic\u0103, ci este un proces care necesit\u0103 implicare, voin\u021b\u0103 \u0219i tenacitate. Forma de psihoterapie potrivit\u0103 pentru mine, poate s\u0103 nu se potriveasc\u0103 personalit\u0103\u021bii tale. \r\nCee ce po\u021bi face \u00een acest sens este s\u0103 \u00eencerci mai multe tipuri de psihoterapie, merg\u00e2nd la o \u0219edin\u021b\u0103 pentru \u00eenceput, \u0219i s\u0103 o identifici pe cea care \u021bi se potrive\u0219te.\r\n\r\n**12. Nu avem nevoie de comp\u0103timire!**\r\n\r\nFaptul c\u0103 mergem la psihoterapeut nu \u00eenseamn\u0103 c\u0103 suntem bolnavi, ci dimpotriv\u0103, ne sim\u021bim \u0219i suntem mai puternici datorita procesului de con\u0219tientizare ce are loc de-a lungul \u0219edin\u021belor.\r\n\u201dCunoa\u0219terea \u00eenseamn\u0103 putere.\u201d\r\n\r\n",
+    "slug": "12-lucruri-pe-care-oamenii-care-merg-la-edine-de-psihoterapie-ar-dori-s-le-tii",
+    "publish": true,
+    "author": [
+      "cristina.ginghina"
+    ],
+    "created": "2015-07-12T10:00:00Z",
+    "modified": "2015-07-12T08:43:27.571Z",
+    "image": "",
+    "tags": [
+      5,
+      7
+    ]
+  }
+},
+{
+  "model": "blog.entry",
+  "pk": 6,
+  "fields": {
+    "title": "4 efecte ale stresului cronic asupra organismului",
+    "subtitle": "stres cronic = dezechilibru",
+    "body": "**1. Uzura fizic\u0103 \u0219i psihic\u0103!**\r\n\r\nG\u00e2ndi\u021bi-v\u0103 la modific\u0103rile fizice care apar \u00een organism atunci c\u00e2nd suntem expu\u0219i unei situa\u021bii amenin\u021b\u0103toare. Ritmul cardiac \u0219i tensiunea arterial\u0103 cresc, tensiunea muscular\u0103 cre\u0219te \u0219i apar problemele gastro-intestinale. Datorita acestor efecte, pe o durat\u0103 mai mare de timp, organismul devine mult prea obosit pentru a mai face fa\u021b\u0103, iar \u00eemb\u0103tr\u00e2nirea celulelor este accelerat\u0103.\r\nInsomniile sunt tot efecte ale stresului cronic care duc la uzur\u0103 psihic\u0103 \u0219i fizic\u0103.\r\n\u00cenv\u0103\u021b\u00e2nd s\u0103-\u021bi manageriezi stresul de zi cu zi, vei reu\u0219i s\u0103 ai \u0219i un somn lini\u0219tit.\r\n\r\n**2. Stresul cre\u0219te riscul de boli, moarte subit\u0103 \u0219i depresie!**\r\n\r\n\u0218tim cu to\u021bii c\u0103 stresul are efecte negative asupra sistemului cardiovascular. Oamenii care sunt stresa\u021bi sunt predispu\u0219i \u00eentr-un procent mai mare la infarct, tensiune arterial\u0103 mare, aritmii. Nivelul ridicat de cortizol duce la un nivel de glucoz\u0103 \u0219i insulin\u0103 ridicat \u00een s\u00e2nge.\r\nS-a descoperit c\u0103 exist\u0103 o leg\u0103tur\u0103 foarte str\u00e2ns\u0103 \u00eentre stresul cronic \u0219i depresie. O stare de depresie duce la comportamente care genereaz\u0103 stres, care accentueaz\u0103 starea de depresie. Persoanele \u00een cauz\u0103 folosesc strategii de coping evitante ca negarea, izolarea social\u0103 sau minimalizarea importan\u021bei evenimentelor.\r\n\r\n**3. Stresul afecteaz\u0103 imunitatea!**\r\n\r\nDup\u0103 multe cercet\u0103ri \u00een domeniu, Janice Kiecolt - Glaser, a ajuns la concluzia c\u0103  hormonii de stres au o influien\u021b\u0103 direct\u0103 asupra celulelor imunitare. Al\u021bi cercet\u0103tori au descoperit c\u0103 stresul de fapt ar spori imunitatea atunci c\u00e2nd este acut. \u00cens\u0103 pe o perioad\u0103 mai \u00eendelungat\u0103 de timp apar efectele negative, sc\u0103derea imunit\u0103\u021bii \u0219i apari\u021bia unei fragilit\u0103\u021bi a organismului. Toate acestea duc la o s\u0103n\u0103tate precar\u0103 at\u00e2t fizic\u0103, c\u00e2t \u0219i psihic\u0103.\r\n\r\n**4. Stresul \u00ee\u021bi influien\u021beaz\u0103 obiceiurile s\u0103n\u0103toase!**\r\n\r\nProbabil c\u0103 atunci cand te afli \u00een echilibru, \u021bi-ai f\u0103cut deja o ideea destul de ampl\u0103 despre ce trebuie s\u0103 faci pentru a men\u021bine acest echilibru: sport regulat, renun\u021barea la fumat, alimenta\u021bie s\u0103n\u0103toas\u0103, consum de alcool moderat, etc. Toate aceste lucruri au un efect direct asupra st\u0103rii de s\u0103n\u0103tatea a min\u021bii, corpului \u0219i spiritului.\r\nAtunci c\u00e2nd apare stresul sim\u021bim nevoia s\u0103 facem ceva pentru c\u0103 ne d\u0103 o stare inconfortabil\u0103. De obicei stresul \u0219i fumatul merg m\u00e2n\u0103 \u00een m\u00e2n\u0103. Este un instrument de management al stresului foarte des \u00eent\u00e2lnit, numai c\u0103 nu este \u0219i s\u0103n\u0103tos.\r\n\r\n\u00cen partea a doua a articolului v\u0103 voi prezenta c\u00e2teva **exerci\u021bii de manageriere a stresului**.\r\n\r\n\u0218i nu uita\u021bi c\u0103 **o minte s\u0103n\u0103toas\u0103 se afl\u0103 doar \u00eentr-un corp s\u0103n\u0103tos**!\r\n\r\n\r\n\r\n\r\n",
+    "slug": "4-efecte-ale-stresului-cronic-asupra-organismului",
+    "publish": true,
+    "author": [
+      "cristina.ginghina"
+    ],
+    "created": "2015-07-13T17:59:03Z",
+    "modified": "2015-07-13T18:03:29.174Z",
+    "image": "",
+    "tags": [
+      1,
+      3,
+      6
+    ]
+  }
+},
+{
+  "model": "blog.entry",
+  "pk": 7,
+  "fields": {
+    "title": "Medicina minte-corp",
+    "subtitle": "O nou\u0103 abordare a st\u0103rii de bine",
+    "body": "C\u00e2nd vorbim de s\u0103n\u0103tate ne referim la un \u00eentreg sistem, \u0219i nu doar la s\u0103n\u0103tatea fizic\u0103.\r\n\r\nO nou\u0103 abordare a medicinei se axeaz\u0103 pe **medicina minte-corp**. Este o perspectiv\u0103 holistic\u0103, ce aduce \u00eempreun\u0103 cercet\u0103tori \u0219i clinicieni din domeniii cum ar fi medicina biologic\u0103 (biomedicina), psihologia s\u0103n\u0103t\u0103\u021bii, s\u0103n\u0103tate public\u0103, \u00eengrijire \u0219i psihoterapie.\r\n\r\nMedicina minte-corp merge pe ideea c\u0103 mintea, corpul \u0219i spiritul sunt parte integral\u0103 a unui singur sistem. Informa\u021biile curg \u201dde la\u201d \u0219i \u201dspre\u201d aceste aspecte ale unei persoane tot timpul, acestea neput\u00e2nd fi separate. Un stresor care afecteaz\u0103 mintea, va afecta \u0219i corpul, \u0219i spiritul inevitabil. O activitate care hr\u0103ne\u0219te spiritul, va vindeca \u0219i mintea, dar \u0219i corpul.\r\n\r\nDac\u0103 lu\u0103m \u00een considerare acest punct de vedere, toate tipurile de boli au noi semnifica\u021bii. Bolile mentale pot fi v\u0103zute at\u00e2t ca o criz\u0103 spiritual\u0103, c\u00e2t \u0219i ca o perturbare a homeostaziei, care poate fi restabilit\u0103 cu diet\u0103, exerci\u021bii \u0219i tratament ce se concentreaz\u0103 pe tratarea fizicului.\r\n\r\nMedicina minte-corp vede persoana ca un sistem de rela\u021bii \u00eentre corp, minte \u0219i spirit. Vede **interconexiunile** dintre oameni, dar \u0219i \u00eentre oameni \u0219i natur\u0103.\r\n\r\n**Conexunile** dintre oameni \u0219i divin (fiecare interpreteaz\u0103 cum dore\u0219te aceast\u0103 no\u021biune) sunt recunoscute ca fiind aspecte importante \u00een starea de s\u0103n\u0103tate \u0219i \u00een modalit\u0103\u021bile de coping cu boala.\r\n\r\n**Suportul social** este ca un amortizor \u00eentre stres \u0219i sistemul minte-corp. Este foarte important s\u0103 avem rea\u021bii bune cu al\u021bi oameni, iar izolarea \u0219i singur\u0103tatea sunt factori de risc pentru o varietate de boli.\r\n\r\n_Ca o concluzie, medicina corp-minte ajut\u0103 oamenii s\u0103 preia controlul asupra propriei lor s\u0103n\u0103t\u0103\u021bi._",
+    "slug": "medicina-minte-corp",
+    "publish": true,
+    "author": [
+      "cristina.ginghina"
+    ],
+    "created": "2015-07-14T17:20:48Z",
+    "modified": "2015-07-14T17:27:06.047Z",
+    "image": "",
+    "tags": [
+      3,
+      5,
+      6,
+      7
+    ]
+  }
+},
+{
+  "model": "blog.entry",
+  "pk": 8,
+  "fields": {
+    "title": "Exerci\u021biu de con\u0219tientizare",
+    "subtitle": "Cu c\u00e2t \u00ee\u021bi oferi mai mult\u0103 aten\u021bie \u0219i bun\u0103 inten\u021bie, cu at\u00e2t vei tr\u0103i mai con\u0219tient!",
+    "body": "Iat\u0103 un exerci\u021biu care \u00ee\u021bi va oferi o perspectiv\u0103 diferit\u0103 asupra ta \u0219i asupra obiectivelor tale. Acesta implic\u0103 desenul, \u00eens\u0103 nu te speria dac\u0103 nu ai talent la desen. Nu acesta este scopul exerci\u021biului! Imaginea pe care o vei crea, va veni din interiorul t\u0103u, va fi acel ceva pe care \u00eenc\u0103 nu \u00eel po\u021bi exprima \u00een cuvinte, dar care este mai aproape de intui\u021bia ta \u0219i de \u00een\u021belepciunea ta interioar\u0103.\r\n\r\n\u00cenainte de a \u00eencepe exerci\u021biul, trebuie s\u0103 ai ni\u0219te materiale preg\u0103tite. Vei avea nevoie de o agend\u0103 sau un jurnal, 3 coli simple de h\u00e2rtie alb\u0103, un creion, creioane colorate sau markere de diverse culori.\r\n\r\nDup\u0103 ce ai preg\u0103tit materialele necesare, a\u0219az\u0103-te confortabil \u00een locul t\u0103u preferat. Important este s\u0103 ai o suprafa\u021b\u0103 ferma unde s\u0103-\u021bi a\u0219ezi foaia de h\u00e2rtie. Vei desena trei imagini. Nu te g\u00e2ndi la ceea ce desenezi! Doar mi\u0219ti creionul sau markerul pe foaia de h\u00e2rtie \u0219i d\u0103-\u021bi voie s\u0103 ias\u0103 la suprafa\u021b\u0103 ceea ce vine din interior. Ai \u00eencredere \u00een tine!\r\n\r\n**Prima imagine**\r\n\r\n\u00cenchide ochii \u0219i exploreaz\u0103-\u021bi corpul pentru a identifica tensiunea muscular\u0103. Simte cum dispare acea tensiune u\u0219or, u\u0219or. Las\u0103 totul s\u0103 se \u00eent\u00e2mple, relaxeaz\u0103-te pentru a deveni receptiv \u0219i maleabil. C\u00e2nd sim\u021bi o schimbare, r\u0103m\u00e2i acolo \u0219i pune-\u021bi urm\u0103toarea \u00eentrebare:\r\n\r\n**\u201dCum m\u0103 simt?\u201d**\r\n\r\nD\u0103 voie oric\u0103rei imagini care vine \u00een minte s\u0103 curg\u0103. Doar \u00eentreab\u0103-te \u0219i r\u0103m\u00e2i a\u0219a 1-2 minute. \r\nAcum, ia oricare creion sau marker \u0219i \u00eencepe s\u0103 desenezi! Folose\u0219te orice culoare dore\u0219ti. Ideea este ca desenul s\u0103 reflecte r\u0103spunsul la \u00eentrebarea de mai sus.\r\nAceast\u0103 activitate nu trebuie s\u0103 dureze mai mult de 1-2 minute, deoarece este un exerci\u021biu rapid \u0219i intuitiv.\r\n\r\n**A doua imagine**\r\n\r\nUrmezi aceia\u0219i pa\u0219i de mai sus, de la prima imagine, doar c\u0103 acum vei avea o alt\u0103 \u00eentrebare asupra c\u0103reia s\u0103 reflectezi.\r\n\r\n**\u201dCe m\u0103 deranjeaz\u0103?\u201d**\r\n\r\nDin nou, \u00ee\u021bi vei aloca 1-2 minute s\u0103 creezi imaginea care corespunde r\u0103spunsului t\u0103u la \u00eentrebare.\r\n\r\n**A treia imagine**\r\n\r\nRepet\u0103 starea de calmitate din exerci\u021biile anterioare, \u00eens\u0103 \u00eentrebarea va fi alta.\r\n\r\n**\u201dCe m\u0103 face fericit acum?\u201d**\r\n\r\nAloc\u0103 1-2 minute s\u0103 creezi imaginea corespunz\u0103toare r\u0103spunsului t\u0103u.\r\n\r\nAcum a\u0219az\u0103 toate desenele \u00een fa\u021ba ta, \u00een ordinea \u00een care le-ai realizat.\r\nVei analiza fiecare imagine \u0219i-ti vei nota r\u0103spunsurile \u00een jurnal.\r\n\u00cencepe prin a analiza primul t\u0103u desen \u0219i r\u0103spunde la urm\u0103toarele \u00eentreb\u0103ri. Apoi procedezi la fel cu celelalte doua imagini.\r\n\r\n**1. Care este tonul general al culorii din imagine? Ce cuv\u00e2nt \u00ee\u021bi vine \u00een minte c\u00e2nd o prive\u0219ti?**\r\n\r\n**2. Care sunt cele mai importante aspecte (caracteristici) ale imaginii? G\u0103se\u0219ti obiecte, oameni, culori, sau forme care \u00ee\u021bi atrag aten\u021bia?**\r\n\r\nScrie ceea ce consideri c\u0103 sunt!\r\n\r\n**3. Prive\u0219te din nou desenul pentru a identifica aspecte mai subtile. Exist\u0103 anumite linii neregulate care au o semnifica\u021bie pentru tine?**\r\n\r\nScrie despre asta!\r\n\r\nAcum prive\u0219te la toate cele trei imagini \u0219i ia \u00een calcul aceast\u0103 \u00eentrebare:\r\n\r\n**Exist\u0103 aspecte comune \u00eentre cele trei desene? Ai folosit culori asem\u0103n\u0103toare? Unele sunt mai accentuate dec\u00e2t altele? Cum arat\u0103 cele trei desene \u00eempreun\u0103?**\r\n\r\nScrie despre aceste aspecte!\r\n\r\nVei folosi aceste imagini \u0219i ceea ce ai notat \u00een jurnal ca indicatori ai stresorilor din via\u021ba ta, \u0219i a resurselor pe care le de\u021bii pentru a face fa\u021b\u0103.\r\n\r\nE\u0219ti pe punctul de a \u00eencepe procesul de dezvoltare personal\u0103 \u0219i este bine s\u0103 \u0219tii cu claritate **unde te afli acum \u0219i unde vrei s\u0103 ajungi.**\r\n\r\nAcum, pe o coal\u0103 de h\u00e2rtie traseaz\u0103 trei coloane. \r\n\r\nNume\u0219te prima coloan\u0103 **\u201dEu: Acum\u201d**. Prive\u0219te prima imagine pe care ai desenat-o, \u0219i f\u0103 o list\u0103 cu 5 p\u00e2n\u0103 la 10 adjective \u0219i fraze scurte care te descriu pe tine, acum!\r\n\r\n\u00cen a doua coloan\u0103, f\u0103 o list\u0103 cu **stresorii**. Ghidul \u00een identificarea acestora va fi a doua imagine \u0219i ceea ce ai notat despre ea.\r\nUnii itemi din list\u0103 pot fi foarte clari, dar exist\u0103 \u0219ansa ca anumite lucruri la care nu te-ai g\u00e2ndit, \u0219i nu le-ai considerat stresori, vor ap\u0103rea \u00een lista ta.\r\n\r\n\u00cen a treia coloan\u0103, listeaz\u0103 **resursele**! \u00cencepi prin a privi a treia imagine \u0219i ceea ce ai notat. Acum creeaz\u0103 o list\u0103 cu lucrurile frumoase din via\u021ba ta. Acestea pot fi aspecte despre cas\u0103 ta, rela\u021bii, serviciu - orice exist\u0103 \u00een via\u021ba ta \u0219i care \u00ee\u021bi \u00eembog\u0103\u021be\u0219te via\u021ba.\r\n\r\nAcum ia-\u021bi c\u00e2teva momente pentru a reflecta asupra exerci\u021biului, \u0219i scrie orice sim\u021bi \u00een jurnal.\r\n\r\nEste recomandat s\u0103 faci acest exerci\u021biu odat\u0103 la dou\u0103-trei luni, \u00een timp ce intervin schimb\u0103ri \u00een via\u021ba ta.\r\n\r\n_**Cu c\u00e2t \u00ee\u021bi oferi mai mult\u0103 aten\u021bie \u0219i bun\u0103 inten\u021bie, cu at\u00e2t vei tr\u0103i mai con\u0219tient!**_\r\n\r\n\r\n\r\n",
+    "slug": "exercitiu-de-constientizare",
+    "publish": true,
+    "author": [
+      "cristina.ginghina"
+    ],
+    "created": "2015-07-14T19:42:16Z",
+    "modified": "2015-07-14T19:46:40.174Z",
+    "image": "",
+    "tags": [
+      1,
+      5
+    ]
+  }
+},
+{
+  "model": "blog.entry",
+  "pk": 9,
+  "fields": {
+    "title": "Un alt fel de Harap-Alb...",
+    "subtitle": "Doar ni\u0219te g\u00e2nduri....",
+    "body": "Ganduri...foarte multe ganduri...atitudini nebanuite, inconstiente, motive cu un numar infinit apar in explicatii... si, totusi, care este adevarul, unde este adevartul Sine? Bineinteles, el nu se dezvaluie in toata splendoarea sa fara a-ti impune trecerea unor probe...deloc usoare..infruntarea unor temeri pe care tu nici nu le constientizai pana atunci, ci le ascundeai sub aripa protectoare a unor moduri de aparare. Stiu, suna a \"Harap-Alb\", dar nu este deloc un basm.. :).\r\n\r\nLa inceput totul este nonsens, este ca o nebuloasa ce nu mai dispare si iti pui de nenumarate ori intrebarea \"De ce?\". Gasesti vinovati...devii o VICTIMA.\r\n\r\nVine momentul cand ceri ajutorul. Realizezi ca ceva este nelalocul lui, acolo, in interiorul tau. Se da o lupta crancena intre doua forte anatagoniste, dar care totusi au un punct in comun...TU! Este ciudat. Incepi sa devii din ce in ce mai atent la reactiile tale, la gandurile tale, la emotiile tale...si stii ce se intampla? Incepi sa joci un rol, un rol mult mai important decat multe altele pe care le-ai jucat pana atunci si pe care le vei juca in continuare. Un rol de care depind multe aspecte ale personalitatii tale. Este rolul de OBSERVATOR. Cand reusesti sa intri in acest rol si sa-i intelegi valoarea si contributia la descoperirea propriului tau Sine, reusesti sa devii CONSTIENT. Cand devii constient, asta se va intampla treptat, evident, incepi sa te cunosti pe tine! \r\n\r\nEste un proces lung care dureaza, poate, o viata intreaga. Insa, odata ce ai plecat pe acest drum nu mai poti da inapoi..te macina aflarea unui raspuns...ACELUI RASPUNS. Tot imperiul construit pana in acel moment devine o ruina si trebuie cladit un altul, mult mai puternic. Iata de ce nu este un proces usor. Nu esti niciodata pregatit pentru SCHIMBARE. Nu te speria! Este normal! Este natura umana sa prefere confortul lucrului stiut in detrimentul celui nou. Ceea ce ai tu de facut este sa accepti schimbarea, sa o primesti in viata ta cu bratele deschise. Este tot ceea ce ai de facut pentru a reusi sa construiesti un nou imperiu. Un imperiu mai puternic, un imperiu care stie de ce este acolo, care ii este menirea, care ii sunt limitele, ce accepta si ce nu accepta...",
+    "slug": "un-alt-fel-de-harap-alb",
+    "publish": true,
+    "author": [
+      "cristina.ginghina"
+    ],
+    "created": "2016-02-27T08:37:10Z",
+    "modified": "2016-02-27T08:38:52.490Z",
+    "image": "",
+    "tags": [
+      5,
+      8
+    ]
+  }
+},
+{
+  "model": "blog.entry",
+  "pk": 10,
+  "fields": {
+    "title": "\u00cenv\u0103\u021barea prin colaborare",
+    "subtitle": "5 \u00eentreb\u0103ri pe care s\u0103 \u021bi le adresezi atunci c\u00e2nd \u00eenv\u0103\u021barea prin colaborare nu func\u021bioneaz\u0103",
+    "body": "\u00cenv\u0103\u021barea prin colaborare este o unealt\u0103 indispensabil\u0103 pentru motivarea \u0219i stimularea elevilor, precum \u0219i pentru atingerea obiectivelor propuse.\r\nCu toate acestea, nu este deloc simplu s\u0103 \u00eei convingi pe copii s\u0103 lucreze impreun\u0103. De obicei, dup\u0103 o lec\u021bie \u00een care incerci s\u0103 lucrezi prin cooperare, \u0219i totul este haotic datorit\u0103 ne\u00een\u021belegerilor \u0219i preferin\u021belor, care nu sunt satisf\u0103cute \u0219i care sunt subiective, \u0219i nu obiective, devii de foarte multe ori at\u00e2t de frustrat \u00eenc\u00e2t ai tendin\u021ba de a renun\u021ba la o asemenea abordare pentru tot restul anului \u0219colar.\r\nEi bine, dac\u0103 sim\u021bi acest lucru nu renun\u021ba \u00eenc\u0103! Nu este u\u0219or la \u00eenceput. Totul se rezolv\u0103 prin r\u0103bdare, perspicacitate \u0219i consecven\u021b\u0103.\r\nVei observa c\u0103 exist\u0103 o mul\u021bime de p\u0103r\u021bi care trebuie s\u0103 func\u021bioneze ca un \u00eentreg, \u00een procesul de \u00eenv\u0103\u021bare prin cooperare, sau sistemul se va pr\u0103bu\u0219i.\r\nVestea bun\u0103 este c\u0103, dac\u0103 identifici unde anume exist\u0103 problema \u00een sistem, po\u021bi implementa strategii pentru a repara ceea ce nu func\u021bioneaz\u0103.\r\nAminte\u0219te-\u021bi ultima activitate de \u00eenv\u0103\u021bare prin cooperare, \u0219i adreseaz\u0103-\u021bi urm\u0103toarele \u00eentreb\u0103ri. Dac\u0103 raspunsul t\u0103au este afirmativ la fiecare dintre acestea, atunci cite\u0219te strategiile de mai jos \u0219i aplic\u0103 \u00een clasa ta pe cea care consideri c\u0103 func\u021bioneaz\u0103 cel mai bine.\r\n\r\n - **Elevii sunt nepolitico\u0219i sau ner\u0103bd\u0103tori unii cu ceilal\u021bi?**\r\n\r\nC\u00e2nd elevii nu se comport\u0103 unii fa\u021b\u0103 de ceilal\u021bi cu respect, poate fi un semn c\u0103 nu se simt conecta\u021bi fa\u021b\u0103 de colegii lor de clas\u0103. Cu alte cuvinte, predomin\u0103 o nep\u0103sare \u00een atmosfera din clas\u0103. F\u0103c\u00e2nd c\u00e2teva exerci\u021bii de team-building, pe parcursul primei s\u0103pt\u0103m\u00e2ni de \u0219coal\u0103, aju\u021bi copiii s\u0103 se conecteze.\r\nDac\u0103 nu ai \u00eenceput anul \u0219colar cu aceste tipuri de exerci\u021bii, nu-\u021bi face griji! Aceste strategii au efect \u00een orice perioad\u0103 a anului \u0219colar! Po\u021bi \u00eencepe cu ceva simplu cum ar fi \u201dDiagrama Venn\u201d. Pentru a desf\u0103\u0219ura acest exerci\u021biu, trebuie s\u0103 desemnezi partenerii, organiz\u00e2nd perechi cu elevi care, de obicei, nu se \u00een\u021beleg foarte bine sau se evit\u0103. Scrie numele lor pe Diagrama Venn, \u00eenm\u00e2neaz\u0103-le organizatorul grafic, \u0219i roag\u0103 partenerii s\u0103 se a\u0219eze \u00eempreun\u0103. Apoi roag\u0103, fiecare pereche \u00een parte, s\u0103 precizeze fapte \u0219i detalii despre ei \u00een\u0219i\u0219i \u0219i s\u0103 le scrie \u00een locul adecvat din Diagrama Venn. Este uimitor s\u0103 observa\u021bi c\u00e2t de repede completeaz\u0103 elevii por\u021biunea de mijloc a Diagramei Venn cu detalii care sunt la fel pentru ambii parteneri din pereche. Chiar \u0219i studen\u021bii care la \u00eenceput considerau c\u0103 nu au nimic \u00een comun sunt surprin\u0219i s\u0103 observe opusul.\r\n\r\n - **Au elevii t\u0103i abilit\u0103\u021bile sociale necesare pentru a lucra \u00eempreun\u0103?**\r\n\r\n\u00ce\u021bi vine s\u0103 crezi sau nu, este posibil ca elevii s\u0103 se plac\u0103 unii pe ceilal\u021bi, dar este nevoie de anumite abilit\u0103\u021bi sociale pentru o munc\u0103 de echip\u0103 plin\u0103 de succes.\r\nA lucra \u00eempreun\u0103 implic\u0103 \u00eemp\u0103r\u021birea sarcinilor, ascultarea reciproc\u0103, oferirea de sugestii \u00eentr-un mod politicos \u0219i multe altele.\r\nDac\u0103 elevilor t\u0103i le lipsesc aceste abilit\u0103\u021bi sociale , este bine s\u0103 s\u0103 \u00eencepi cu activit\u0103\u021bile \u00een perechi, \u00een detrimentul celor \u00een echip\u0103, deoarece este mult mai u\u0219or de lucrat. Men\u021bine direc\u021bia activit\u0103\u021bii simpl\u0103 \u0219i foarte structurat\u0103, cum ar fi s\u0103 ceri elevilor s\u0103 \u00eempart\u0103 sarcinile sau s\u0103-\u0219i atribuie roluri foarte clare.\r\nAceste sfaturi vor ajuta la management-ul clasei, dar nu se adreseaz\u0103 principalei probleme, elevii t\u0103i nu au abilit\u0103\u021bile necesare de a lucra impreun\u0103. Pentru abordarea acestei probleme, organizeaz\u0103 lec\u021bii \u00een fiecare s\u0103pt\u0103m\u00e2n\u0103, \u00eencep\u00e2nd cu cele mai importante abilit\u0103\u021bi sociale pe care consideri c\u0103 ar trebui s\u0103 \u0219i le \u00eensu\u0219easc\u0103 elevii t\u0103i.\r\nCreeaz\u0103 un grafic denumit, de exemplu, \u201dAbilit\u0103\u021bi de lucru \u00eempreun\u0103\u201d. Scrie, ca titlu, abilitatea social\u0103 pe care te focusezi \u00een acea activitate, apoi scrie \u00een dou\u0103 coloane, \u201dArat\u0103 ca\u201d \u0219i \u201dSun\u0103 ca\u201d. Lucreaz\u0103 cu elevii t\u0103i, printr-o furtun\u0103 de idei, cum arat\u0103 \u0219i cum sun\u0103 c\u00eend \u00eei \u00eencuraj\u0103m pe al\u021bii, \u0219i noteaz\u0103 r\u0103spunsurile acestora \u00een coloane. Apoi, imediat, impune o activitate de \u00eenv\u0103\u021bare, care va constitui o oportunitate pentru elevi s\u0103 practice abilit\u0103\u021bile sociale la care am lucrat anterior. \u00cen timpul activit\u0103\u021bii, fiecare elev are o foaie de h\u00e2rtie \u0219i un creion, \u0219i fiecare dintre ace\u0219tia rezolv\u0103 c\u00e2te o problem\u0103 independent, \u00eenainte de a le ar\u0103ta colegilor r\u0103spunsurile lor \u0219i a le discuta \u00een echip\u0103. \u00cen timp ce elevii lucreaz\u0103, plimb\u0103-te prin clas\u0103 \u0219i ofer\u0103 comentarii pozitive acolo unde sunt evidente abilit\u0103\u021bile sociale.\r\n\r\n - **Studen\u021bii t\u0103i respect\u0103 instruc\u021biunile \u00een timpul lec\u021biilor de \u00eenv\u0103\u021bare prin cooperare sau \u00eent\u00e2mpin\u0103 probleme \u00een acest sens?**\r\n\r\nDac\u0103 elevii nu respect\u0103 instrcu\u021biunile date este posibil s\u0103 fie din cauza faptului c\u0103 nu le aud. De obicei, aceste tipuri de activit\u0103\u021bi, sunt destul de zgomotoase, de aceea este important s\u0103 stabile\u0219ti un \u201dsemnal de lini\u0219te\u201d pentru a ob\u021bine aten\u021bia acestora rapid. Poate fi o b\u0103taie din palme, c\u00e2teva lovituri u\u0219oare pe un set de clopo\u021bei sau orice alt\u0103 metod\u0103 pe care o folose\u0219ti la clas\u0103 de obicei. \u00cenva\u021b\u0103-\u021bi copiii s\u0103 r\u0103spund\u0103 la acest semnal \u00eentr-un interval de timp de 3 p\u00e2n\u0103 la 5 secunde, \u0219i \u00eentotdeauna a\u0219teapt\u0103 p\u00e2n\u0103 toat\u0103 lumea face lini\u0219te pentru a oferi instruc\u021biunile. Dac\u0103 nu vor \u00eenceta s\u0103 vorbeasc\u0103, schimb\u0103 abordarea \u0219i ofer\u0103-le fi\u0219e pentru munc\u0103 individual\u0103 pentru restul orei de lucru.\r\nTrebuie s\u0103 \u021bii cont c\u0103 poate fi abordat\u0103 \u0219i dintr-o alt\u0103 perspectiv\u0103 lipsa lini\u0219tii din clas\u0103. Poate le-ai oferit mult prea multe instruc\u021biuini \u00een acel\u0219i timp. Instruc\u021biunile le oferi astefl \u00eenc\u00e2t toat\u0103 lumea s\u0103 le \u00een\u021beleag\u0103, \u0219i eventual, le po\u021bi scrie pe tabl\u0103 sau s\u0103 le \u00eempar\u021bi fiec\u0103rei perechi, sau echipe, \u00een parte, dup\u0103 ce le explici frontal.\r\n\r\n  - **Ai elevi care fac aproape totul \u00een echip\u0103, pe c\u00e2nd al\u021bii au un aport aproape nesemnificativ?**\r\n\r\nUneori, \u00eenv\u0103\u021barea prin cooperare, este un e\u0219ec  datorit\u0103 neparticip\u0103rii egale a studen\u021bilor la activitate. Elevii care sunt mai asertivi \u0219i mult mai \u00eencrez\u0103tori \u00een sine, au tendin\u021ba de a le spune colegilor ce s\u0103 fac\u0103, sau duc ei la \u00eendeplinire \u0219i sarcinile colegilor.\r\nAl\u021bii particip\u0103 pasiv, nu particip\u0103 niciodat\u0103 la discu\u021bii, doar a\u0219teapt\u0103 ca ceilal\u021bi s\u0103 le spun\u0103 ce s\u0103 fac\u0103. C\u00e2nd se \u00eent\u00e2mpl\u0103 acest lucru, analizeaz\u0103 structura activit\u0103\u021bii \u0219i fii sigur(\u0103) c\u0103 indica\u021biile tale impun participarea \u00een mod egal.\r\nUn alt mod de a egaliza participarea la activitate este s\u0103 atribui roluri sau s\u0103 rogi studen\u021bii s\u0103-\u0219i \u00eempart\u0103 sarcinile \u00een echip\u0103. Uneori este bine s\u0103 impar\u021bi echipele \u00een perechi pentru a avea un mai mare control asupra acestui aspect.\r\n\r\n - **Nu observi progresul academic pe care \u021bi l-ai propus la unii elevi sau la to\u021bi elevii?**\r\n\r\nDac\u0103 ai folosit \u00eenv\u0103\u021barea prin colaborare aproape \u00een fiecare zi, iar elevii t\u0103i nu fac niciun progres academic, este momentul s\u0103 evaluezi \u00eenc\u0103 odat\u0103 abordarea acestei metode si s\u0103 identifici ce se petrece de fapt. De obieci, c\u00e2nd \u00eencepem s\u0103 folosim \u00eenv\u0103\u021barea prin colaborare suntem at\u00e2t de entuziasma\u021bi, \u00eenc\u00e2t nu mai este impus\u0103 suficient\u0103 activitate independent\u0103. \u00cen acest caz, \u00eencepem s\u0103 accentu\u0103m mai mult \u00eemp\u0103r\u021birea sarcinilor \u00een cardul echipei \u0219i atribuirea de roluri membrilor echipei.\r\nEste important, de asemenea, s\u0103 inchei lec\u021bia cu un scurt chestionar, o sarcin\u0103 care s\u0103 fie considerat\u0103 \u201dbiletul de ie\u0219ire\u201d, un jurnal, lucru independent sau tem\u0103 pentru acas\u0103 (afterschool).\r\nDac\u0103 elevii care au un nivel de performan\u021b\u0103 mai sc\u0103zut fac progrese, iar cei care sunt capabili de performan\u021b\u0103 stagneaz\u0103, \u00eentreab\u0103-te dac\u0103 to\u021bi elevii t\u0103i sunt provoca\u021bi la toate lec\u021biile.\r\nUneori, studen\u021bii performan\u021bi sf\u00e2r\u0219esc prin a fi tutori pentru copiii care sunt mai slabi, practic\u0103 ce va distruge cre\u0219terea nivelului academic a copiilor dota\u021bi.\r\nDe obicei, clasele eterogene sunt recomandate la nivelul primar, dar uneori va fi nevoie s\u0103 regrupezi  elevii pentru anumite lec\u021bii, pentru a putea diferen\u021bia con\u021binutul. De exemplu, pe parcursul unei etape din lec\u021bie, po\u021bi grupa elevii  \u021bin\u00e2nd cont de nevoile lor academice \u0219i oferind fiec\u0103rei echipe sarcini de lucru diferen\u021biate.\r\n\r\nNu uita c\u0103 majoritatea copiilor au nevoie de sus\u021binere c\u00e2nd \u00eenva\u021b\u0103 pentru prima oar\u0103 cum s\u0103 lucreze prin cooperare. Nu este u\u0219or \u0219i poate vei fi de multe ori frustrat la \u00eenceputul acestui \u201dproiect\u201d, \u0219i vei fi de multe ori tentat s\u0103 abordezi, \u00een continuare, lucrul individual pentru tot restul anului, \u00eens\u0103 \u00eenainte de a face asta, adreseaz\u0103-\u021bi cele 5 \u00eentreb\u0103ri de mai sus \u0219i observ\u0103 unde exits\u0103 probleme \u00een sistemul pe care l-ai aplicat \u0219i de ce este nevoie pentru a fi ref\u0103cut.\r\nPlata? C\u00e2nd \u00eenv\u0103\u021barea prin cooperare va \u00eencepe s\u0103 func\u021bioneze \u00een clasa ta, \u00eenv\u0103\u021barea va deveni o bucurie at\u00e2t pentru tine, c\u00e2t \u0219i pentru elevii tai!",
+    "slug": "invatarea-prin-colaborare",
+    "publish": true,
+    "author": [
+      "cristina.ginghina"
+    ],
+    "created": "2016-05-02T11:10:28Z",
+    "modified": "2016-05-02T11:16:36.096Z",
+    "image": "",
+    "tags": [
+      6
+    ]
+  }
+},
+{
+  "model": "blog.entry",
+  "pk": 11,
+  "fields": {
+    "title": "Atitudinea meditativ\u0103",
+    "subtitle": "\u00cenva\u021b\u0103 s\u0103 devii con\u0219tient \u0219i prezent, \u0219i conflictele interioare se vor rezolva.",
+    "body": "\r\n\r\nPentru a tr\u0103i o via\u021b\u0103 con\u0219tient\u0103, omul are nevoia de a-\u0219i forma o capacitate de reflec\u021bie profund\u0103 \u0219i de a adopta o pozi\u021bie reflexiv\u0103 devenind astfel mai rezilient \u0219i mai capabil de a face fa\u021b\u0103 situa\u021biilor cu care se confrunt\u0103 \u00een via\u021ba de zi cu zi \u0219i de a le \u00een\u021belege \u00een adev\u0103rata lor esen\u021b\u0103.\r\n\r\nAceste constructe se aseam\u0103n\u0103 izbitor de mult cu atitudinea meditativ\u0103 din psihologia budist\u0103 (ni se demonstreaz\u0103, din nou, c\u0103 budismul nu este o religie).\r\n\r\nCe este de fapt atitudinea meditativ\u0103? S\u0103 ne imagin\u0103m patru inele concentrice, fiecare dintre ele contribuind la experien\u021ba de \u201daici \u0219i acum\u201d prin care activ\u0103m \u201dsinele meditativ\u201d.\r\n\r\n<a data-flickr-embed=\"true\"  href=\"https://www.flickr.com/photos/148073114@N05/33081922036/in/dateposted-public/\" title=\"Schema Meditativ\u0103\"><img src=\"https://c1.staticflickr.com/3/2407/33081922036_6ee1cc8758_z.jpg\" width=\"640\" height=\"480\" alt=\"Schema Meditativ\u0103\"></a><script async src=\"//embedr.flickr.com/assets/client-code.js\" charset=\"utf-8\"></script>\r\n\r\nInelul exterior reprezint\u0103 **realitatea extern\u0103** care curpinde nu doar evenimentele care ni se \u00eent\u00e2mpl\u0103 \u0219i situa\u021biile pe care le cocre\u0103m, ci \u0219i oamenii cu care rela\u021bion\u0103m.\r\n\r\nAl doilea inel reprezint\u0103 **lumea reprezent\u0103rilor** - adic\u0103 modele mentale ale experien\u021belor anterioare. Acestea au rolul de a ne orienta , de a forma interpret\u0103rile noastre despre trecut \u0219i prezent, \u0219i stabilesc a\u0219tept\u0103rile noastre pentru viitor.\r\n\r\nAl treile inel reprezint\u0103 **\u201esinele reflexiv\u201d**, acea parte din noi capabil\u0103 de o pozi\u021bie reflexiv\u0103 fa\u021b\u0103 de experien\u021b\u0103. Acesta are rolul de a media sau filtra experin\u021ba realit\u0103\u021bii externe. Din aceast\u0103 pozi\u021bie putem reflecta, con\u0219tient sau incon\u0219tient, asupra sensului experien\u021bei noastre, \u00een loc s\u0103 luam \u00een considerare superficial experien\u021ba.\r\nSinele reflexiv, format, ne permite o libertate intern\u0103 semnificativ\u0103, astfel rezolv\u00e2ndu-ne conflictele interioare.\r\n\r\nToate aceste inele (etape) ne duc spre al patrulea inel (a patra etap\u0103), numit **sinele meditativ**. Acesta este r\u0103spunsul la \u00eentrebarea: _cine (sau ce) este cel care reflect\u0103 de fapt la experien\u021b\u0103?_ Inchide ochii \u0219i pune-\u021bi aceast\u0103 \u00eentrebare.\r\n\r\n\u00cempletit\u0103 cu doctrina fundamental\u0103 a psihologiei budiste, aceast\u0103 \u00een\u021belegere evaziv\u0103 reflect\u0103 paradoxul c\u0103 sinele meditativ poate fi \u00een acela\u0219i timp un sine \u201dsigur\u201d sau niciun fel de sine (personal), ci doar con\u0219tientizare (vezi Goldstein & Kornfield, 1987; Kornfield, 1993; Engler, 2003).\r\n\r\n\r\nSursa:  Wallin J. David - \u201eAta\u0219amentul \u00een psihoterapie\u201d.\r\n\r\n\r\n",
+    "slug": "atitudinea-meditativa",
+    "publish": true,
+    "author": [
+      "cristina.ginghina"
+    ],
+    "created": "2017-02-26T09:14:22Z",
+    "modified": "2017-02-26T10:02:59.234Z",
+    "image": "",
+    "tags": [
+      2,
+      5,
+      7
+    ]
+  }
+},
+{
+  "model": "blog.entry",
+  "pk": 12,
+  "fields": {
+    "title": "test",
+    "subtitle": "test",
+    "body": "Dialog\r\n\r\n\\- hhhh\r\n\r\n\\- ffff\r\n\r\nBut they will remember you.\r\n\r\nYour kindness. Your empathy. Your care and concern. They\u2019ll remember that you took the time to listen. That you stopped to ask them how they were. How they really were. They\u2019ll remember the personal stories you tell about your life: your home, your pets, your kids. They\u2019ll remember your laugh. They\u2019ll remember that you sat and talked with them while they ate their lunch.",
+    "slug": "test",
+    "publish": false,
+    "author": [
+      "cristina.ginghina"
+    ],
+    "created": "2017-03-12T09:33:37Z",
+    "modified": "2017-03-12T09:34:21.236Z",
+    "image": "",
+    "tags": [
+      1
+    ]
+  }
+},
+{
+  "model": "blog.entry",
+  "pk": 13,
+  "fields": {
+    "title": "Workaholism-ul",
+    "subtitle": "O afec\u021biune din ce \u00een ce mai des \u00eent\u00e2lnit\u0103 \u00een societatea de ast\u0103zi",
+    "body": "Adic\u021bia legat\u0103 de serviciu poate fi considerat\u0103 una dintre noile adic\u021bii comportamentale, at\u00e2t timp c\u00e2t nicio substan\u021b\u0103 adictiv\u0103 nu este luat\u0103 de c\u0103tre indivizi.\r\n\u00cenc\u0103 din a doua jum\u0103tate a secolului XX, cercet\u0103torii \u0219i-au focusat aten\u021bia pe diferite forme de adic\u021bii comportamentale cum ar fi:\r\n\r\n- Exerci\u021biile fizice;\r\n- Shopping-ul compulsiv;\r\n- Jocurile pe calculator;\r\n- Dependen\u021ba de internet;\r\n- Dependen\u021ba de Cubul Rubik;\r\n\r\nDSM-IV nu men\u021bioneaz\u0103 niciunde despre workaholism, dar la sec\u021biunea specific\u0103 tulbur\u0103rilor obsesiv-compulsive de personalitate, se refer\u0103 la devotamentul excesiv prin munc\u0103 \u0219i productivitate, ceea ce duce la excluderea activit\u0103\u021bilor din timpul liber \u0219i rela\u021biile de prietenie. Nu exist\u0103 justificare nici prin nevoile economice legate de acest comportament. Subiec\u021bii simt foarte des c\u0103 nu au timp s\u0103-\u0219i ia liber o sear\u0103 sau un weekend s\u0103 se relaxeze. De obicei, am\u00e2n\u0103 activit\u0103\u021bile pl\u0103cute, cum ar fi o vacan\u021b\u0103, astfel nu le duce niciodat\u0103 la \u00eendeplinire. Dac\u0103 totu\u0219i pleac\u0103 \u00eentr-o vacan\u021b\u0103, se simt foarte inconfortabili av\u00e2nd sentimentul c\u0103 \u201epierd vremea\u201d dac\u0103 nu au o activitate legat\u0103 de munc\u0103.\r\n\r\nDSM - 5 nu men\u021bioneaz\u0103 nimic despre workaholism, la fel \u0219i ICD - 10.\r\nPrimul care a utilizat termenul de \u201eworkaholic\u201d a fost Oates (1971), care obi\u0219nuia s\u0103 se refere la un subiect care sim\u021bea compulsia sau nevoia incontrolabil\u0103 de a lucra \u00een continuu. \r\nAceast\u0103 frumoas\u0103 adic\u021bie reprezint\u0103 o barier\u0103 \u00een ob\u021binerea eficien\u021bei, a satisfac\u021biei profesionale \u0219i personale.\r\n\r\nWorkaholism-ul este una dintre principalele probleme care afecteaz\u0103 at\u00e2t via\u021ba profesional\u0103, c\u00e2t \u0219i personal\u0103 a adul\u021bilor \u0219i este caracterizat\u0103 de urm\u0103toarele aspecte:\r\n\r\n- Implicarea excesiv\u0103 \u00een munc\u0103 \u0219i neglijarea celorlalte aspecte ale vie\u021bii;\r\n- Foarte multe ore peste program, \u00een weekenduri \u0219i \u00een vacan\u021be;\r\n- Nevoia de control \u0219i delegarea unor foarte pu\u021bine responsabilit\u0103\u021bi celorlal\u021bi colegi;\r\n- Un nivel foarte mare de perfec\u021biune asupra muncii sale \u0219i asupra muncii celorlal\u021bi;\r\n- Se simte obligat s\u0103 lucreze datorit\u0103 unei presiuni interne;\r\n\r\nEste foarte important de punctat faptul c\u0103 workaholismul nu trebuie confundat cu dep\u0103\u0219irea unor ore petrecute la serviciu pe s\u0103pt\u0103m\u00e2n\u0103. Dimpotriv\u0103, \u00een recentele meta-analize conduse pe acest subiect a reie\u0219it c\u0103 workaholismul \u0219i orele lucrate pe s\u0103pt\u0103m\u00e2n\u0103 sunt corelate doar moderat.\r\nO zon\u0103 care continu\u0103 s\u0103 fie \u00een dezbateri cu privire la efectul pozitiv sau negativ al acestui fenomen. \r\nUnii cercet\u0103tori sus\u021bin c\u0103 workaholismul este asociat cu un nivel mare de eustres (stresul pl\u0103cut), \u00eempreun\u0103 cu rezultate pozitive, \u0219i c\u0103 ace\u0219tia sunt modele pentru ceilal\u021bi angaja\u021bi. Al\u021bii au acceptat ideea c\u0103 duc la rezultate pozitive pe termen scurt, \u00eens\u0103 pe termen lung duc la rezultate negative (s\u0103n\u0103tate precar\u0103, probleme \u00een rela\u021bii). \r\n\r\nRela\u021bia dintre workaholism \u0219i alte tr\u0103s\u0103turi de personalitate\r\n\r\nCele 5 tr\u0103s\u0103turi de personalitate principale, extraversia, con\u0219tiinciozitatea, consim\u021b\u0103m\u00e2ntul, deschiderea c\u0103tre noi experien\u021be \u0219i nevroza, au fost adesea legate de workaholism. Aceste leg\u0103turi sunt relativ slabe. Cele mai puternice corela\u021bii exist\u0103 \u00eentre workaholism \u0219i tr\u0103s\u0103turile de personalitate orientate spre realizare, cum ar fi celed e tipul A, motiva\u021bia de realizare \u0219i perfec\u021bionismul. De asemenea putem afrma c\u0103 cercet\u0103rile cu privire la acest topic sunt limitate. S-a descoperit c\u0103 narcisismul este pozitiv legat de workaholism. Unele studii au adoptat mai multe abord\u0103ri cu privire la \u00een\u021belegerea rela\u021biei dintre workaholism \u0219i perfec\u021bionism.\r\n\r\nDe foarte multe ori \u00een \u0219tiin\u021b\u0103, c\u00e2t \u0219i \u00een practic\u0103, se confund\u0103 adesea workaholism-ul cu implicarea \u00een munc\u0103. De obicei, persoanele care sunt implicate \u00een munc\u0103 sus\u021bin c\u0103 lucreaz\u0103 foarte mult, \u00eens\u0103 afirm\u0103 c\u0103 o fac cu pl\u0103cere \u0219i c\u0103 le place foarte mult. Cele dou\u0103 aspecte sunt foarte asem\u0103n\u0103toare deoarece ambele categorii lucreaz\u0103 din greu \u0219i mult mai mult dec\u00e2t majoritatea colegilor lor, \u00eens\u0103, chiar \u0219i a\u0219a exist\u0103 o serie de diferen\u021be \u00eentre acestea, dintre care amintim:\r\n\r\n- Motiva\u021bia care st\u0103 la baza acestor comportamente, reprezint\u0103 motiva\u021bia intrinsec\u0103 pentru pentru cei care sunt implica\u021bi \u00een munc\u0103, pe c\u00e2nd pentru workaholici este  constr\u00e2ngerea interioar\u0103.\r\n- Cele dou\u0103 categorii de comportamente experimenteaz\u0103 emo\u021bii diferite. De exemplu, \u00een urma unor studii, workaholicii sunt mai mult oreinta\u021bi spre a experimenta emo\u021bii negative discrete (vin\u0103, anxietate, furie, dezam\u0103gire) la serviciu sau acas\u0103, pe c\u00e2nd indivizii implica\u021bi \u00een munc\u0103 sunt mult mai susceptibili la a experimenta emo\u021bii discrete pozitive (jovialitate, autoasigurare, considera\u021bie, respect) la serviciu \u0219i acas\u0103.\r\n- O ultim\u0103 diferen\u021b\u0103 este despre faptul c\u0103 workaholi\u0219tii sunt afecta\u021bi \u00een via\u021ba de familie datorit\u0103 emo\u021biilor negative pe care le experimenteaz\u0103, pe c\u00e2nd cei implica\u021bi \u00een munc\u0103 au o via\u021b\u0103 de familie pl\u0103cut\u0103, datorit\u0103 emo\u021biilor pozitive pe care le experimenteaz\u0103.\r\nPentru a considera aceast\u0103 adic\u021bie o tendin\u021b\u0103 a tr\u0103s\u0103turilor de personalitate, \u00eenseamn\u0103 s\u0103 g\u00e2ndim \u00een termeni de caracteristici stabile care se formeaz\u0103 de-a lungul timpului, de obicei devenind stabile \u00een adolescen\u021b\u0103 \u0219i care pot fi \u00eent\u0103rite de condi\u021biile din mediul exterior, c\u00e2t \u0219i de stres.\r\n\r\nGriffits sus\u021bine c\u0103 pentru a introduce workaholismul \u00een categoria adic\u021biilor e nevoie s\u0103 fie partajat\u0103 cu alte criterii cum ar fi:\r\n\r\n- Proeminen\u021ba sau scoaterea \u00een eviden\u021b\u0103 - munca este cea mai important\u0103 activitate a unei persoane \u00een via\u021b\u0103 \u0219i domin\u0103 g\u00e2ndirea \u0219i comportamentul;\r\n- Transformarea st\u0103rii de spirit - munca este asociat\u0103 cu dispozi\u021bia care poate varia foarte mult (excitare, evaziune, lini\u0219te);\r\n- Toleran\u021ba - workaholicul este for\u021bat s\u0103 creasc\u0103 gradual \u0219i progresiv perioada de timp petrecut\u0103 \u00een activit\u0103\u021bile de lucru;\r\n- Abstinen\u021ba - angaja\u021bii sunt afecta\u021bi at\u00e2t fizic c\u00e2t \u0219i psihic de situa\u021bii \u00een care nu trebuie s\u0103 munceasc\u0103, cum ar fi vacan\u021bele, zile libere, boal\u0103, etc.\r\n- Conflictele - workaholicii \u00eent\u00e2mpin\u0103 dificult\u0103\u021bi cu rela\u021biile interpersonale c\u00e2t \u0219i cu activit\u0103\u021bile din timpul liber.\r\n- Recidiva - momentele \u00een care dup\u0103 o perioad\u0103 \u00een care a \u021binut adic\u021bia sub control, ajunge iar\u0103\u0219i la un comportament exagerat din acest punct de vedere.\r\n\r\nExist\u0103  cel pu\u021bin patru motive pentru care workaholismul este o adic\u021bie care poate fi prevenit\u0103 sau tratat\u0103 foarte greu, dintre care amintim:\r\nAdic\u021bia de lucru nu se refer\u0103 la un abuz de substan\u021be ci de un anumit comportament. Dac\u0103 \u00een cazul adic\u021biilor de substan\u021be abstinen\u021ba total\u0103 este o solu\u021bie, \u00een cazul workaholicului nu este posibil acest lucru deoarece nu \u00eei putem interzice unui individ s\u0103 lucreze. Din acest motiv este foarte greu s\u0103 m\u0103sori ce semnific\u0103 abstinen\u021b\u0103 pentru dependen\u021bii de munc\u0103.\r\n\r\nDe asemenea, se sus\u021bine c\u0103 workaholismul este o adic\u021bie foarte inteligent\u0103 deoarece este doar un execes a unui lucru, a unui comportament, care \u00een societate, de cele mai multe ori, este considerat\u0103 o virtute cheie \u0219i nu este legat\u0103 de un comportament criminal cum ar fi abuzul de droguri, jocurile de noroc sau alcoolismul. Acest fapt \u00eenseamn\u0103 c\u0103 implic\u0103 un tratament care implic\u0103 presiunea social\u0103.\r\n\r\nUn alt obstacol important \u00een tratarea workaholismului este c\u0103, datorit\u0103 naturii acestei adic\u021bii, indivizii nu au timp pentru consiliere sau tratament. Ei muncesc \u00eencontinuu, acest lucru ne duce cu g\u00e2ndul la faptul c\u0103 strategiile de succes pentru prevenirea sau tratarea workaholismului trebuie s\u0103:\r\n\r\n- se focuseze pe stabilirea unor obiective realiste \u0219i realizabile;\r\n- ajutarea workaholicului de a con\u0219tientiza c\u0103 are o problem\u0103 \u0219i c\u0103 trebuie s\u0103 fac\u0103 ceva \u00een acest sens;\r\n- focusarea direct\u0103 pe comportamentul la munc\u0103 excesiv\u0103 \u0219i pe consecin\u021bele care apar datorit\u0103 acestui lucru;\r\n- nu trebuie s\u0103 fie un mare consumator de timp.\r\nInterven\u021bia primar\u0103 - \u00een ciuda faptului c\u0103 workaholicii muncesc foarte mult \u0219i din greu din cauza unei constr\u00e2ngeri interioare, mediul \u00een care \u00ee\u0219i desf\u0103soar\u0103 activitatea poate stimula acest comportament adictiv. \r\n\r\nNu este exclus ca workaholicii s\u0103 fie atra\u0219i de organiza\u021bii care favorizeaz\u0103 munca grea \u00eenaintea unei vie\u021bi echilibrate \u0219i s\u0103n\u0103toase. Este tipic marilor companii s\u0103 apercieze excesul de efort \u0219i energie pe care workaholicii \u00eel depun \u00een munca lor \u0219i reprezint\u0103 un aspect pozitiv pentru acestea.\r\n\r\nOb\u021binerea unor recompense cum ar fi promovarea \u00een carier\u0103, bonusuri, salarii mari, aten\u021bie pozitiv\u0103, confirm\u0103 concep\u021bia workaholicilor de a fi persoane speciale de care organiza\u021biile au nevoie. \u00cen schimb, companiile pot contribui la prevenirea workaholismului prin schimbarea culturii organiza\u021bionale.\r\n",
+    "slug": "workaholismul",
+    "publish": true,
+    "author": [
+      "cristina.ginghina"
+    ],
+    "created": "2017-03-12T21:32:44Z",
+    "modified": "2017-03-12T21:41:38.236Z",
+    "image": "",
+    "tags": [
+      1
+    ]
+  }
+},
+{
+  "model": "blog.entry",
+  "pk": 14,
+  "fields": {
+    "title": "Dou\u0103 discu\u021bii despre fericire",
+    "subtitle": "(Fragment)",
+    "body": "  Plafonul radiant r\u0103sp\u00e2ndea \u00een \u00eenc\u0103perea de lucru a locuin\u021bei lui Gromov lumina lui bogat\u0103 \u0219i uniform\u0103. A\u0219eza\u021bi fa\u021b\u0103 \u00een fa\u021b\u0103, \u00een dou\u0103 jil\u021buri comode, T\u0103un \u0219i Ilona se priveau ca \u0219i cum nu s-ar fi v\u0103zut de mult\u0103 vreme.\r\n  Pentru fiecare dintre ei, ultimele zile \u00eensemnaser\u0103 mult \u00een noua lor existen\u021b\u0103.\r\n  \r\nGrigore se restabilise de pe urma accidentului, dar \u00een ochii lui se citea oboseala \u0219i triste\u021bea. C\u00e2t despre Ilona, gesturile \u0219i privirile ei exprimau o st\u00e2njeneal\u0103, care era la ea un lucru neobi\u0219nuit. Dup\u0103 ce se juc\u0103 c\u00e2tva timp nervoas\u0103 cu un bibelou de sidef de pe mas\u0103, ea \u00eentrerupsese cea dint\u00e2i t\u0103cerea.\r\n\r\n\\- Ce este fericirea, Grigore?\r\n\r\n  \u00centrebarea venise pe nea\u0219teptate. T\u0103un tres\u0103ri. \u0218i \u00een\u021belese c\u0103 era \u00eenceputul unei pagini noi \u00een via\u021ba lui \u0219i a ei.\r\n \r\n  Se fr\u0103m\u00e2nt\u0103 mult timp p\u00e2n\u0103 s\u0103-i r\u0103spund\u0103. Clipele de t\u0103cere erau pline de dezn\u0103dejde. O pierdea, o pierdea definitiv. Punctul de sprijin, ultimul punct de sprijin, disp\u0103rea.\r\n  \r\n  \u00cel b\u0103tu o clip\u0103 g\u00e2ndul s-o implore, s\u0103-i vorbeasc\u0103 despre datorie, despre trecutul lor comun, care n-a avut vreme s\u0103 se \u0219tearg\u0103. S\u0103-i vorbeasc\u0103 din nou despre prima lui dragoste, abia \u00eenfiripat\u0103 \u0219i fr\u00e2nt\u0103 de moarte, despre iluzia rena\u0219terii. Dar \u00ee\u0219i d\u0103du seama c\u0103 n-ar fi putut trezi dec\u00e2t comp\u0103timirea ei.\r\n\r\n  S\u0103 o biciuiasc\u0103 cu ironie sarcastic\u0103, s\u0103 r\u00e2d\u0103 de \u201emobilitatea\u201d ei sufleteasc\u0103, s\u0103-i c\u00e2nte batjocoritor \u201eLa dona e mobile\u201d? N-avea rost! Ar fi r\u00e2s de propria lui fiin\u021b\u0103. C\u00e2t de mult o iubea!\r\n\r\n  \u0218i hot\u0103r\u00ee s\u0103 fie obiectiv, ca un str\u0103in, ca un om din afar\u0103.\r\n\r\n \\- Fericirea este participare, Ilona\u2026\r\n\r\n  Ilona str\u00e2nse puternic bibeloul \u00eentre degete \u0219i d\u0103du din cap nedumerit\u0103.\r\n\r\n  \\- De fericire se pot bucura numai oamenii, Ilona. \u0218i dintre oameni, numai cei care pot fi \u0219i neferici\u021bi.\r\n\r\n  \\- Nu \u00een\u021beleg nimic.\r\n\r\n  \\- G\u00e2nde\u0219te-te la Georg. El este nefericit pentru c\u0103 nu mai poate participa c\u00e2teva luni la via\u021b\u0103. Este scos \u00een afara limitelor fire\u0219ti ale existen\u021bei reale. E o pas\u0103re cu aripi legate.\r\n\r\n  Poate mai exist\u0103 \u0219i acum oameni-viermi, mul\u021bumi\u021bi s\u0103 tr\u0103iasc\u0103 pasiv, ca ni\u0219te plante sau animale inferioare, s\u0103 m\u0103n\u00e2nce, s\u0103 bea, s\u0103 doarm\u0103, s\u0103 se plimbe. Dar asemenea oameni, rup\u021bi de restul omenirii, nu pot fi ferici\u021bi, nici neferici\u021bi. A\u0219a cum o reptil\u0103 nu poate tr\u0103i dec\u00e2t cel mult senza\u021bia tubului digestiv plin\u2026\r\n\r\n  Ilona \u00eel privi c\u00e2teva clipe \u00eeng\u00e2ndurat\u0103, \u00ee\u0219i \u021buguie buzele \u0219i spuse cu voce schimbat\u0103:\r\n\r\n  \\- Dar Georg o are pe Indira, care-l \u00een\u021belege, \u00eel ajut\u0103.\r\n\r\n  \\- V\u0103d c\u0103 tu ai o ideea foarte precis\u0103 despre fericire, observ\u0103 T\u0103un, cu un z\u00e2mbet amar pe buze. Eu cred \u00eens\u0103 c\u0103 Indira - aici parc\u0103 ar fi spus Ilona \u0219i gusta un fel de r\u0103zbunare - paote cel mult\u2026s\u0103-l fac\u0103 pe Georg mai pu\u021bin nefericit pe calea lui spre adev\u0103rata fericire.\r\n\r\n  Ilona nu sim\u021bea nici accentele ciudate, nici ezit\u0103rile lui Grigore. Ea \u00eentreb\u0103 mai departe.\r\n\r\n  \\- Poate da un om fericire altuia?\r\n\r\n  \\- P\u0103rerea mea este c\u0103 un singur om nu poate da celuilalt ceea ce \u00eentreaga comunitate uman\u0103 \u00eei poate da. Poate doar s\u0103-l ajute s\u0103 g\u0103seasc\u0103 fericirea, ceea ce este destul de mult.\r\n\r\n  \\- S\u0103 vorbim despre noi, Grigore. Tu e\u0219ti fericit?\r\n\r\n   Pe fa\u021ba lui T\u0103un treceau umbre de am\u0103r\u0103ciune.\r\n \r\n  \\- Am fost, Ilona. Demult. Aproape c\u0103 nu-mi mai aduc aminte. Era \u00een via\u021ba dint\u00e2i, c\u00e2nd sim\u021beam c\u0103 munca mea era o p\u0103rticic\u0103 din efortul \u00eentregii omeniri, c\u00e2nd cuvintele mele, cercet\u0103rile \u00eentreprinse de mine \u00een laboratoarele institutului, ideile mele slujeau altora, c\u00e2nd participam la via\u021ba celorlal\u021bi oameni \u0219i m\u0103 sim\u021beam mai legat de ei dec\u00e2t acum. Atunci odihna dup\u0103 munc\u0103 era plin\u0103 de bucuriile \u00eenf\u0103ptuirilor trecute \u0219i al celor care aveau s\u0103 vin\u0103. Eram fericit, Ilona, profund fericit. Eram \u00een\u021beles, Ilona. Participam la via\u021b\u0103.\r\n\r\n  \\- \u0218i acum?\r\n\r\n  \\- Acum m\u0103 simt at\u00e2t de obosit la g\u00e2ndul c\u0103 nu fac nimic. \u00cen jurul meu curge un \u0219uvoi care m\u0103 las\u0103 ag\u0103\u021bat de toate cioturile. E groaznic s\u0103 fii inutil! Da, draga mea, cred c\u0103 sunt nefericit.\r\n\r\n  \\- Dac\u0103 e\u0219ti nefericit, \u00eenseamn\u0103 c\u0103 po\u021bi fi \u0219i fericit! Trebuie s\u0103 fii fericit! Ai spus-o doar tu. Voi fi l\u00e2ng\u0103 tine, te voi ajuta s\u0103 p\u0103trunzi \u00een \u0219uvoi. Uite, \u0219i eu\u2026\r\n\r\n  Glasul ei suna nefiresc. Ultimele cuvinte p\u0103reau for\u021bate, \u0219i acest lucru o enerva. bibeloul \u00eei sc\u0103pa din m\u00e2n\u0103 \u0219i se rostogoli pe spongina pufoas\u0103 a du\u0219umelei.\r\n\r\n   Se opri o clip\u0103, apoi relu\u0103 ideea.\r\n\r\n  \\- Da, Grigore, voiam s\u0103-\u021bi spun c\u0103 am sim\u021bit c\u0103 devin util\u0103, c\u0103 \u201eparticip\u201d, cum zici tu. \u0218i acum \u00een\u021beleg de ce sunt sau mi se pare c\u0103 \u00eencep s\u0103 fiu fericit\u0103. La lec\u021bia \u021binut\u0103 acum c\u00e2teva zile, de Iuk, l-am ajutat, am colaborat cu el. \u00cen sf\u00e2r\u0219it, am f\u0103cut o treab\u0103. Elevii m\u0103 acceptau, ba chiar\u2026aveau nevoie de mine.\r\n\r\n   T\u0103un o privi \u00eendelung \u0219i spuse \u00eencet.\r\n\r\n  \\- Acesta este oare singurul lucru care te-a f\u0103cut s\u0103 te sim\u021bi fericit\u0103?\r\n\r\n  Nu se opri la cap\u0103tul acestei \u00eentreb\u0103ri. Continu\u0103 s\u0103 vorbeasc\u0103 cu o voiciune care avea ceva straniu:\r\n\r\n  \\- Fericitul Goethe a trecut \u0219i el prin fr\u0103m\u00e2nt\u0103rile acestea ale noastre. El a \u00eencercat s\u0103 r\u0103spund\u0103 la \u00eentrebarea ta. \u0218i l-a creat pe Faust, cea mai frumoas\u0103 poveste despre n\u0103zuin\u021ba omului spre propria fericire.\r\n\r\n  Dac\u0103 m\u0103 g\u00e2ndesc bine, sunt Faust la executarea contractului cu Mefisto. M\u0103 aflu \u00een cea de-a doua via\u021b\u0103 \u0219i pl\u0103tesc poli\u021ba pe care Faust n-a pl\u0103tit-o. Am cunoscut gloria, prietenia \u0219i dragostea recunosc\u0103toare a oamenilor. Am avut parte de tinere\u021be, cu iubirea \u0219i toate frumuse\u021bile ei. Iar dac\u0103 acum, \u00een aceast\u0103 a doua via\u021b\u0103, nu m\u0103 \u00eenconjoar\u0103 fl\u0103c\u0103rile iadului, dac\u0103 mediul meu de via\u021b\u0103 este agreabil, dac\u0103 nu suf\u0103r de foame, dac\u0103 trumul nu-mi este ros de vermina mizeriei, suf\u0103r \u00eens\u0103 la fiecare tres\u0103rire de via\u021b\u0103 pe care o v\u0103d \u00een jurul meu, suf\u0103r fiindc\u0103 sunt\u2026, mai bine zis fiindc\u0103 nu simt nimic. M\u0103 simt ca o reptil\u0103 \u00eentr-o lume de p\u0103s\u0103ri cu aripi minunate. Ca o reptil\u0103, ma auzi?\r\n\r\n  \\- Grigore!\r\n\r\n  \\- Nu m\u0103 \u00eentrerupe! continu\u0103 el cu febrilitate. Suf\u0103r fiindc\u0103 trebuie s\u0103 te pierd. O \u0219tiu prea bine, am \u00een\u021beles-o de mult\u2026\r\n\r\n  Se apropie de ea:\r\n\r\n  \\- Ascult\u0103, Ilona. Vorbeai despre fericire. Pentru tine se deschide acum c\u0103rarea spre ea. P\u0103\u0219e\u0219te f\u0103r\u0103 ezitare pe aceast\u0103 cale. Bra\u021bul lui Iuk este puternic\u2026t\u00e2n\u0103r, sigur. Mi-ar fi de o mie de ori mai greu s\u0103 mila dec\u00e2t nep\u0103sarea ta.\r\n\r\n  Cu b\u0103rbia \u00een palme, cu coatele sprijinite de mas\u0103, Ilona \u00eel privea pe T\u0103un. Reflexele violetecare c\u0103deau de pe vitraliile camerei pe fa\u021ba lui \u00eei d\u0103deau o \u00eenf\u0103\u021bi\u0219are ireal\u0103. \u00centr-un t\u00e2rziu se scutur\u0103, c\u0103 \u0219i cum ar fi vrut s\u0103 se smulg\u0103 dintr-un vis.\r\n\r\n  \\- Grigore, nu vreau s\u0103 fii nefericit, nu trebuie s\u0103 fii nefericit! Nu te voi p\u0103r\u0103si. Nu \u0219tiu \u00eenc\u0103 prea bine ce se va \u00eent\u00e2mpla cu noi, dar sunt \u00eencredin\u00e2at\u0103 c\u0103 inima ta mare se va umple de bucuriile pe care le r\u00e2vne\u0219ti. \u0218i voi fi l\u00e2ng\u0103 tine\u2026oric\u00e2t va fi nevoie.\r\n\r\n  Ar fi vrut s\u0103 se opreasc\u0103 \u00eenainte dea fi rostit ultimele cuvinte, dar cuvintele fuseser\u0103 spuse , \u0219i acum \u00eei venea s\u0103 pl\u00e2ng\u0103 de ciud\u0103.\r\n\r\n  T\u0103un ar fi vrut s\u0103 glumeasc\u0103, s\u0103 zic\u0103 ceva lini\u0219titor, dar orice \u00ee\u00ee venea in minte i se p\u0103rea ridicol, nefiresc. \u00cel n\u0103p\u0103dea o senza\u021bie de usc\u0103ciune.\r\n\r\n  O t\u0103cere grea se a\u0219ternu \u00een odaie.\r\n\r\n  Dup\u0103 c\u00e2tva timp, se auzir\u0103 de dincolo de u\u0219\u0103 pa\u0219ii m\u0103sura\u021bi \u0219i ritmici ai lui Gromov. Cur\u00e2nd, profesorul intr\u0103 \u00een camer\u0103. Se apropie vesel de ei, f\u0103r\u0103 s\u0103 remarce \u00eenordarea care plutea \u00een aer.\r\n\r\n  \u00ce\u0219i trase un scaun l\u00e2ng\u0103 fotoliul lui T\u0103un \u0219i \u00eencepu s\u0103 vorbeasc\u0103 pe ner\u0103suflate.\r\n\r\n  \\- Grigore drag\u0103, societatea noastr\u0103 are grij\u0103 de membrii ei. Va trebui s\u0103 recuno\u0219ti acest lucru. Sunt bucuros s\u0103-\u021bi dau o veste mare. Comisia central\u0103 a discutat problema ta. E\u0219ti invitat s\u0103 participi la lupta contra cutremurelor.\r\n\r\n   Spre mirarea profesorului nimeni nu a zis nimic.\r\n\r\n  \\- T\u0103une, nu zici niciun cuv\u00e2nt? \u00eentreb\u0103 uimit profesorul. Se a\u0219teptase la o explozie de entuziasm. Ce-i cu voi? \u0218i tu, fat\u0103 a cerului, parc\u0103 ai amu\u021bit. Dar ce s-a \u00eent\u00e2mplat?\r\n\r\n  Grigore ascultase la \u00eenceput cuvintele profesorului cu indiferen\u021b\u0103, sub impresia celor \u00eent\u00e2mplate. Dar pe m\u0103sur\u0103 ce sensul lor i se \u00eentip\u0103rea \u00een minte, sim\u021bi cum \u00een el cresc apele unei bucurii nem\u0103surate.\r\n\r\n  Se ridic\u0103 de jil\u021b \u0219i f\u0103cu c\u00e2\u021biva pa\u0219i spre Gromov. Apoi se opri locului. \u0218i \u00eentorc\u00e2ndu-\u0219i privirile spre Ilona, rosti ap\u0103sat, ca \u0219i cum abia acum ar fi r\u0103spuns la prima ei \u00eentrebare.\r\n  \r\n\\- Fericirea este lupt\u0103 \u0219i n\u0103dejde!_\r\n\r\n                       (Sahariana - M. Solomon, I.M. \u0218tefan)\r\n_",
+    "slug": "doua-discutii-despre-fericire",
+    "publish": true,
+    "author": [
+      "cristina.ginghina"
+    ],
+    "created": "2017-03-13T17:19:56Z",
+    "modified": "2017-03-13T17:48:25.217Z",
+    "image": "",
+    "tags": [
+      4,
+      5
+    ]
+  }
+},
+{
+  "model": "login.userprofile",
+  "pk": 3,
+  "fields": {
+    "user": [
+      "cristina.ginghina"
+    ],
+    "displayingContactInfo": true,
+    "phoneNo": "-"
+  }
+},
+{
+  "model": "login.userprofile",
+  "pk": 6,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "displayingContactInfo": true,
+    "phoneNo": null
+  }
+},
+{
+  "model": "login.userprofile",
+  "pk": 10,
+  "fields": {
+    "user": [
+      "alex"
+    ],
+    "displayingContactInfo": true,
+    "phoneNo": null
+  }
+},
+{
+  "model": "login.membership",
+  "pk": 2,
+  "fields": {
+    "user": [
+      "razvansky"
+    ],
+    "isPaymentStatusActive": true,
+    "date": "2018-11-29",
+    "membership_type": "Free"
+  }
+},
+{
+  "model": "login.membership",
+  "pk": 3,
+  "fields": {
+    "user": [
+      "cristina.ginghina"
+    ],
+    "isPaymentStatusActive": true,
+    "date": "2018-11-29",
+    "membership_type": "Free"
+  }
+},
+{
+  "model": "login.membership",
+  "pk": 6,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "isPaymentStatusActive": true,
+    "date": "2019-01-12",
+    "membership_type": "Free"
+  }
+},
+{
+  "model": "login.membership",
+  "pk": 10,
+  "fields": {
+    "user": [
+      "alex"
+    ],
+    "isPaymentStatusActive": true,
+    "date": "2019-02-17",
+    "membership_type": "Free"
+  }
+}
+]

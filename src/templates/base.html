@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+  <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="google-site-verification" content="Xfa6zxSy-SnXD67rTxnKOLcpv9q92Kei3Oyzyeu9VWs" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="geo.position" content="44.447161;26.110174" />
+    <meta name="geo.region" content="RO" />
+    <meta name="geo.placename" content="Bucharest" />
+    <meta name="audience" content="all" />
+    <meta name="language" content="ro" />
+    <meta name="distribution" content="global" />
+
+  {% block metatags %}
+    <meta name="author" content="by Selfpower.ro">
+    <meta property="fb:app_id" content="2521504124841472" />
+  {% endblock metatags %}
+
+    {% if LIVE %}
+       <meta name="robots" content="index, follow" />
+    {% else %}
+       <meta name="robots" content="noindex" />
+    {% endif %}
+
+
+
+
+    <title>
+      {% block title %}Asociatia Selfpower - Armonie | Simplitate | Deschidere{% endblock title %}
+    </title>
+
+    {% include 'css_js.html' %}
+
+
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  },
+  "theme": "classic",
+  "content": {
+    "message": "Acest website foloseste cookie-uri pentru a putea oferi o experienta cat mai buna.  Prin continuarea navigarii pe acest site,  va oferiti acordul in folosirea acestora.",
+    "dismiss": "Okay",
+    "link": "Afla mai multe",
+    "href": "{% url 'confidentialitate' %}",
+  }
+})});
+</script>
+
+  </head>
+
+  <!-- we put the body tag in each template so we can assign IDs-->
+  {% block body %} {% endblock body %}
+
+    {% include 'banner.html' %}
+
+    {% include 'navbar.html' %}
+
+      {% block content %}  {% endblock content %}
+
+    {% include 'footer.html' %}
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="https://code.jquery.com/jquery-1.6.min.js"></script>
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/selfpower.js"></script>
+
+        <!-- Script to Activate the Carousel -->
+    <script>
+        $(function () {
+            {% if anchor %}
+                $(document.body).animate({
+                    'scrollTop':   $('#{{ anchor }}').offset().top
+                }, 2000);
+            {% endif %}
+        });
+    </script>
+
+    <script  src="/static/js/awstats_misc_tracker.js" ></script>
+
+    {% include 'analytics.html' %}
+
+  </body>
+
+</html>

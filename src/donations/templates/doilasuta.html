@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block metatags %}
+    <meta name="description" content="Selfpower - sustine asociatia prin redirectionare din impozit">
+    <meta name="keywords" content="Selfpower, sustine, donatie, redirectionare, impozit, doi, anaf, venit">
+    <meta property="og:title" content="Doi la suta din impozit - redirectionare" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.selfpower.ro/doilasuta" />
+    <meta property="og:description" content="Selfpower - sustine asociatia prin redirectionare din impozit" />
+    <meta property="og:image" content="https://www.selfpower.ro/static/img/banner.png" />
+    <meta property="og:image:secure_url" content="https://www.selfpower.ro/static/img/banner.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="Proiecte Image" />
+    <meta property="og:image:width" content="1000" />
+    <meta property="og:image:height" content="532" />
+    <meta property="fb:app_id" content="2521504124841472" />
+{% endblock metatags %}
+
+{% block title %} Doneaza Doua Procente - Selfpower Consiliere, Educatie si Dezvoltare Personala{% endblock title %}
+
+{% block body %} <body id="doilasuta"> {% endblock body %}
+
+
+{% block content %}
+
+    <div class="container">
+      <div class="row">
+      <div class="box">
+          <div class="col-lg-10 col-lg-offset-1">
+              <hr>
+              <h2 class="intro-text text-center"><strong>Susțineți activitatea </strong>
+                  Selfpower
+              </h2>
+              <hr>
+          </div>
+      </div><!-- ./box -->
+      </div><!-- ./row -->
+
+      <div class="row">
+      <div class="box">
+        <div class="col-lg-10 col-lg-offset-1">
+              <h2 class="text-center"> Redirecționează 2% din impozit către asociația Selfpower!</h2>
+              <br>
+        </div><!-- ./col-lg-10 -->
+      </div><!-- ./box -->
+      </div><!-- ./row -->
+
+     <div class="row">
+     <div class="box">
+              <div class="col-lg-3 col-lg-offset-1">
+                   <img  src="{% static "img/step1.png" %}"
+                         alt="Imagine Pasul 1"
+                         style="width: 50%;"
+                         class="thumbnail center-block">
+              </div><!-- ./col-sm-3 -->
+              <div class="col-lg-6 ">
+                  <h3 class="text-center"> Descarcă și completează formularul de direcționare a 2% din impozit. </h3>
+                  <br>
+                    <hr>
+                  <br>
+                  <h4 class="text-center">
+                    {% if LIVE %}
+                      <a href="{% static "documents/Formular_donatie.pdf" %}" class="center-block">Accesează formular (PDF)</a>
+                    {% else %}
+                      <a href="/sustine/pdf_view/" class="center-block">Accesează formular (PDF)</a>
+                    {% endif %}
+
+                  </h4>
+              </div><!-- ./col-sm-6 -->
+              <br>
+              <hr>
+              <br>
+              <div class="col-lg-3 col-lg-offset-1">
+                   <img  src="{% static "img/step2.png" %}"
+                         alt="Imagine Pasul 2"
+                         style="width: 50%;"
+                         class="thumbnail center-block">
+              </div><!-- ./col-sm-3 -->
+              <div class="col-lg-6 ">
+                 <h3 class="text-center"> După completarea cu datele personale, trimite-ne formularul completat.
+                  <br>   Mulțumim!</h3>
+                  <br>
+                    <hr>
+                  <br>
+                 <h4 class="text-center"><a href="mailto:office@selfpower.ro">Trimite pe email formularul completat</a></h4>
+                  <br>
+                   <hr>
+                  <br>
+              </div><!-- ./col-sm-6 -->
+            </div><!-- ./box -->
+        </div><!-- ./row -->
+
+        <div class="row">
+        <div class="box">
+              <div class="col-lg-8 col-lg-offset-2 ">
+                  <h3 class="text-center"> Sau completează formularul pe</h3>
+                    <hr><br>
+                  <h4 class="text-center"><a href="https://redirectioneaza.ro/selfpower/doilasuta">redirectioneaza.ro</a></h3>
+                    <br>
+                    <hr>
+              </div><!-- ./col-sm-6 -->
+          </div><!-- ./box -->
+      </div><!-- ./row -->
+
+
+</div><!-- /.container -->
+
+{% endblock content %}

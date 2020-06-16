@@ -1,0 +1,72 @@
+{% extends 'blog_base.html' %}
+{% load static %}
+
+{% block metatags %}
+    <meta name="description" content="Proiecte, Activitati, Evenimente, Colaborari, Actiuni, Workshopuri, Workshop-uri, Educatie, Tabere de Dezvoltare Personala">
+    <meta name="keywords" content="Selfpower, Proiecte, Activitati, Evenimente, Colaborari, Actiuni, Workshopuri, Workshop-uri, Educatie, Tabara, Tabere, Dezvoltare, Personala">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.selfpower.ro/proiecte" />
+    <meta property="og:title" content="Proiecte, Evenimente, Colaborari, Workshop-uri - Selfpower.ro" />
+    <meta property="og:description" content="Proiecte, Activitati, Evenimente, Colaborari, Actiuni, Workshopuri, Workshop-uri, Educatie, Tabere Dezvoltare Personala" />
+    <meta property="og:image" content="https://www.selfpower.ro/static/img/banner.png" />
+    <meta property="og:image:secure_url" content="https://www.selfpower.ro/static/img/banner.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="Proiecte Image" />
+    <meta property="og:image:width" content="1000" />
+    <meta property="og:image:height" content="532" />
+    <meta property="fb:app_id" content="2521504124841472" />
+{% endblock metatags %}
+
+{% block title %} Proiecte, Evenimente, Colaborari, Workshop-uri - Selfpower.ro{% endblock title %}
+
+{% block body %} <body id="proiecte"> {% endblock body %}
+
+
+{% block content %}
+
+    <div class="container">
+    <div class="row">
+    <div class="box">
+            <div class="col-lg-10 col-lg-offset-1">
+                <hr>
+                <h2 class="intro-text text-center"><strong>Proiecte</strong>
+                    Selfpower
+                </h2>
+                <hr>
+            </div>
+    </div><!-- ./box -->
+    </div><!-- ./row -->
+    </div><!-- ./container-->
+
+
+
+    <div class="container">
+       	{% for item in proiect_list %}
+           <div class="row">
+             <div class="box">
+                <div class="col-lg-10 col-lg-offset-1">
+                  <h2 class="text-center">
+                    <a href="{% url "proiecte_detail" slug=item.slug %}"> {{item.title}} </a>
+                  </h2>
+                  <br>
+                      <a href="{% url "proiecte_detail" slug=item.slug %}">
+                        {% if item.images.all.0.image.url %}
+                        <img  src="{{ item.images.all.0.image.url }}"
+                              alt="banner img proiecte"
+                              style="width: 70%;"
+                              class="img-responsive center-block">
+                        {% else %}
+                        <img  src="{% static "img/blogimage.jpg" %}"
+                              alt="Blog Image"
+                              style="width: 70%;"
+                              class="img-responsive center-block">
+                        {% endif %}
+                      </a><!-- or style="max-height:225px" -->
+                       <br>
+                </div><!-- /.col-lg-10 -->
+              </div>
+           </div><!-- /.row -->
+        {% endfor %}
+    </div><!-- /.container -->
+
+{% endblock content %}

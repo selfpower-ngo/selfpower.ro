@@ -1,0 +1,11 @@
+codecov:
+coverage:
+  status:
+    project:
+      # basic
+      target: 85%
+      threshold: 1%
+    patch:
+      # pull-requests only
+      target: 90%
+      threshold: 1%

@@ -1,0 +1,367 @@
+{% extends 'base.html' %}
+
+{% block metatags %}
+    <meta name="description" content="Profil de utilizator - Selfpower - - Setari, configurari, afisare informatii">
+    <meta name="keywords" content="Selfpower, Blog, Articole, Studii, Consiliere, Educatie, Dezvoltare, Personala">
+    <meta property="og:title" content="Profil de utilizator" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://selfpower.ro/profile" />
+    <meta property="og:description" content="Profil de utilizator - Setari, configurari, afisare informatii" />
+    <meta property="og:image" content="https://selfpower.ro/static/img/ParkGreenxs.jpg" />
+    <meta property="og:image:secure_url" content="https://selfpower.ro/static/img/ParkGreenxs.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="717" />
+    <meta property="og:image:height" content="403" />
+{% endblock metatags %}
+{% block title %} Profil de utilizator - Selfpower Consiliere, Educatie si Dezvoltare Personala{% endblock title %}
+
+{% load static %}
+
+{% block body %} <body id="profile"> {% endblock body %}
+
+
+{% block content %}
+
+    <div class="container">
+        <div class="box">
+
+
+            <div class="container bootstrap snippet">
+
+                <div class="row">
+                    <div class="col-sm-9">
+                      <h1> Bună {{ user.username }}!</h1>
+                      <br>
+                          <a class="btn btn-default" href="/administrare" role="button">
+                              <span class="glyphicon glyphicon-cog" aria-hidden="true"> </span> administrare
+                          </a>
+                          <a class="btn btn-default" href="{% url 'instant_logout' %}" role="button">
+                              <span class="glyphicon glyphicon-log-out" aria-hidden="true"> </span> logout
+                          </a>
+                    </div>
+
+                    <div class="col-sm-2"><a href="#" class="pull-right"><img id="profileImage" title="profile image" class="img-circle img-responsive" src="{% static "images/user.png" %}"></a></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3"><!--left col-->
+
+                      <ul class="list-group">
+                        <li class="list-group-item text-muted">Profil</li>
+                        <li class="list-group-item text-left"> {{user.first_name}} {{user.last_name}}
+                          {% if user.first_name == "" and user.last_name == "" %}
+                             -
+                          {% endif %}
+                        </li>
+                        <li class="list-group-item text-right"><span class="pull-left"><strong>Creat:</strong></span> {{ user.date_joined|date:'d M Y H:i' }}</li>
+                        <li class="list-group-item text-right"><span class="pull-left"><strong>Activ:</strong></span> {{ user.last_login|date:'d M Y H:i' }}</li>
+
+                      </ul>
+
+                      <div class="panel panel-default">
+                        <div class="panel-heading">Email <i class="fa fa-link fa-1x"></i></div>
+                        <div class="panel-body"><a href="mailto:{{user.email}}">{{ user.email }}</a>
+                            {% if user.email == "" %}
+                               <small>nicio adresă salvată</small>
+                            {% endif %}
+                        </div>
+                      </div>
+
+
+                      <ul class="list-group">
+                        <li class="list-group-item text-muted">Statut</li>
+                        <li class="list-group-item text-right"><span class="pull-left"><strong>Tip de cont:</strong></span>
+                            {% if user.membership.membership_type == "Free" %}
+                                Membru liber <small>(cont gratuit)</small>
+                            {% endif %}
+
+                            {% if user.membership.membership_type == "VIP" %}
+                                Membru Special <small>(cont cu plată)</small>
+                            {% endif %}
+                        </li>
+
+
+                        {% if user.membership.membership_type == "VIP" %}
+
+                            <li class="list-group-item text-right"><span class="pull-left"><strong>Status de abonament:</strong></span>
+                                {% if user.membership.isPaymentStatusActive %}
+                                     Activ, plata efectuată
+                                {% else %}
+                                     Inactiv<small>, abonamentul nu a fost plătit </small>
+                                {% endif %}
+                            </li>
+
+                        {% endif %}
+                       </ul>
+
+                      <div class="panel panel-default">
+                        <div class="panel-heading">Social Media</div>
+                        <div class="panel-body">
+                            <i class="fa fa-facebook fa-2x"></i> <i class="fa fa-github fa-2x"></i> <i class="fa fa-twitter fa-2x"></i> <i class="fa fa-pinterest fa-2x"></i> <i class="fa fa-google-plus fa-2x"></i>
+                        </div>
+                      </div>
+
+                    </div><!--/col-3-->
+                    <div class="col-sm-8">
+
+                      <ul class="nav nav-tabs" id="myTab">
+                        <!-- <li><a href="#home" data-toggle="tab">Panou principal</a></li>
+                        <li><a href="#messages" data-toggle="tab">Secundar</a></li> -->
+                        <li class="active"><a href="#settings" data-toggle="tab">Setări</a></li>
+                      </ul>
+
+                      <div class="tab-content">
+                        <div class="tab-pane" id="home">
+                          <div class="table-responsive">
+                            <table class="table table-hover">
+                              <thead>
+                                <tr>
+                                  <th>#</th>
+                                  <th>Label 1</th>
+                                  <th>Label 2</th>
+                                  <th>Label 3</th>
+                                  <th>Label </th>
+
+
+                                </tr>
+                              </thead>
+                              <tbody id="items">
+                                <tr>
+                                  <td>1</td>
+                                  <td>Table cell</td>
+                                  <td>Table cell</td>
+                                  <td>Table cell</td>
+                                  <td>Table cell</td>
+
+
+                                </tr>
+                                <tr>
+                                  <td>2</td>
+                                  <td>Table cell</td>
+                                  <td>Table cell</td>
+                                  <td>Table cell</td>
+                                  <td>Table cell</td>
+
+
+                                </tr>
+                                <tr>
+                                  <td>3</td>
+                                  <td>Table cell</td>
+                                  <td>Table cell</td>
+                                  <td>Table cell</td>
+                                  <td>Table cell</td>
+
+
+                                </tr>
+                                <tr>
+                                  <td>4</td>
+                                  <td>Table cell</td>
+                                  <td>Table cell</td>
+                                  <td>Table cell</td>
+                                  <td>Table cell</td>
+
+
+                                </tr>
+                                <tr>
+                                  <td>5</td>
+                                  <td>Table cell</td>
+                                  <td>Table cell</td>
+                                  <td>Table cell</td>
+                                  <td>Table cell</td>
+
+                                </tr>
+                                <tr>
+                                  <td>6</td>
+                                  <td>Table cell</td>
+                                  <td>Table cell</td>
+                                  <td>Table cell</td>
+                                  <td>Table cell</td>
+
+
+                                </tr>
+                                <tr>
+                                  <td>7</td>
+                                  <td>Table cell</td>
+                                  <td>Table cell</td>
+                                  <td>Table cell</td>
+                                  <td>Table cell</td>
+
+                                </tr>
+                                 <tr>
+                                  <td>8</td>
+                                  <td>Table cell</td>
+                                  <td>Table cell</td>
+                                  <td>Table cell</td>
+                                  <td>Table cell</td>
+
+
+                                </tr>
+                                <tr>
+                                  <td>9</td>
+                                  <td>Table cell</td>
+                                  <td>Table cell</td>
+                                  <td>Table cell</td>
+                                  <td>Table cell</td>
+
+
+                                </tr>
+                                <tr>
+                                  <td>10</td>
+                                  <td>Table cell</td>
+                                  <td>Table cell</td>
+                                  <td>Table cell</td>
+                                  <td>Table cell</td>
+
+
+                                </tr>
+                              </tbody>
+                            </table>
+                            <hr>
+                            <div class="row">
+                              <div class="col-md-4 col-md-offset-4 text-center">
+                                <ul class="pagination" id="myPager"></ul>
+                              </div>
+                            </div>
+                          </div><!--/table-resp-->
+
+                          <hr>
+
+                         </div><!--/tab-pane-->
+                         <div class="tab-pane" id="messages">
+
+                           <h2></h2>
+
+                           <ul class="list-group">
+                              <li class="list-group-item text-muted">Inbox</li>
+                              <li class="list-group-item text-right"><a href="#" class="pull-left">Here is your a link to the latest summary report from the..</a> 2.13.2014</li>
+                              <li class="list-group-item text-right"><a href="#" class="pull-left">Hi Joe, There has been a request on your account since that was..</a> 2.11.2014</li>
+                              <li class="list-group-item text-right"><a href="#" class="pull-left">Nullam sapien massaortor. A lobortis vitae, condimentum justo...</a> 2.11.2014</li>
+                              <li class="list-group-item text-right"><a href="#" class="pull-left">Thllam sapien massaortor. A lobortis vitae, condimentum justo...</a> 2.11.2014</li>
+                              <li class="list-group-item text-right"><a href="#" class="pull-left">Wesm sapien massaortor. A lobortis vitae, condimentum justo...</a> 2.11.2014</li>
+                              <li class="list-group-item text-right"><a href="#" class="pull-left">For therepien massaortor. A lobortis vitae, condimentum justo...</a> 2.11.2014</li>
+                              <li class="list-group-item text-right"><a href="#" class="pull-left">Also we, havesapien massaortor. A lobortis vitae, condimentum justo...</a> 2.11.2014</li>
+                              <li class="list-group-item text-right"><a href="#" class="pull-left">Swedish chef is assaortor. A lobortis vitae, condimentum justo...</a> 2.11.2014</li>
+
+                            </ul>
+
+                         </div><!--/tab-pane-->
+                         <div class="tab-pane active" id="settings">
+
+                               {% if form.errors %}
+                                <!-- <p>Your username and password didn't match. Please try again.</p> -->
+                                  <font size="3" color="red">{{ form.errors }}</font>
+
+                              {% endif %}
+
+                              <hr>
+                              <form class="form" method="post" id="registrationForm">
+                              {% csrf_token %}
+
+                              {% if messages %}
+                                  {% for message in messages %}
+                                      alert(message);
+                                  {% endfor %}
+                              {% endif %}
+
+                              {% if form.errors %}
+                                    <!-- <p>Your username and password didn't match. Please try again.</p> -->
+                                    <font size="3" color="red">Verificati si incercati din nou.</font>
+                                    <p>  </p>
+                              {% endif %}
+
+                                  <div class="form-group">
+
+                                      <div class="col-xs-6">
+                                          <label style="padding-top: 10px; font-size:1.2em;" for="username">USERNAME</label>
+                                          <input type="text" class="form-control" name="username" id="username" placeholder="{{ user.username }}" title="enter your first name if any." value="{{ user.username}}">
+                                      </div>
+                                  </div>
+
+
+                                  <div class="form-group">
+
+                                      <div class="col-xs-6">
+                                          <label style="padding-top: 10px; font-size:1.2em;" for="first_name">TIP CONT</label>
+                                          <input readonly type="text" class="form-control" name="account_type" id="accountType" value="{{ user.membership.membership_type }}" title="">
+                                      </div>
+                                  </div>
+
+
+                                  <div class="form-group">
+
+                                      <div class="col-xs-6">
+                                          <label  style="padding-top: 10px; font-size:1.2em;" for="first_name">PRENUME</label>
+                                          <input type="text" class="form-control" name="first_name" id="first_name" value="{{ user.first_name }}" title="enter your first name if any.">
+                                      </div>
+                                  </div>
+
+                                  <div class="form-group">
+
+                                      <div class="col-xs-6">
+                                        <label style="padding-top: 10px; font-size:1.2em;" for="last_name">NUME</label>
+                                          <input type="text" class="form-control" name="last_name" id="last_name" value="{{ user.last_name }}" title="enter your last name if any.">
+                                      </div>
+                                  </div>
+
+                                  <div class="form-group">
+
+                                      <div class="col-xs-6">
+                                          <label style="padding-top: 10px; font-size:1.2em;">NUMĂR TELEFON</label>
+                                          <input type="text" class="form-control" name="phoneNo" id="phoneNo" value="{{user.userprofile.phoneNo}}" title="enter your phone number if any.">
+                                      </div>
+                                  </div>
+
+
+                                  <div class="form-group">
+
+                                      <div class="col-xs-6">
+                                          <label  style="padding-top: 10px; font-size:1.2em;" for="email">EMAIL</label>
+                                          <input type="email" class="form-control" name="email" id="email" value="{{ user.email }}" title="enter your email.">
+                                      </div>
+                                  </div>
+
+
+                                  <div class="form-group">
+                                       <div class="col-xs-12">
+                                            <br>
+                                            <button class="btn btn-lg btn-success" type="submit"><i class="glyphicon glyphicon-ok-sign"></i> Salvează</button>
+                                            <button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i> Resetează</button>
+                                        </div>
+                                  </div>
+                            </form>
+                          </div>
+
+                          </div><!--/tab-pane-->
+                      </div><!--/tab-content-->
+
+        </div><!--/col-9-->
+    </div><!--/row-->
+
+
+
+
+        </div> <!--  end of box-->
+
+    </div>  <!--  end of container-->
+
+
+
+
+
+
+
+<!--Start of Tawk.to Script-->
+<script>
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5b94f137f31d0f771d8493ec/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+    <!-- /.container -->
+
+{% endblock content %}

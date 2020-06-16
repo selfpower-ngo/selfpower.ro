@@ -1,0 +1,154 @@
+{% extends "blog_base.html" %}
+{% load django_markdown %}
+{% load static %}
+
+{% block metatags %}
+    <meta name="description" content="{% block metadesc %}{% if object.subtitle %}{{ object.subtitle }}{% else %}Selfpower.ro Blog Post{% endif %}{% endblock metadesc %}">
+    <meta name="keywords" content="Selfpower, Blog, Post, Articol, Studiu, Consiliere, Educatie, Dezvoltare, Personala">
+    <meta name="article:author" content="{% if object.author.get_full_name %}{{ object.author.get_full_name }}{% else %} by Selfpower.ro{% endif %}">
+    <meta property='article:publisher' content='https://www.selfpower.ro/' />
+    <meta property='og:site_name' content='Asociatia Selfpower' />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{ request.scheme }}://{{request.META.HTTP_HOST}}/blog/{{ object.slug }}" />
+    <meta property="og:title" content="{% block metatitle %}{% if object.title %}{{ object.title }}{% else %}Selfpower.ro Blog Post{% endif %}{% endblock metatitle %}" />
+    <meta property="og:description" content="{% if object.subtitle %}{{ object.subtitle }}{% else %}Selfpower.ro Blog Post{% endif %}" />
+    <meta property="og:image" content="{% if object.image %}{{ request.scheme }}://{{request.META.HTTP_HOST}}{{ object.image.url }}{% else %}https://www.selfpower.ro/static/img/banner.png{% endif %}" />
+    <meta property="og:image:secure_url" content="{% if object.image %}{{ request.scheme }}://{{request.META.HTTP_HOST}}{{ object.image.url }}{% else %}https://www.selfpower.ro/static/img/banner.png{% endif %}" />
+    <meta property="og:image:type" content="{% if object.image %}image/jpg{% else %}image/png{% endif %}" />
+    <meta property="og:image:alt" content="Blog Post Image" />
+    {% if object.image %}
+    {% else %}
+    <meta property="og:image:width" content="1000" />
+    <meta property="og:image:height" content="532" />
+    {% endif %}
+    <meta property="fb:app_id" content="2521504124841472" />
+{% endblock metatags %}
+
+
+{% block title %}  {{ object.title }} {% endblock title %}
+
+{% block blog_entries %}
+
+  <div class="row">
+      <div class="col-lg-10 col-lg-offset-1">
+          <hr>
+          <h2 class="intro-text text-center"><strong>Articol</strong>
+              Selfpower
+          </h2>
+          <hr>
+      </div>
+  </div><!-- ./row -->
+  <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <div id="mycarousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="item active">
+              {% if object.image %}
+                <img src=" {{ object.image.url }} " alt="Blog Image" class="img-responsive center-block" style="width: 70%;">
+              {% else %}
+                <img src="{% static "img/blogimage.jpg" %}" alt="Blog Post Image" class="img-responsive center-block" style="width: 90%;">
+              {% endif %}
+            </div>
+          </div><!-- ./carousel-inner -->
+        </div><!-- ./mycarousel -->
+      </div><!-- ./col-md-10 -->
+  </div><!-- ./row -->
+
+  <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="blogpost">
+          <h2 class="text-center">{{object.title}}</h2>
+              <br>
+              <p class="text-center" style="color: #837777;">
+                 <i> {{ object.subtitle }} </i>
+              </p>
+              <hr>
+          {{ object.body | markdown }}
+
+        </div><!-- ./blogpost -->
+
+        <div class="blogpost">
+          <hr>
+          <p class="text-center">
+            <small><!-- All of this for Author -->
+              autor:
+                 <b>
+                   {{ object.author.get_full_name|default:object.author.username }}
+                 </b>
+               , publicat:
+                <b>
+                 {{ object.created }}
+                </b>
+            </small>
+          </p>
+          <ul class="pager">
+                <li>
+                  <a href="{% url "blog_index" %}">&larr; Cuprins</a>
+                </li>
+          </ul><!-- ./pager -->
+        </div><!-- ./blogpost -->
+        <hr>
+      </div><!-- ./col-md-8 -->
+  </div><!-- ./row -->
+
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <div id="disqus_thread"></div>
+        <script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        var disqus_config = function () {
+        this.page.url = 'https://selfpower.ro{% url "entry_detail" slug=object.slug %}';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'selfpower-blog-post-{{ object.slug }}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://selfpower-ro.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+  </div><!-- ./row -->
+
+
+
+
+
+
+
+{% include 'modalDonations.html' %}
+
+ <!-- this code displays an alert box if this is the first time when the user access this page. uses cookies. -->
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+
+function s()
+{
+    $('#prizePopup').modal('show');
+}
+
+
+var cookies = document.cookie.split(';');//contains all the cookies
+var cookieName = ['access']; // to contain name of all the cookies
+for(i=0;i<cookies.length;i++) {
+    cookieName[i] = cookies[i].split('=')[0].trim();
+}
+
+    if(cookieName.indexOf('access')>-1) {
+        console.log("This is NOT first access");
+    } else {
+        console.log("First Access");
+        document.cookie = "access=yes";
+        $(window).load(function()
+        {
+          setTimeout(s, 40000);
+        });
+    }
+</script>
+
+
+
+{% endblock %}

@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+<!-- -->
+{% block metatags %}
+    <meta name="google-site-verification" content="_kKMOjMxqNKLEiBffYvqD9TeDLQkGnGNgBheOH62NoI" />
+    <meta name="description" content="Selfpower comunitate de consiliere si dezvoltare personala. Consiliere. Cursuri. Educatie. Blog">
+    <meta name="keywords" content="Selfpower, Consiliere, Dezvoltare, Personala, Comunitate, Studiu, Blog">
+    <meta property="og:title" content="Acasa - Selfpower Consiliere, Educatie si Dezvoltare Personala" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://selfpower.ro" />
+    <meta property="og:description" content="Selfpower comunitate de consiliere si dezvoltare personala. Evenimente. Cursuri. Educatie. Blog" />
+    <meta property="og:image" content="https://selfpower.ro/static/img/ParkGreenxs.jpg" />
+    <meta property="og:image:secure_url" content="https://selfpower.ro/static/img/ParkGreenxs.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="717" />
+    <meta property="og:image:height" content="403" />
+{% endblock metatags %}
+{% block title %} Acasa - Selfpower Consiliere, Educatie si Dezvoltare Personala{% endblock title %}
+
+{% load static %}
+
+{% block body %} <body id="home"> {% endblock body %}
+
+{% block content %}
+ 
+    <div class="container">
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                <img src="{% static "img/banner.png" %}" alt="Blog Image" class="img-responsive center-block">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-6 col-lg-offset-3 text-center">
+                    <hr>
+                    <p class="frontpage">"M-am str&#259;duit ne&#238;ncetat s&#259; nu ridiculizez, s&#259; nu depl&#226;ng <br>&#351;i nici s&#259; dispre&#355;uiesc ac&#355;iunile umane, ci s&#259; le în&#355;eleg."<br>Spinoza</p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <hr>
+                    <h2 class="intro-text text-center">Cercetare
+                        <strong>Stresul Emigranților</strong>
+                    </h2>
+                    <hr>
+                    <img class="img-responsive img-border img-left" src="{{MEDIA_URL}}/img/JaquesRallPhotographyFrankfurtamMain2xs.jpg" alt="">
+                    <hr class="visible-xs">
+                    <small>
+                    <p>
+                      Am ales sa fac aceasta cercetare din dorinta de a oferi un sprijin emigrantilor romani din Germania, si ca urmare a propriei experiente de emigrant in Germania.
+                    </p>
+                    <p class="text-justified blog">
+                      Inainte de a avea eu insumi aceasta experienta, consideram ca nu este atat de dificil sa ma adaptez intr-o noua tara, dar nu am luat in calcul toti factorii care ar putea sa perturbe procesul de adaptare la o noua cultura si consecintele care pot aparea in urma unui pas atat de important.
+                    </p>
+                    </small>
+                    <ul class="pager">
+                        <li>
+                          <a href="https://selfpower.ro/blog/stresul-emigrantilor-romani-din-germania">Citește mai mult &rarr;</a>
+                        </li>
+                    </ul><!-- ./pager -->
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="box">
+            <div class="row">
+            <form id="inregistrare" class="form-inline text-center" action="" method="POST">
+              {% csrf_token %}
+                <div class="form-group">
+                  <label for="email_address">Newsletter:</label>
+                  <input type="email" class="form-control" name="adresa_email" id="id_adresa_email" placeholder="nume@nume.com">
+                  </div>
+                <button type="submit" class="btn btn-default">Înscriere</button>
+            </form>
+            </div>
+            {% for message in messages %}
+              <div class="row">
+                  <div class="col-lg-6 col-lg-offset-3">
+                    <br>
+                    {% if 'success' in message.tags %}
+                    <div class="alert alert-success" role="alert"><center><strong>{{ message }}</strong></center></div>
+                    {% endif %}
+                    {% if 'error' in message.tags %}
+                    <div class="alert alert-danger" role="alert"><center><strong>{{ message }}</strong></center>{{ form.errors }}<small>{{ form.non_field_errors | striptags }}</small></div>
+                    {% endif %}
+                  </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+{% endblock content %}

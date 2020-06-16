@@ -1,0 +1,22 @@
+{% load i18n %}
+{% autoescape off %}
+
+<h3>{% blocktrans %}Primiti acest email pentru ca ati solicitat o logare rapida.{% endblocktrans %}</h3>
+<hr>
+<br>
+<h1>
+  {{ code }}
+</h1>
+<br>
+
+<h3>{% trans "Foloseste acest link de logare rapida:" %}<h3>
+<br>
+
+{{ url }}
+<br><br>
+<p>{% trans "Multumim! Pentru orice nelamuriri, contactati-ne." %}</p>
+<br>
+<p>{% blocktrans %}Echipa Selfpower. {% endblocktrans %}</p>
+<br>
+
+{% endautoescape %}

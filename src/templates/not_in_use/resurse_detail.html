@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+
+
+{% block title %} Date de contact - Selfpower Consiliere, Educatie si Dezvoltare Personala{% endblock title %}
+
+{% block body %} <body id="hub"> {% endblock body %}
+
+
+
+{% block content %}
+
+    <div class="container">
+
+        <div class="row">
+            <div class="box">
+
+            <div class="row"> 
+                    <div class="col-lg-10 col-lg-offset-1">
+                        <hr>
+                        <h2 class="intro-text text-center">
+                            Read. Learn. Apply.
+                        </h2>
+                        <hr>
+
+                        <br>
+                    </div>
+
+
+                    {% if not object.profile.isEmpty %}
+                        <div class="row" style="margin-top:50px;">
+                          <img src=" {{ object.profile.url }} " alt="Blog Image" class="img-responsive center-block" style="width: 50%;">
+                        </div>
+                     {% endif %}
+   
+
+            </div> <!-- row -->
+
+            {% if not object.title.isEmpty %}
+                <br>
+                <br>
+                    <h2 class="intro-text text-center">
+                        {{object.title}}
+                    </h2>
+                <hr>
+                <br>
+            {% endif %}
+
+
+            {% if not videoUrl.isEmpty %}
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="{{ videoUrl }}" allowfullscreen></iframe>
+                    </div>
+                </div>
+            {% endif %}
+            
+
+
+            <div class="row" style="margin-top:50px;">
+                {% for book in books %}
+                     <div class="col-lg-3 col-lg-offset-1 text-center">           
+                        <a href="{{ book.url }}"> {{ book.title }} </a>  
+                    </div>
+                 {% endfor %}      
+            </div>
+
+            
+
+            {% if not object.text.isEmpty %}
+            <div class="row" style="margin-top:50px;">
+              <div class="col-lg-10 col-lg-offset-1 text-center">
+                        <p> {{object.text}} </p>
+              </div>
+            </div>
+             {% endif %}
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <!--Start of Tawk.to script
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5b94f137f31d0f771d8493ec/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+End of Tawk.to Script-->
+    <!-- /.container -->
+
+{% endblock %}

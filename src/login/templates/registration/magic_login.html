@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+ 
+{% block metatags %}
+    <meta name="description" content="Date de Contact - Selfpower comunitatea de consiliere si dezvoltare personala.">
+    <meta name="keywords" content="Selfpower, Blog, Articole, Studii, Consiliere, Educatie, Dezvoltare, Personala">
+    <meta property="og:title" content="Contact - Selfpower Consiliere, Educatie si Dezvoltare Personala" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://selfpower.ro/contact" />
+    <meta property="og:description" content="Date de Contact - Selfpower comunitatea de consiliere si dezvoltare personala." />
+    <meta property="og:image" content="https://selfpower.ro/static/img/ParkGreenxs.jpg" />
+    <meta property="og:image:secure_url" content="https://selfpower.ro/static/img/ParkGreenxs.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="717" />
+    <meta property="og:image:height" content="403" />
+{% endblock metatags %}
+{% block title %} Date de contact - Selfpower Consiliere, Educatie si Dezvoltare Personala{% endblock title %}
+
+{% block body %} <body id="profile"> {% endblock body %}
+
+{% load i18n %}
+ 
+{% block content %}
+
+    <div class="container">
+
+       <div class="login-form">
+            <div class="main-div">
+                 <div class="panel">
+
+                   <div class="panel">
+                      <h2>Logare rapida</h2>
+                       <p>cu link magic</p>
+                   </div>
+                   
+
+                    <form method="POST" id="myForm">
+			            {% csrf_token %}
+
+                        <p> Introdu numele de utilizator mai jos și vei primi pe email un link magic de logare rapidă! </p>
+
+			            
+                        <div class="form-group">
+                          <input type="text" class="form-control" id="username" placeholder="numele meu de utilizator" name="username">
+                        </div>
+
+				    <button class="btn btn-primary">Trimite-mi cod magic</button>
+			        </form>
+
+                  
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5b94f137f31d0f771d8493ec/1cserg2se';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+<!-- recaptcha script -->
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<!--  End ofrecaptcha script -->
+
+
+
+    <!-- /.container -->
+
+{% endblock content %}

@@ -1,0 +1,60 @@
+
+    <nav class="navbar navbar-default">
+        <div class="">
+            <!-- Brand and toggle get grouped for better mobile display -->
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                <a class="navbar-brand" href="/">Selfpower</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                       <a href="{% url 'about' %}"><span class="glyphicon glyphicon-home" aria-hidden="true"></span><!-- Home Icon --></a>
+                    </li>
+                    <li>
+                       <a href="{% url 'membri' %}">Membri</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'blog_index' %}">Blog</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'proiecte_index' %}">Proiecte</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'doilasuta' %}">2%</a>
+                    </li>
+                    <!-- <li class="dropdown" id="parentCell" ><a class="dropdown-toggle" data-toggle="dropdown" href="#">Sustine proiectul<span class="caret"></span></a>
+                       <ul class="dropdown-menu" style="border: 0px solid black; background-color: #F5F5F5;">
+                         <li>
+                            <a href="{% url 'donatii' %}">Donatii</a>
+                         </li>
+                         <li>
+                            <a href="{% url 'doilasuta' %}">2%</a>
+                         </li>
+                       </ul>
+                    </li> -->
+                    <li>
+                        <a href="{% url 'contact' %}">Contact</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'profile' %}">
+                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span><!-- Profil -->
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+
+
+        </div>
+        <!-- /.container -->
+    </nav>
