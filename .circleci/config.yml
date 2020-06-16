@@ -32,7 +32,7 @@ jobs:
           keys:
             - v1-dependencies-{{ checksum "requirements/test.txt" }}-{{ checksum "requirements/base.txt" }}
             # fallback to using the latest cache if no exact match is found
-            - v1-dependencies-
+            - v1-dependencies
       - run:
           name: install dependencies
           command: |
