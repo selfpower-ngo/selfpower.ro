@@ -1,75 +1,21 @@
-# Python CircleCI 2.0 configuration file
-#
-# Check https://circleci.com/docs/2.0/language-python/ for more details
-#
-version: 2
+version: 2.1
+
+orbs:
+  python: circleci/python@0.2.1
+
 jobs:
-  build:
-    docker:
-      - image: circleci/python:3.6.7
-        environment:
-          PIPENV_VENV_IN_PROJECT: false
-          DATABASE_URL: postgresql://root@localhost/circle_test?sslmode=disable
-          # This is for test
-          # Do not place secrets or API Keys here, cause we're in git
-          DJANGO_SETTINGS_MODULE: SelfpowerProject.settings.circleci
-          # this is also because of the way we import base.* (we should not *)
-          EMAIL_HOST_PASSWORD: something
-          EMAIL_HOST_USER: something
-      - image: circleci/postgres:10.10
-        environment:
-          POSTGRES_USER: circleci
-          POSTGRES_DB: circle_test
-
-    working_directory: ~/repo
-
+  build-and-test:
+    executor: python/default
     steps:
       - checkout
-      - run: sudo chown -R circleci:circleci /usr/local/bin
-      - run: sudo chown -R circleci:circleci /usr/local/lib/python3.6/site-packages
-      # Download and cache dependencies
-      - restore_cache:
-          keys:
-            - v1-dependencies-{{ checksum "requirements/test.txt" }}-{{ checksum "requirements/base.txt" }}
-            # fallback to using the latest cache if no exact match is found
-            - v1-dependencies-
+      - python/load-cache
+      - python/install-deps
+      - python/save-cache
       - run:
-          name: install dependencies
-          command: |
-            python3.6 -m venv venv
-            . venv/bin/activate
-            pip install --upgrade pip
-            pip install -r requirements/test.txt
-      - run:
-          # this can be removed
-          name: Locate site Packages
-          command: python -c "import site; print(site.getsitepackages())"
-      - save_cache:
-          paths:
-            - "./venv"
-            - "/usr/local/bin"
-            - "/usr/local/lib/python3.6/site-packages"
-          key: v1-dependencies-{{ checksum "requirements/test.txt" }}-{{ checksum "requirements/base.txt" }}
+          command: ./manage.py test
+          name: Test
 
-      - run:
-          name: Run Tests & Coverage & CodeCov
-          command: |
-            . venv/bin/activate
-            python src/manage.py collectstatic
-            python src/manage.py migrate
-            python src/manage.py test src/
-            which coverage
-            coverage erase
-            coverage run src/manage.py test src/
-            coverage report
-            coverage html
-            codecov
-
-      - store_test_results:
-          path: test-results
-      - store_artifacts:
-          path: htmlcov
-          destination: tr1
-      - store_artifacts:
-          path: xmlcov
-          destination: cov1
+workflows:
+  main:
+    jobs:
+      - build-and-test
