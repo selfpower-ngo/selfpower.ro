@@ -130,7 +130,10 @@ http://127.0.0.1:8000/administrare
 For the example login with the superuser.
 Otherwise you will get a crash when accessing the profile page.
 
+## Contributors
 
+- [![](https://github.com/alexinntekt.png?size=50)](https://github.com/AlexInntekt)
+- [![](https://github.com/ionescu77.png?size=50)](https://github.com/ionescu77)
 
 ### Contribution guidelines ###
 
