@@ -86,6 +86,14 @@
                   <a href="{% url "blog_index" %}">&larr; Cuprins</a>
                 </li>
           </ul><!-- ./pager -->
+          <ul class="pager">
+            Tags:
+            {% for ob in object.tags.all%}
+            <li>
+              <a href="{% url 'list_by_tag' ob %}">{{ob.slug}}</a>
+            </li>
+            {% endfor %}
+          </ul><!-- ./pager -->
         </div><!-- ./blogpost -->
         <hr>
       </div><!-- ./col-md-8 -->

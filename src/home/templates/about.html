@@ -12,6 +12,27 @@
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="717" />
     <meta property="og:image:height" content="403" />
+
+    <style>
+        .tag-links{
+            background-color: orange;
+            box-shadow: 0 5px 0 darkred;
+            color: white;
+            padding: 1em 1.5em;
+            position: relative;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .hover{
+            background-color: #ce0606;
+            cursor: pointer;
+        }
+        .tag-links:active{
+            box-shadow: none;
+            top: 5px;
+        }
+
+    </style>
 {% endblock metatags %}
 {% block title %} Despre Noi - Selfpower Consiliere, Educatie si Dezvoltare Personala{% endblock title %}
 
@@ -80,6 +101,31 @@
 
             </div>
         </div>
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <hr>
+                    <h2 class="intro-text text-center"><strong>Tag-uri</strong>
+                        de blog
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-lg-6 col-lg-offset-3 text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <div class="flex-wr-s-s m-rl--5">
+                        {% for t in tags %}
+                        <a class="tag-links" href="{% url 'list_by_tag' t %}" >
+                            {{t.slug}}
+                        </a>
+                        {% endfor %}
+                    </div>	
+                </div>
+                </div>
+            </div>
+        </div>
+        
+
 
         <div class="row">
             <div class="box">
