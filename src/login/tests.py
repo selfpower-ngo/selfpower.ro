@@ -6,8 +6,6 @@ from django.urls import resolve, reverse
 from django.contrib.auth.models import User
 from django.contrib.auth import views as auth_views
 
-from nopassword.views import LoginView as nopasswordlogin
-
 from .views import signup, profile
 from .models import UserProfile, Membership
 
@@ -49,8 +47,6 @@ class TestAuth(TestCase):
         self.assertEqual(classical_login_url, '/autentificare/panou_logare/')
         response = self.client.get(reverse('panou_logare'), follow=True)
         self.assertEquals(response.status_code, 200)
-        # email_login_view = reverse(nopasswordlogin)
-        # self.assertEqual(email_login_view, '/autentificare/login/')
 
 
         panou_logare_url = reverse('panou_logare')
@@ -132,9 +128,6 @@ class TestAuth(TestCase):
 
         classical_login_view = resolve('/autentificare/panou_logare/')
         self.assertEqual(classical_login_view.func.view_class, auth_views.LoginView)
-
-        email_login_view = resolve('/autentificare/login/')
-        self.assertEqual(email_login_view.func.view_class, nopasswordlogin)
 
     def test_create_user(self):
         """
