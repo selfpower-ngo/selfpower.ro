@@ -17,8 +17,6 @@ c)profile
 from django.urls import path, include
 from django.contrib.auth import views as auth_views
 
-# from nopassword.views import LoginView as nopasswordlogin
-
 from .views import profile, signup, activate
 
 urlpatterns = [
