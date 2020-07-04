@@ -97,11 +97,6 @@ class TestAuth(TestCase):
         # response = self.client.get(reverse('nopassword'), follow=True)
         # self.assertEquals(response.status_code, 200)
 
-        login_url = reverse('login')
-        print("Reverse URL check:", login_url)
-        self.assertEqual(login_url, '/autentificare/login/')
-        response = self.client.get(reverse('login'), follow=True)
-        self.assertEquals(response.status_code, 200)
 
         # ----- This needs extra care because of token
         # ---   reset/<uidb64>/<token>
