@@ -17,7 +17,7 @@ c)profile
 from django.urls import path, include
 from django.contrib.auth import views as auth_views
 
-from nopassword.views import LoginView as nopasswordlogin
+# from nopassword.views import LoginView as nopasswordlogin
 
 from .views import profile, signup, activate
 
@@ -40,8 +40,8 @@ urlpatterns = [
     path(r'password_reset_complete/', auth_views.PasswordResetCompleteView.as_view(template_name='password_reset_complete.html'), name='password_reset_complete'),
     # the endpoints and other urls for the passwordless authentication,
     # the 'nopassword' package:
-    path(r'accounts/', include('nopassword.urls'), name='nopassword'),
-    path(r'login/', nopasswordlogin.as_view(), name="login"),
+    # path(r'accounts/', include('nopassword.urls'), name='nopassword'),
+    # path(r'login/', nopasswordlogin.as_view(), name="login"),
     # activation of account after signup:
     path(r'activate/<uidb64>/<token>', activate, name='activate'),
 
