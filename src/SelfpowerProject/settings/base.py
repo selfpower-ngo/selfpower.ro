@@ -46,7 +46,6 @@ INSTALLED_APPS = (
     'hub',
     'login',
     'backend',
-    'nopassword',
     'requests',
 
 )
