@@ -95,10 +95,10 @@
                 </li>
           </ul><!-- ./pager -->
           <ul class="pager">
-            Tags:
-            {% for ob in object.tags.all%}
+            All tags:
+            {% for t in tags %}
             <li>
-              <a href="{% url 'list_by_tag' ob %}">{{ob.slug}}</a>
+              <a href="{% url 'list_by_tag' t %}">{{t.slug}}</a>
             </li>
             {% endfor %}
           </ul><!-- ./pager -->

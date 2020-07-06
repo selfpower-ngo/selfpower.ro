@@ -36,6 +36,11 @@ class BlogDetail(generic.DetailView):
     model = Entry
     template_name = "blog_post.html"
 
+    def get_context_data(self, **kwargs):
+        context = super(BlogDetail, self).get_context_data(**kwargs)
+        context['tags'] = Tag.objects.all()
+        return context
+
 
 
 class AddPost(TemplateView):
