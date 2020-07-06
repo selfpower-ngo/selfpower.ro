@@ -35,9 +35,17 @@
         <hr>
         
         <h2 class="intro-text text-center"><strong>All tags: </strong>
-          {% for t in tags %}
-            <a href="{% url 'list_by_tag' t %}">{{t.slug}}</a>
-          {% endfor %}
+          
+            
+
+                {% for c in tags %}
+                <span class="label label-warning">
+                  <a href="{% url 'list_by_tag' c %}">{{c.slug}}</a>
+                </span>
+                &nbsp
+                {% endfor %}
+            </select>
+       
         </h2>
         
     </div>

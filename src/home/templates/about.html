@@ -111,17 +111,23 @@
                     </h2>
                     <hr>
                 </div>
-                <div class="col-lg-6 col-lg-offset-3 text-center">
-                <div class="col-lg-10 col-lg-offset-1">
+                <div class="col-lg-6 col-lg-offset-3">
                     <div class="flex-wr-s-s m-rl--5">
                         {% for t in tags %}
-                        <a class="tag-links" href="{% url 'list_by_tag' t %}" >
-                            {{t.slug}}
-                        </a>
+                        &nbsp;
+                        <span class="label label-warning">
+                            &nbsp;
+                            <span class="h5">
+                                
+                            <a href="{% url 'list_by_tag' t %}" class="flex-c-c size-h-2 bo-1-rad-20 bocl12 f1-s-1 cl8 hov-btn2 trans-03 p-rl-20 p-tb-5 m-all-5">
+                                &nbsp;<strong>{{t.slug}}</strong>
+                            </a>
+                            </span>
+                        </span>
                         {% endfor %}
                     </div>	
                 </div>
-                </div>
+               
             </div>
         </div>
         

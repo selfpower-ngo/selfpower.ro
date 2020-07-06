@@ -32,9 +32,13 @@
         <h2 class="intro-text text-center"><strong>Articole </strong>
             Selfpower
         </h2>
-        <h2 class="intro-text text-center">Tag: 
-            <strong><a href="{% url 'list_by_tag' query %}">{{query}}</a></strong>
-        </h2>
+        <div class="text-center">
+        <span class="h3 intro-text">
+          <span class="label label-warning"> 
+              <strong><a href="{% url 'list_by_tag' query %}">{{query}}</a></strong>
+          </span>
+        </span>
+      </div>
         <hr>
     </div>
 </div><!-- ./box -->
