@@ -57,7 +57,6 @@ class ListPostsByTag(TemplateView):
         tag_url = kwargs['tag']
         posts = Entry.objects.filter(tags__slug=tag_url)
         tags = Tag.objects.all()
-        print(posts)
         return render(request, self.template_name, {'posts':posts,'query':tag_url,'tags':tags})
 
 def search(request):
