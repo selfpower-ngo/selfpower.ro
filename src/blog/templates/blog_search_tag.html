@@ -40,6 +40,14 @@
         </span>
       </div>
         <hr>
+        <h2 class="intro-text text-center"><strong>All tags: </strong>
+          {% for c in tags %}
+          <span class="label label-warning">
+            <a href="{% url 'list_by_tag' c %}">{{c.slug}}</a>
+          </span>
+          &nbsp
+          {% endfor %}
+        </h2>
     </div>
 </div><!-- ./box -->
 </div><!-- ./row -->

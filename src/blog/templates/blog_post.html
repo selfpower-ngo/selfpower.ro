@@ -35,7 +35,15 @@
           <h2 class="intro-text text-center"><strong>Articol</strong>
               Selfpower
           </h2>
-          <hr>
+          <div class="intro-text text-center">
+          {% for c in object.tags.all %}
+            <span class="label label-warning">
+              <a href="{% url 'list_by_tag' c %}">{{c.slug}}</a>
+            </span>
+            &nbsp
+          {% endfor %}
+        </div>
+        <hr>    
       </div>
   </div><!-- ./row -->
   <div class="row">
