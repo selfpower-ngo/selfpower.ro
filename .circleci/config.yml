@@ -6,7 +6,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/python:3.6.7
+      - image: circleci/python:3.7.7
         environment:
           PIPENV_VENV_IN_PROJECT: false
           DATABASE_URL: postgresql://root@localhost/circle_test?sslmode=disable
@@ -36,7 +36,7 @@ jobs:
       - run:
           name: install dependencies
           command: |
-            python3.6 -m venv venv
+            python3.7 -m venv venv
             . venv/bin/activate
             pip install --upgrade pip
             pip install -r requirements/test.txt
