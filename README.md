@@ -65,6 +65,27 @@ export GOOGLE_RECAPTCHA_SECRET_SERVER_KEY="--hidden--"
 ```
 export STAGING_DATABASE_PASSWORD="--hidden--"
 ```
+
+#### 3.1 For Windows usage only:
+
+Additionally, for the virtual environment created, in the `activate.bat` file we must use another type of implementation of the ENV variables:
+
+```
+set "SECRET_KEY=blbabb32wdfiwjwrs"
+set "DJANGO_SETTINGS_MODULE=SelfpowerProject.settings.local"
+
+set "MAILCHIMP_API=--hidden--"
+set "MAILCHIMP_LIST_ID=--hidden--"
+
+set "EMAIL_HOST_USER=webmaster@selfpower.ro"
+set "EMAIL_HOST_PASSWORD=--hidden--"
+
+set "GOOGLE_RECAPTCHA_SECRET_KEY=--hidden--"
+set "GOOGLE_RECAPTCHA_SECRET_SERVER_KEY=--hidden--"
+
+set "STAGING_DATABASE_PASSWORD=--hidden--"
+```
+
 - after adding those to `bin/activate`, finally we can activate the virtualenv
 
 ```
@@ -130,7 +151,10 @@ http://127.0.0.1:8000/administrare
 For the example login with the superuser.
 Otherwise you will get a crash when accessing the profile page.
 
+## Contributors
 
+- [![](https://github.com/alexinntekt.png?size=50)](https://github.com/AlexInntekt)
+- [![](https://github.com/ionescu77.png?size=50)](https://github.com/ionescu77)
 
 ### Contribution guidelines ###
 

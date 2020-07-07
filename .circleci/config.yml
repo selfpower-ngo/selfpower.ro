@@ -32,7 +32,7 @@ jobs:
           keys:
             - v1-dependencies-{{ checksum "requirements/test.txt" }}-{{ checksum "requirements/base.txt" }}
             # fallback to using the latest cache if no exact match is found
-            - v1-dependencies-
+            - v1-dependencies
       - run:
           name: install dependencies
           command: |
@@ -48,7 +48,7 @@ jobs:
           paths:
             - "./venv"
             - "/usr/local/bin"
-            - "/usr/local/lib/python3.6/site-packages"
+            - "/usr/local/lib/python3.7/site-packages"
           key: v1-dependencies-{{ checksum "requirements/test.txt" }}-{{ checksum "requirements/base.txt" }}
 
       - run:
