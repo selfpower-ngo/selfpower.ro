@@ -89,9 +89,9 @@
           </ul><!-- ./pager -->
           <hr>
           <h2 style="margin-left:10px" class="intro-text text-center">
-            {% for c in object.tags.all %}
+            {% for tag in object.tags.all %}
             <span class="label label-warning" style="display:inline-flex">
-              <a href="{% url 'list_by_tag' c %}">#{{c.slug}}</a>
+              <a href="{% url 'list_by_tag' tag %}">#{{tag.slug}}</a>
             </span>
             &nbsp
             {% endfor %}
