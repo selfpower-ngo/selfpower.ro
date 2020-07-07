@@ -35,14 +35,7 @@
           <h2 class="intro-text text-center"><strong>Articol</strong>
               Selfpower
           </h2>
-          <div class="intro-text text-center">
-          {% for c in object.tags.all %}
-            <span class="label label-warning">
-              <a href="{% url 'list_by_tag' c %}">{{c.slug}}</a>
-            </span>
-            &nbsp
-          {% endfor %}
-        </div>
+          
         <hr>    
       </div>
   </div><!-- ./row -->
@@ -91,17 +84,19 @@
           </p>
           <ul class="pager">
                 <li>
-                  <a href="{% url "blog_index" %}">&larr; Cuprins</a>
+                  <a href="{% url 'blog_index' %}">&larr; Cuprins</a>
                 </li>
           </ul><!-- ./pager -->
-          <ul class="pager">
-            All tags:
-            {% for t in tags %}
-            <li>
-              <a href="{% url 'list_by_tag' t %}">{{t.slug}}</a>
-            </li>
+          <hr>
+          <h2 style="margin-left:10px" class="intro-text text-center">
+            {% for c in object.tags.all %}
+            <span class="label label-warning" style="display:inline-flex">
+              <a href="{% url 'list_by_tag' c %}">#{{c.slug}}</a>
+            </span>
+            &nbsp
             {% endfor %}
-          </ul><!-- ./pager -->
+   
+          </h2>
         </div><!-- ./blogpost -->
         <hr>
       </div><!-- ./col-md-8 -->
