@@ -1,8 +1,16 @@
+<style>
+    .span-spacing{
+        display:inline-flex;
+        margin-bottom:10px;
+        margin-top:5px;
+    }
+</style>
+
 <h2 class="intro-text text-center">
     {% for tag in tags %}
-        <span style="display:inline-flex;margin-bottom: 10px;margin-top: 5px;" class="label label-warning text-center">
+        <span class="span-spacing label label-warning text-center">
             <a style="text-decoration: none;" href="{% url 'list_by_tag' tag %}">#{{tag.slug}}</a>
         </span>
-        &nbsp
+        &nbsp;
     {% endfor %}
 </h2>
