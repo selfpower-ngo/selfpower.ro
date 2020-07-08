@@ -51,7 +51,7 @@ class AddPost(TemplateView):
 
 class ListPostsByTag(TemplateView):
 
-    template_name = 'blog_search_tag.html'
+    template_name = 'list_posts_by_tag.html'
 
     def get(self, request, *args, **kwargs):
         tag_url = kwargs['tag']
@@ -63,4 +63,4 @@ def search(request):
     query = request.GET.get('q')
     object_list = Entry.objects.filter(Q(tags__slug=query))
     print(object_list)
-    return render(request,'blog_search_tag.html',{'object_list':object_list,'query':query})
+    return render(request,'list_posts_by_tag.html',{'object_list':object_list,'query':query})
