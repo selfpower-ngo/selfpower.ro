@@ -4,7 +4,7 @@
 
 {% block metatags %}
     <meta name="description" content="{% block metadesc %}{% if object.subtitle %}{{ object.subtitle }}{% else %}Selfpower.ro Blog Post{% endif %}{% endblock metadesc %}">
-    <meta name="keywords" content="Selfpower, Blog, Post, Articol, Studiu, Consiliere, Educatie, Dezvoltare, Personala">
+    <meta name="keywords" content="Selfpower, Blog, Post, Articol, {% for t in object.tags.all %}{{t.slug}}{% endfor %}">
     <meta name="article:author" content="{% if object.author.get_full_name %}{{ object.author.get_full_name }}{% else %} by Selfpower.ro{% endif %}">
     <meta property='article:publisher' content='https://www.selfpower.ro/' />
     <meta property='og:site_name' content='Asociatia Selfpower' />
