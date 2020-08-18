@@ -33,17 +33,19 @@
         <h2 class="intro-text text-center"><strong>Articole </strong>
             Selfpower
         </h2>
+        <hr>
         <div class="text-center">
         <span class="h3 intro-text">
+          <p style="font-size: 14px; display:inline-block" >Posturi despre:</p>
           <span class="label label-warning"> 
-              <strong><a href="{% url 'list_by_tag' query %}">#{{query}}</a></strong>
+               <strong style="color:#fff3ea">#{{query}}</strong>
           </span>
         </span>
       </div>
-        <hr>
-        {%include "tag_list.html" %}
+        
+        <!-- {%include "tag_list.html" %}
         {% block tag %}
-        {% endblock %}
+        {% endblock %} -->
     </div>
 </div><!-- ./box -->
 </div><!-- ./row -->
