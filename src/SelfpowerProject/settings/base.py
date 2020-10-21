@@ -46,7 +46,6 @@ INSTALLED_APPS = (
     'hub',
     'login',
     'backend',
-    'nopassword',
     'requests',
 
 )
@@ -147,9 +146,6 @@ VERIFY_URL = VERIFY_URL_TEST
 AUTHENTICATION_BACKENDS = (
     # Needed to login by username in Django admin, regardless of `nopassword`
     'django.contrib.auth.backends.ModelBackend',
-
-    # Send login codes via email
-    'nopassword.backends.email.EmailBackend',
 )
 
 # Put this here to have a default when we run tests
