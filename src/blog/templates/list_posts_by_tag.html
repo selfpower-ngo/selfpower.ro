@@ -2,9 +2,10 @@
 {% load static %}
 
 {% block metatags %}
+    <meta name="title" content="Selfpower Blog - Articole despre {{query}}">
     <meta name="description" content="{% block metadesc %}Selfpower.ro - Blog, Articole, Studii, Index{% endblock metadesc %}">
-    <meta name="keywords" content="Selfpower, Blog, Articole, Studii, Consiliere, Educatie, Dezvoltare, Personala">
-    <meta property="og:title" content="{% block metatitle %}Selfpower Blog - Articole despre Consiliere, Educatie si Dezvoltare Personala{% endblock metatitle %}" />
+    <meta name="keywords" content="Selfpower, Blog, Articole, {{query}}">
+    <meta property="og:title" content="{% block metatitle %}Selfpower Blog - Articole despre {{query}}{% endblock metatitle %}" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.selfpower.ro/blog/{% block og_url %}{% endblock og_url %}" />
     <meta property="og:description" content="Selfpower - Blog, Articole, Studii" />
@@ -17,7 +18,7 @@
     <meta property="fb:app_id" content="2521504124841472" />
 {% endblock metatags %}
 
-{% block title %}Selfpower Blog - Articole despre Consiliere, Educatie si Dezvoltare Personala{% endblock title %}
+{% block title %}Selfpower Blog - Articole despre {{query}}{% endblock title %}
 
 {% block body %} <body id="blog"> {% endblock body %}
 
@@ -33,9 +34,18 @@
             Selfpower
         </h2>
         <hr>
-        {%include "tag_list.html" %}
+        <div class="text-center">
+        <span class="h3 intro-text">
+          <p style="font-size: 14px; display:inline-block" >Posturi despre:</p>
+          <span class="label label-warning"> 
+               <strong style="color:#fff3ea">#{{query}}</strong>
+          </span>
+        </span>
+      </div>
+        
+        <!-- {%include "tag_list.html" %}
         {% block tag %}
-        {% endblock %}
+        {% endblock %} -->
     </div>
 </div><!-- ./box -->
 </div><!-- ./row -->
@@ -43,7 +53,7 @@
 
 
 <div class="container">
-  {% for object in object_list %}
+  {% for object in posts %}
     <div class="row">
         <div class="box">
           <div class="col-lg-10 col-lg-offset-1">

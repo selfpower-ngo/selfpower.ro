@@ -389,3 +389,9 @@ and (min-width: 1624px) {
   opacity: 1;
   height: 100px;
 }
+
+.span-spacing{
+  display:inline-flex;
+  margin-bottom:10px;
+  margin-top:5px;
+}

@@ -4,7 +4,7 @@
 
 {% block metatags %}
     <meta name="description" content="{% block metadesc %}{% if object.subtitle %}{{ object.subtitle }}{% else %}Selfpower.ro Blog Post{% endif %}{% endblock metadesc %}">
-    <meta name="keywords" content="Selfpower, Blog, Post, Articol, Studiu, Consiliere, Educatie, Dezvoltare, Personala">
+    <meta name="keywords" content="Selfpower, Blog, Post, Articol, {% for t in object.tags.all %}{{t.slug}}{% endfor %}">
     <meta name="article:author" content="{% if object.author.get_full_name %}{{ object.author.get_full_name }}{% else %} by Selfpower.ro{% endif %}">
     <meta property='article:publisher' content='https://www.selfpower.ro/' />
     <meta property='og:site_name' content='Asociatia Selfpower' />
@@ -35,7 +35,8 @@
           <h2 class="intro-text text-center"><strong>Articol</strong>
               Selfpower
           </h2>
-          <hr>
+          
+        <hr>    
       </div>
   </div><!-- ./row -->
   <div class="row">
@@ -83,9 +84,18 @@
           </p>
           <ul class="pager">
                 <li>
-                  <a href="{% url "blog_index" %}">&larr; Cuprins</a>
+                  <a href="{% url 'blog_index' %}">&larr; Cuprins</a>
                 </li>
           </ul><!-- ./pager -->
+          <hr>
+          <h2 class="intro-text text-center">
+            {% for tag in object.tags.all %}
+            <span class="label label-warning" style="display:inline-flex">
+              <a style="text-decoration: none;" href="{% url 'list_by_tag' tag %}">#{{tag.slug}}</a>
+            </span>
+            {% endfor %}
+   
+          </h2>
         </div><!-- ./blogpost -->
         <hr>
       </div><!-- ./col-md-8 -->
