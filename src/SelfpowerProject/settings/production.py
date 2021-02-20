@@ -8,7 +8,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 DEBUG = False
 LIVE = True
 DISQUS = True
-ALLOWED_HOSTS = ['selfpower.ro', 'www.selfpower.ro', 'release.selfpower.ro']
+ALLOWED_HOSTS = ['selfpower.ro', 'www.selfpower.ro', 'staging.selfpower.ro']
 
 # Setup Database
 from .database_production import DATABASES
