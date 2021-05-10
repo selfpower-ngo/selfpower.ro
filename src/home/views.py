@@ -18,6 +18,7 @@ from mailchimp3 import MailChimp
 
 from SelfpowerProject.settings.utils import convert_text_to_md5
 from .forms import SignUpForm
+from blog.models import Tag
 
 API_KEY = settings.MAILCHIMP_API
 LIST_ID = settings.MAILCHIMP_LIST_ID
@@ -128,7 +129,8 @@ def home(request):
             return render(request, 'about.html')
     else:
         Nform = SignUpForm()
-    return render(request, 'about.html', {'form': Nform})
+        tags = Tag.objects.all()
+    return render(request, 'about.html', {'form': Nform,'tags':tags})
 
 
 class MembersView(TemplateView):
