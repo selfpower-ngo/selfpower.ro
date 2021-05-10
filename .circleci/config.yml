@@ -2,11 +2,14 @@
 #
 # Check https://circleci.com/docs/2.0/language-python/ for more details
 #
-version: 2
+version: 2.1
 jobs:
-  build:
+  run-tests:
+    parameters:
+      django-version:
+        type: string
     docker:
-      - image: circleci/python:3.7.7
+      - image: circleci/python:3.6.8
         environment:
           PIPENV_VENV_IN_PROJECT: false
           DATABASE_URL: postgresql://root@localhost/circle_test?sslmode=disable
@@ -16,6 +19,8 @@ jobs:
           # this is also because of the way we import base.* (we should not *)
           EMAIL_HOST_PASSWORD: something
           EMAIL_HOST_USER: something
+          DJANGO: << parameters.django-version >>
+
       - image: circleci/postgres:10.10
         environment:
           POSTGRES_USER: circleci
@@ -26,20 +31,33 @@ jobs:
     steps:
       - checkout
       - run: sudo chown -R circleci:circleci /usr/local/bin
-      - run: sudo chown -R circleci:circleci /usr/local/lib/python3.*/site-packages
+      - run: sudo chown -R circleci:circleci /usr/local/lib/python3.6/site-packages
       # Download and cache dependencies
       - restore_cache:
           keys:
-            - v1-dependencies-{{ checksum "requirements/test.txt" }}-{{ checksum "requirements/base.txt" }}
+            - v1-dependencies-{{ checksum "requirements/test.txt" }}-{{ checksum "requirements/base.txt" }}-<< parameters.django-version >>
             # fallback to using the latest cache if no exact match is found
-            - v1-dependencies
+            # this is not good when using matrix build:
+            - v1-dependencies-<< parameters.django-version >>
+      - run:
+          name: prepare dependencies
+          command: |
+            python3.6 -m venv venv
+            . venv/bin/activate
+            pip install -U pip wheel setuptools
+            echo ${DJANGO}
+            sed -i '/^Django==/d' requirements/base.txt
+            echo "We will cat the requirements/base.txt:"
+            cat requirements/base.txt
       - run:
           name: install dependencies
           command: |
-            python3.7 -m venv venv
             . venv/bin/activate
-            pip install --upgrade pip
             pip install -r requirements/test.txt
+            echo ${DJANGO}
+            pip install django~=${DJANGO}
+            echo "Show current django:"
+            python src/manage.py --version
       - run:
           # this can be removed
           name: Locate site Packages
@@ -48,9 +66,10 @@ jobs:
           paths:
             - "./venv"
             - "/usr/local/bin"
-            - "/usr/local/lib/python3.7/site-packages"
-          key: v1-dependencies-{{ checksum "requirements/test.txt" }}-{{ checksum "requirements/base.txt" }}
+            - "/usr/local/lib/python3.6/site-packages"
+          key: v1-dependencies-{{ checksum "requirements/test.txt" }}-{{ checksum "requirements/base.txt" }}-<< parameters.django-version >>
 
+      - run: mkdir test-results
       - run:
           name: Run Tests & Coverage & CodeCov
           command: |
@@ -62,14 +81,22 @@ jobs:
             coverage erase
             coverage run src/manage.py test src/
             coverage report
-            coverage html
-            codecov
-
+            coverage xml -o test-results/coverage.xml
       - store_test_results:
           path: test-results
       - store_artifacts:
-          path: htmlcov
-          destination: tr1
-      - store_artifacts:
-          path: xmlcov
-          destination: cov1
+          path: test-results
+      - run:
+          name: Upload CodeCov
+          command: |
+            bash <(curl -s https://codecov.io/bash)
+workflows:
+  version: 2
+  build_using_workflows:
+    jobs:
+      - run-tests:
+          name: build-django2
+          django-version: 2.2.0
+      - run-tests:
+          name: build-django3
+          django-version: 3.2.0
