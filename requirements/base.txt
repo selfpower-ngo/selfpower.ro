@@ -16,7 +16,7 @@ Pillow==8.1.1
 pytz==2020.1
 requests==2.23.0
 Unidecode==1.1.1
-urllib3==1.25.9
+urllib3==1.26.5
 
 # For Dj 2.x & 3.x alt to utils.six
 six==1.16.0
